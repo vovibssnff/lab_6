@@ -1,0 +1,20 @@
+plugins {
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation(project(':common'))
+    implementation files("../libs/rudp-SNAPSHOT.jar")
+    implementation('com.google.code.gson:gson:2.10.1')
+}
+
+
+application {
+    mainClass = 'ClientLauncher'
+}
+
+
