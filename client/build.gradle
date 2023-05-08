@@ -14,7 +14,15 @@ dependencies {
 
 
 application {
-    mainClass = 'ClientLauncher'
+    mainClass = 'wing.ClientLauncher'
+}
+
+sourceSets {
+    main {
+        resources {
+            srcDirs "../common/src/resources"
+        }
+    }
 }
 
 

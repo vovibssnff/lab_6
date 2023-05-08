@@ -2,6 +2,7 @@ plugins {
     id 'application'
 }
 
+
 repositories {
     mavenCentral()
 }
@@ -12,5 +13,14 @@ dependencies {
 }
 
 application {
-    mainClass = 'ServerLauncher'
+    mainClass = 'wing.ServerLauncher'
 }
+
+sourceSets {
+    main {
+        resources {
+            srcDirs "../common/src/resources"
+        }
+    }
+}
+

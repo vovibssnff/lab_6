@@ -5,8 +5,8 @@ import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import com.google.gson.stream.JsonReader;
-import common.OutputEngine;
-import common.data.LabWork;
+import wing.OutputEngine;
+import wing.data.LabWork;
 
 import java.io.FileInputStream;
 import java.io.FileReader;

@@ -1,9 +1,9 @@
 package wing.managment;
 
 import com.google.gson.Gson;
-import server.ServerConnectionService;
-import common.OutputEngine;
-import common.cmd.*;
+import wing.ServerConnectionService;
+import wing.OutputEngine;
+import wing.cmd.*;
 import wing.load.CollectionLoader;
 
 import java.io.File;
@@ -20,11 +20,11 @@ public class ServerConnector {
     public static void init() {
 //        Collections.addElemsFromList(Parser.parse());
 //        Collections.sortCollection();
-        ServerState.setGson(new Gson());
+        ServerState.setCollectionReceiver(new CollectionReceiver());
         System.out.println(OutputEngine.greeting_msg());
         Scanner keyboardScanner = new Scanner(System.in);
 
-        ServerConnectionService.connect();
+        ServerConnectionService.initConnection(2222);
     }
     public static void commandExecute(Command currentCommand, File tmpFile) {
         currentCommand.execute();

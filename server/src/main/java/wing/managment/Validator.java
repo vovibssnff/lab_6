@@ -1,8 +1,8 @@
 package wing.managment;
 
-import common.*;
-import common.data.Color;
-import common.data.Difficulty;
+import wing.*;
+import wing.data.Color;
+import wing.data.Difficulty;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

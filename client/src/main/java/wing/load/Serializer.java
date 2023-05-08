@@ -3,7 +3,7 @@ package wing.load;
 import wing.managment.ProgramState;
 import com.google.gson.Gson;
 import com.google.gson.stream.JsonWriter;
-import common.data.LabWork;
+import wing.data.LabWork;
 
 import java.io.FileWriter;
 import java.io.IOException;

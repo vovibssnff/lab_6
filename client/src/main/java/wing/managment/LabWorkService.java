@@ -1,9 +1,11 @@
 package wing.managment;
 
+import wing.cmd.*;
 import wing.data.*;
 import wing.io.InputEngine;
 import wing.OutputEngine;
 import wing.ReceiverInterface;
+import wing.ClientConnectionService;
 
 public class LabWorkService implements ReceiverInterface {
     public int iterations=0;
@@ -27,19 +29,34 @@ public class LabWorkService implements ReceiverInterface {
                 "pfdmp : вывести значения поля minimalPoint всех элементов в порядке убывания");
     }
     @Override
-    public void info() {}
-    @Override
-    public void soutCollection() {
-        //System.out.println(ClientConnectionService.sendRequest("show"));
+    public void info() {
+        Transmitter transmitter = new Transmitter(InfoCmd.getName(), null, null, null);
+        System.out.println(ClientConnectionService.sendRequest(transmitter));
     }
     @Override
-    public void addElem(LabWork elem) {}
+    public void soutCollection() {
+        Transmitter transmitter = new Transmitter(SoutCollectionCmd.getName(), null, null, null);
+        System.out.println(ClientConnectionService.sendRequest(transmitter));
+    }
     @Override
-    public void update(LabWork elem) {}
+    public void addElem(LabWork elem) {
+        Transmitter transmitter = new Transmitter(AddCmd.getName(), null, null, elem);
+        System.out.println(ClientConnectionService.sendRequest(transmitter));
+    }
     @Override
-    public void removeById(Long id) {}
+    public void update(LabWork elem) {
+        Transmitter transmitter = new Transmitter(UpdateCmd.getName(), elem.getId(), null, elem);
+        System.out.println(ClientConnectionService.sendRequest(transmitter));}
     @Override
-    public void clear() {}
+    public void removeById(Long id) {
+        Transmitter transmitter = new Transmitter(RemoveByIdCmd.getName(), id, null, null);
+        System.out.println(ClientConnectionService.sendRequest(transmitter));
+    }
+    @Override
+    public void clear() {
+        Transmitter transmitter = new Transmitter(ClearCmd.getName(), null, null, null);
+        System.out.println(ClientConnectionService.sendRequest(transmitter));
+    }
     @Override
     public void executeScript(String filename) {
         iterations++;
@@ -54,15 +71,33 @@ public class LabWorkService implements ReceiverInterface {
         System.exit(0);
     }
     @Override
-    public void head() {}
+    public void head() {
+        Transmitter transmitter = new Transmitter(HeadCmd.getName(), null, null, null);
+        System.out.println(ClientConnectionService.sendRequest(transmitter));
+    }
     @Override
-    public void removeLower(Long id) {}
+    public void removeLower(Long id) {
+        Transmitter transmitter = new Transmitter(RemoveLowerCmd.getName(), id, null, null);
+        System.out.println(ClientConnectionService.sendRequest(transmitter));
+    }
     @Override
-    public void history() {}
+    public void history() {
+        Transmitter transmitter = new Transmitter(HistoryCmd.getName(), null, null, null);
+        System.out.println(ClientConnectionService.sendRequest(transmitter));
+    }
     @Override
-    public void countLessThanMinimalPoint(Double minimalPoint) {}
+    public void countLessThanMinimalPoint(Double minimalPoint) {
+        Transmitter transmitter = new Transmitter(CountLessThanMinimalPointCmd.getName(), null, minimalPoint, null);
+        System.out.println(ClientConnectionService.sendRequest(transmitter));
+    }
     @Override
-    public void printUniqueAuthor() {}
+    public void printUniqueAuthor() {
+        Transmitter transmitter = new Transmitter(PrintUniqueAuthorCmd.getName(), null, null, null);
+        System.out.println(ClientConnectionService.sendRequest(transmitter));
+    }
     @Override
-    public void printFieldDescendingMinimalPoint() {}
+    public void printFieldDescendingMinimalPoint() {
+        Transmitter transmitter = new Transmitter(PrintFieldDescendingMinimalPointCmd.getName(), null, null, null);
+        System.out.println(ClientConnectionService.sendRequest(transmitter));
+    }
 }

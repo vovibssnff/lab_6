@@ -18,10 +18,14 @@ public class UsrInputReceiver implements UsrInputInterface {
     }
     @Override
     public LabWork add() {
+        ProgramState.setMode(Mode.ADD);
         return ElemInputService.setElemScript(null);
     }
     @Override
-    public LabWork update(Long arg) {return ElemInputService.setElemScript(arg);}
+    public LabWork update(Long arg) {
+        ProgramState.setMode(Mode.UPDATE);
+        return ElemInputService.setElemScript(arg);
+    }
     @Override
     public <T> boolean typeValidator(String arg, Class<T> clazz) {
         if (arg!=null && !arg.equals("")) {

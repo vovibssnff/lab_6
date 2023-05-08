@@ -28,6 +28,7 @@ public class Collections {
     /**
      * Печать истории команд
      */
+    //TODO переделать на возврат строки вместо принта
     public static void printHistory() {
         if (commandList.size()==1) {
             System.out.println(commandList.get(0).getClass().getName());
@@ -130,10 +131,10 @@ public class Collections {
      * в коллекцию
      * @param elem - новый объект
      */
-    public static void addElem(LabWork elem) {
+    public static String addElem(LabWork elem) {
         collection.add(elem);
         sortCollection();
-        System.out.println(OutputEngine.successAddElem());
+        return OutputEngine.successAddElem();
     }
 
     /**
@@ -162,14 +163,17 @@ public class Collections {
     /**
      * Печать основной коллекции
      */
-    public static void printCollection() {
+    public static String printCollection() {
+        String string1 = "";
+        String string2 = "";
+        String stringRes = "";
         Iterator<LabWork> iter = collection.iterator();
         if (collection.isEmpty()) {
-            System.out.println(OutputEngine.collectionEmpty());
+            return (OutputEngine.collectionEmpty());
         } else {
             while (iter.hasNext()) {
                 LabWork elem = iter.next();
-                System.out.println("_________________________________" +
+                string1 = "_________________________________" +
                         "\nid: " + elem.getId() +
                         "\nname: " + elem.getName() +
                         "\ncoordinates: " + elem.getCoordinates().getX() + " " + elem.getCoordinates().getY() +
@@ -177,17 +181,20 @@ public class Collections {
                         "\nminimalPoint: " + elem.getMinimalPoint() +
                         "\ndifficulty: " + elem.getDifficulty() +
                         "\nauthor: " + "\n=============" + elem.getAuthor().toString() + "\n=============" +
-                        "\n#################################");
+                        "\n#################################";
+                stringRes = string1+string2;
+                string2 = stringRes;
             }
+            return stringRes;
         }
     }
 
     /**
      * Удаление всех элементов основной коллекции
      */
-    public static void clearCollection() {
+    public static String clearCollection() {
         collection.clear();
-        System.out.println(OutputEngine.successClear());
+        return (OutputEngine.successClear());
     }
 
     /**
@@ -203,7 +210,7 @@ public class Collections {
             }
             index++;
         }
-        System.out.println(OutputEngine.idNotFoundError());
+        //System.out.println(OutputEngine.idNotFoundError());
         return -1;
     }
 
@@ -242,10 +249,10 @@ public class Collections {
     /**
      * Печать первого элемента коллекции
      */
-    public static void printFirstElem() {
+    public static String printFirstElem() {
         if (!Collections.getCollection().isEmpty()) {
             LabWork elem = collection.getFirst();
-            System.out.println("_________________________________" +
+            return ("_________________________________" +
                     "\nid: " + elem.getId() +
                     "\nname: " + elem.getName() +
                     "\ncoordinates: " + elem.getCoordinates().getX() + " " + elem.getCoordinates().getY() +
@@ -255,7 +262,7 @@ public class Collections {
                     "\nauthor: " + "\n=============" + elem.getAuthor().toString() + "\n=============" +
                     "\n#################################");
         } else {
-            System.out.println(OutputEngine.collectionEmpty());
+            return (OutputEngine.collectionEmpty());
         }
 
     }
@@ -263,11 +270,11 @@ public class Collections {
     /**
      * Печать значений minimalPoint элементов основной коллекции
      */
-    public static void printMinimalPoints() {
+    public static String printMinimalPoints() {
         Iterator<LabWork> iter = collection.iterator();
         ArrayList<Double> mas = new ArrayList<>();
         if (collection.isEmpty()) {
-            System.out.println(OutputEngine.collectionEmpty());
+            return (OutputEngine.collectionEmpty());
         } else {
             while (iter.hasNext()) {
                 LabWork elem = iter.next();
@@ -282,7 +289,7 @@ public class Collections {
                     }
                 }
             }
-            System.out.println(mas);
+            return mas.toString();
         }
     }
 
@@ -290,7 +297,7 @@ public class Collections {
      * Удаление элемента коллекции по id
      * @param id - id удаляемого элемента
      */
-    public static void removeById(long id) {
+    public static String removeById(long id) {
         Iterator<LabWork> iter = collection.iterator();
         boolean found = false;
         while (iter.hasNext()) {
@@ -303,9 +310,10 @@ public class Collections {
             }
         }
         if (!found) {
-            System.out.println(OutputEngine.idNotFoundError());
+            return (OutputEngine.idNotFoundError());
         }
         sortCollection();
+        return null;
     }
 
     /**
@@ -330,16 +338,20 @@ public class Collections {
      * @see Person
      * , принадлежащих элементам коллекции
      */
-    public static void printUniqueAuthor() {
+    public static String printUniqueAuthor() {
+        String string = "";
+        String stringRes = "";
         Iterator<LabWork> iter = collection.iterator();
         Set<Person> uniqueAuthors = new HashSet<>();
         while (iter.hasNext()) {
             uniqueAuthors.add(iter.next().getAuthor());
         }
         for (Person author : uniqueAuthors) {
-            System.out.print("\n=============" + author.toString()+"\n=============");
+            string = ("\n=============" + author.toString()+"\n=============");
+            stringRes = stringRes+string;
         }
-        System.out.println("\n");
+        stringRes = stringRes+"\n";
+        return stringRes;
     }
 
     /**

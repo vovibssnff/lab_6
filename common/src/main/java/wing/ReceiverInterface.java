@@ -1,5 +1,6 @@
 package wing;
 
+import wing.cmd.Command;
 import wing.data.LabWork;
 
 public interface ReceiverInterface {

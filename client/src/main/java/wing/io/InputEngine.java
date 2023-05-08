@@ -28,7 +28,7 @@ public class InputEngine {
         command.execute();
     }
     public static void init() {
-        ClientConnectionService.init();
+        ClientConnectionService.initConnection();
         CollectionsEngine.addElemToCommandMap(AddCmd.getName(), new AddCmd());
         CollectionsEngine.addElemToCommandMap(HelpCmd.getName(), new HelpCmd());
         CollectionsEngine.addElemToCommandMap(SoutCollectionCmd.getName(), new SoutCollectionCmd());

@@ -1,7 +1,7 @@
 package wing.load;
 
 import wing.managment.Collections;
-import common.data.LabWork;
+import wing.data.LabWork;
 
 import java.io.*;
 import java.util.ArrayDeque;
