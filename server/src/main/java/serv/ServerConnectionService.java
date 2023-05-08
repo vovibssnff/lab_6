@@ -162,7 +162,8 @@ public class ServerConnectionService {
 
                     Transmitter transmitter = ServerState.getGson().fromJson(jsonRequest, Transmitter.class);
 
-                    String resp = ServerState.getGson().toJson(ServerState.getCollectionReceiver().processTransmitter(transmitter));
+//                    String resp = ServerState.getGson().toJson(ServerState.getCollectionReceiver().processTransmitter(transmitter));
+                    String resp = ServerState.getCollectionReceiver().processTransmitter(transmitter);
                     logger.info("Response: " + resp);
 
                     sendResponse(clientChannel, clientAddress, resp);

@@ -46,26 +46,6 @@ public class CollectionService {
     }
 
     /**
-     * Добавление в commandMap новой команды
-     * @param key - ключ, имя команды
-     * @param value - значение, объект команды
-     */
-    public static void addElemToCommandMap(String key, Command value) {
-        commandMap.put(key, value);
-    }
-
-    /**
-     * Поиск в HashMap объект необходимой команды по её названию
-     * @param command - искомая команда
-     * @return command
-     */
-    public static Command searchCommand(String command) {
-        return commandMap.entrySet().stream()
-                .filter(entry -> entry.getKey().equals(command))
-                .map(Map.Entry::getValue).findFirst().orElse(null);
-    }
-
-    /**
      * Добавление в HashSet нового уникального значения id
      * @param i - новый id
      */
@@ -222,8 +202,10 @@ public class CollectionService {
      * @param id - id удаляемого элемента
      */
     public static String removeById(long id) {
+        System.out.println("What a fuck");
         if (idSet.contains(id)) {
             LabWork elem = collection.stream().filter(entry -> entry.getId().equals(id)).findFirst().get();
+            System.out.println(elem.getName() + elem.getColor().toString());
             idSet.remove(elem.getId());
             passportIdSet.remove(elem.getAuthor().getPassportID());
             collection.remove(elem);

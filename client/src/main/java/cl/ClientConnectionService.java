@@ -94,7 +94,7 @@ public class ClientConnectionService {
         while (true) {
             DatagramPacket receivePacket = new DatagramPacket(receiveData, receiveData.length);
             try {
-                socket.setSoTimeout(5000);
+                socket.setSoTimeout(50);
                 socket.receive(receivePacket);
                 byte[] receivedChunk = new byte[receivePacket.getLength()];
                 System.arraycopy(receiveData, 0, receivedChunk, 0, receivePacket.getLength());
@@ -121,3 +121,5 @@ public class ClientConnectionService {
         return new String(messageBytes);
     }
 }
+
+

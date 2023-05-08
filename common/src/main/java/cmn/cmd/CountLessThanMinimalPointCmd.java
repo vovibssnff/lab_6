@@ -9,6 +9,11 @@ public class CountLessThanMinimalPointCmd implements Command {
     private UsrInputInterface usrInputReceiver;
     private ReceiverInterface labWorkService;
     private Double minimalPoint;
+    public CountLessThanMinimalPointCmd(UsrInputInterface usrInputReceiver, String arg) {
+        this.usrInputReceiver = usrInputReceiver;
+        this.minimalPoint = Double.parseDouble(arg);
+    }
+
     @Override
     public void setUsrInputReceiver(UsrInputInterface usrInputReceiver) {
         this.usrInputReceiver=usrInputReceiver;

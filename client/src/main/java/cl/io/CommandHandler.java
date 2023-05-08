@@ -32,7 +32,7 @@ public class CommandHandler {
                 currentCommand = command.getConstructor(UsrInputInterface.class, String.class).newInstance(ProgramState.getUsrInputReceiver(), tokens[1]);
             } catch (InstantiationException | IllegalAccessException | InvocationTargetException |
                      NoSuchMethodException e) {
-                System.out.println(OutputEngine.incorrectArg());
+                System.out.println(OutputEngine.incorrectCommand());
                 throw new RuntimeException(e);
             }
         }

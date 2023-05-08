@@ -57,6 +57,7 @@ public class CollectionReceiver {
     public void add(Transmitter transmitter) {
         if (Validator.checkId(transmitter.getElem().getId())&&Validator.checkPassportId(transmitter.getElem().getAuthor().getPassportID())) {
             CollectionService.addElem(transmitter.getElem());
+            System.out.println("Kogda ebaali, chto ta jope napisali?");
         } else {
             System.out.println(OutputEngine.incorrectId());
         }
@@ -70,7 +71,7 @@ public class CollectionReceiver {
     }
 
     public String remove_by_id(Transmitter transmitter) {
-        if (Validator.checkId(transmitter.getId())) {
+        if (!Validator.checkId(transmitter.getId())) {
             return CollectionService.removeById(transmitter.getId());
         } else {
             return OutputEngine.incorrectId();
@@ -89,7 +90,7 @@ public class CollectionReceiver {
         return CollectionService.printFirstElem();
     }
     public void remove_lower(Transmitter transmitter) {
-        if (Validator.checkId(transmitter.getId())) {
+        if (!Validator.checkId(transmitter.getId())) {
             CollectionService.removeLower(transmitter.getId());
         }
     }
