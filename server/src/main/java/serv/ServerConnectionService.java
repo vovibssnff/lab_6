@@ -15,30 +15,29 @@ import java.nio.channels.Selector;
 import java.util.Iterator;
 
 public class ServerConnectionService {
-    private static ReliableServerSocket reliableServerSock;
-    private static ReliableSocket reliableSock;
+    //private static ReliableServerSocket reliableServerSock;
+    //private static ReliableSocket reliableSock;
     private static InetSocketAddress address;
     public static void initConnection(Integer port) {
         Selector selector = null;
         DatagramChannel channel = null;
         try {
+            address = new InetSocketAddress(port);
             channel = DatagramChannel.open();
             channel.configureBlocking(false);
-            address = new InetSocketAddress(port);
             channel.bind(address);
             selector = Selector.open();
             channel.register(selector, SelectionKey.OP_READ);
-            reliableServerSock = new ReliableServerSocket(port+1);
 
         } catch (IOException e) {
             e.printStackTrace();
         }
         ByteBuffer buffer = ByteBuffer.allocate(1024);
         assert selector != null;
-        connect(selector, buffer, port);
+        connect(selector, buffer);
     }
 
-    public static void connect(Selector selector, ByteBuffer buffer, Integer port) {
+    public static void connect(Selector selector, ByteBuffer buffer) {
         while (true) {
             try {
                 selector.select();
@@ -51,15 +50,10 @@ public class ServerConnectionService {
                 SelectionKey key = iterator.next();
 
                 if (key.isReadable()) {
+                    SocketAddress clientAddress = null;
                     DatagramChannel clientChannel = (DatagramChannel) key.channel();
                     buffer.clear();
-                    try {
-                        reliableSock = (ReliableSocket) reliableServerSock.accept();
-                        System.out.println(reliableSock.getRemoteSocketAddress());
-                    } catch (IOException e) {
-                        throw new RuntimeException(e);
-                    }
-                    SocketAddress clientAddress = null;
+                    System.out.println(clientChannel.socket());
                     try {
                         clientAddress = clientChannel.receive(buffer);
                     } catch (IOException e) {
@@ -82,7 +76,6 @@ public class ServerConnectionService {
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
-                    // Send acknowledgment to the client
 
                     iterator.remove();
                 }

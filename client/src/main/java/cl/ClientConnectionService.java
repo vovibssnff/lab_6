@@ -11,22 +11,22 @@ import java.net.*;
 
 public class ClientConnectionService {
     private static InetSocketAddress serverAddress;
-    private static ReliableSocket reliableSock;
+    //private static ReliableSocket reliableSock;
     private static DatagramSocket socket = null;
+    
     public static void initConnection() {
 
         try {
             socket = new DatagramSocket();
             serverAddress = new InetSocketAddress("localhost", 2222);
-            reliableSock = new ReliableSocket(socket);
-            reliableSock.connect(serverAddress);
-        } catch (SocketException e) {
-            throw new RuntimeException(e);
+            //reliableSock = new ReliableSocket(socket);
+            //reliableSock.connect(serverAddress);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
 
     }
+
     public static String sendRequest(Transmitter message) {
 
         String jsonRequest = ProgramState.getGson().toJson(message);
