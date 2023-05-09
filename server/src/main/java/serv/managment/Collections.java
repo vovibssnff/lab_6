@@ -12,7 +12,7 @@ import java.util.*;
  * @author mc_vovi
  */
 public class Collections {
-    private static final ArrayList<Command> commandList = new ArrayList<>(); //журнал истории команд
+    private static final ArrayList<String> commandList = new ArrayList<>(); //журнал истории команд
     private static final Map<String, Command> commandMap = new HashMap<>(); //коллекция для идентификации введенных команд
     private static final HashSet<Long> idSet = new HashSet<Long>(); //множество значений id класса LabWork
     private static final HashSet<String> passportIdSet = new HashSet<>(); //множество значений passportId класса Person
@@ -22,7 +22,7 @@ public class Collections {
      * Добавление в журнал истории команд очередной команды
      * @param command - выполненная команда
      */
-    public static void addCommand(Command command) {
+    public static void addCommand(String command) {
         commandList.add(command);
     }
 
@@ -30,17 +30,23 @@ public class Collections {
      * Печать истории команд
      */
     //TODO переделать на возврат строки вместо принта
-    public static void printHistory() {
+    public static String printHistory() {
+        String string1 = "";
+        String string2 = "";
+        String stringRes = "";
         if (commandList.size()==1) {
-            System.out.println(commandList.get(0).getClass().getName());
+            return commandList.get(0).getClass().getName();
         } else {
             int i;
             for (i=1; i<=commandList.size(); i++) {
-                System.out.println(commandList.get(commandList.size()-i).getClass().getName());
+                string1 = commandList.get(commandList.size()-i)+"\n";
+                stringRes = string1 + string2;
+                string2 = stringRes;
             }
+            return stringRes;
         }
     }
-    public static List<Command> getHistory() {
+    public static List<String> getHistory() {
         return commandList;
     }
 
@@ -322,7 +328,7 @@ public class Collections {
      * @param minimalPoint - minimalPoint
      * @return n - искомое количество
      */
-    public static int countLessThanMinimalPoint(double minimalPoint) {
+    public static Integer countLessThanMinimalPoint(double minimalPoint) {
         Iterator<LabWork> iter = collection.iterator();
         int n = 0;
         while (iter.hasNext()) {

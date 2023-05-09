@@ -9,6 +9,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.lang.reflect.InvocationTargetException;
 import java.util.InputMismatchException;
+import java.util.NoSuchElementException;
 import java.util.Scanner;
 import java.util.regex.Pattern;
 
@@ -72,28 +73,30 @@ public class InputEngine {
         modeSwitcher(null, null);
     }
     public static void scanCommand(String[] tokens, Command currentCommand, File tmpFile) {
-        String input = ProgramState.getScanner().nextLine().trim();
-        tokens = input.split(" ");
-        Command command = CollectionsEngine.searchCommand(tokens[0]);
+            String input = ProgramState.getScanner().nextLine().trim();
 
-        try {
-            currentCommand = command.getClass().getConstructor().newInstance();
-        } catch (InstantiationException e) {
-            throw new RuntimeException(e);
-        } catch (IllegalAccessException e) {
-            throw new RuntimeException(e);
-        } catch (InvocationTargetException e) {
-            throw new RuntimeException(e);
-        } catch (NoSuchMethodException e) {
-            throw new RuntimeException(e);
+            tokens = input.split(" ");
+            Command command = CollectionsEngine.searchCommand(tokens[0]);
+
+            try {
+                currentCommand = command.getClass().getConstructor().newInstance();
+            } catch (InstantiationException e) {
+                throw new RuntimeException(e);
+            } catch (IllegalAccessException e) {
+                throw new RuntimeException(e);
+            } catch (InvocationTargetException e) {
+                throw new RuntimeException(e);
+            } catch (NoSuchMethodException e) {
+                throw new RuntimeException(e);
+            }
+            if (tokens.length<2) {
+                launchInvoke(currentCommand, null);
+            } else {
+                launchInvoke(currentCommand, tokens[1]);
+            }
         }
-        if (tokens.length<2) {
-            launchInvoke(currentCommand, null);
-        } else {
-            launchInvoke(currentCommand, tokens[1]);
-        }
+
         //CollectionLoader.save(tmpFile);
-    }
     public static void modeSwitcher(Command currentCommand, String filename) {
         String[] tokens = new String[0];
         File file = null;
@@ -136,7 +139,7 @@ public class InputEngine {
                 }
                 while (true) {
                     assert fileScanner != null;
-                    if (!fileScanner.hasNextLine()) break;
+                    if (!fileScanner.hasNextLine()) return;
                     scanCommand(tokens, currentCommand, tmpFile);
                 }
             }

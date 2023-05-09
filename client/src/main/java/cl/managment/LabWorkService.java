@@ -1,5 +1,6 @@
 package cl.managment;
 
+import cl.io.Mode;
 import cmn.cmd.*;
 import cmn.data.LabWork;
 import cmn.data.Transmitter;
@@ -31,32 +32,27 @@ public class LabWorkService implements ReceiverInterface {
     }
     @Override
     public void info() {
-        Transmitter transmitter = new Transmitter(InfoCmd.getName(), null, null, null);
-        System.out.println(ClientConnectionService.sendRequest(transmitter));
+        RequestService.sendRequest(new Transmitter(InfoCmd.getName(), null, null, null));
     }
     @Override
     public void soutCollection() {
-        Transmitter transmitter = new Transmitter(SoutCollectionCmd.getName(), null, null, null);
-        System.out.println(ClientConnectionService.sendRequest(transmitter));
+        RequestService.sendRequest(new Transmitter(SoutCollectionCmd.getName(), null, null, null));
     }
     @Override
     public void addElem(LabWork elem) {
-        Transmitter transmitter = new Transmitter(AddCmd.getName(), null, null, elem);
-        System.out.println(ClientConnectionService.sendRequest(transmitter));
+        RequestService.sendRequest(new Transmitter(AddCmd.getName(), null, null, elem));
     }
     @Override
     public void update(LabWork elem) {
-        Transmitter transmitter = new Transmitter(UpdateCmd.getName(), elem.getId(), null, elem);
-        System.out.println(ClientConnectionService.sendRequest(transmitter));}
+        RequestService.sendRequest(new Transmitter(UpdateCmd.getName(), elem.getId(), null, elem));
+    }
     @Override
     public void removeById(Long id) {
-        Transmitter transmitter = new Transmitter(RemoveByIdCmd.getName(), id, null, null);
-        System.out.println(ClientConnectionService.sendRequest(transmitter));
+        RequestService.sendRequest(new Transmitter(RemoveByIdCmd.getName(), id, null, null));
     }
     @Override
     public void clear() {
-        Transmitter transmitter = new Transmitter(ClearCmd.getName(), null, null, null);
-        System.out.println(ClientConnectionService.sendRequest(transmitter));
+        RequestService.sendRequest(new Transmitter(ClearCmd.getName(), null, null, null));
     }
     @Override
     public void executeScript(String filename) {
@@ -65,6 +61,7 @@ public class LabWorkService implements ReceiverInterface {
             System.out.println(OutputEngine.stackOverflowError());
             return;
         }
+        ProgramState.setMode(Mode.FILE);
         InputEngine.modeSwitcher(null, filename);
     }
     @Override
@@ -73,32 +70,26 @@ public class LabWorkService implements ReceiverInterface {
     }
     @Override
     public void head() {
-        Transmitter transmitter = new Transmitter(HeadCmd.getName(), null, null, null);
-        System.out.println(ClientConnectionService.sendRequest(transmitter));
+        RequestService.sendRequest(new Transmitter(HeadCmd.getName(), null, null, null));
     }
     @Override
     public void removeLower(Long id) {
-        Transmitter transmitter = new Transmitter(RemoveLowerCmd.getName(), id, null, null);
-        System.out.println(ClientConnectionService.sendRequest(transmitter));
+        RequestService.sendRequest(new Transmitter(RemoveLowerCmd.getName(), id, null, null));
     }
     @Override
     public void history() {
-        Transmitter transmitter = new Transmitter(HistoryCmd.getName(), null, null, null);
-        System.out.println(ClientConnectionService.sendRequest(transmitter));
+        RequestService.sendRequest(new Transmitter(HistoryCmd.getName(), null, null, null));
     }
     @Override
     public void countLessThanMinimalPoint(Double minimalPoint) {
-        Transmitter transmitter = new Transmitter(CountLessThanMinimalPointCmd.getName(), null, minimalPoint, null);
-        System.out.println(ClientConnectionService.sendRequest(transmitter));
+        RequestService.sendRequest(new Transmitter(CountLessThanMinimalPointCmd.getName(), null, minimalPoint, null));
     }
     @Override
     public void printUniqueAuthor() {
-        Transmitter transmitter = new Transmitter(PrintUniqueAuthorCmd.getName(), null, null, null);
-        System.out.println(ClientConnectionService.sendRequest(transmitter));
+        RequestService.sendRequest(new Transmitter(PrintUniqueAuthorCmd.getName(), null, null, null));
     }
     @Override
     public void printFieldDescendingMinimalPoint() {
-        Transmitter transmitter = new Transmitter(PrintFieldDescendingMinimalPointCmd.getName(), null, null, null);
-        System.out.println(ClientConnectionService.sendRequest(transmitter));
+        RequestService.sendRequest(new Transmitter(PrintFieldDescendingMinimalPointCmd.getName(), null, null, null));
     }
 }

@@ -13,18 +13,16 @@ public class ClientConnectionService {
     private static InetSocketAddress serverAddress;
     //private static ReliableSocket reliableSock;
     private static DatagramSocket socket = null;
-    
-    public static void initConnection() {
 
+    public static void initConnection() {
         try {
             socket = new DatagramSocket();
             serverAddress = new InetSocketAddress("localhost", 2222);
             //reliableSock = new ReliableSocket(socket);
             //reliableSock.connect(serverAddress);
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();
         }
-
     }
 
     public static String sendRequest(Transmitter message) {
@@ -41,9 +39,13 @@ public class ClientConnectionService {
         byte[] receiveData = new byte[1024];
         DatagramPacket receivePacket = new DatagramPacket(receiveData, receiveData.length);
         try {
+            socket.setSoTimeout(2000);
             socket.receive(receivePacket);
+
+        } catch (SocketTimeoutException e) {
+            System.out.println("Сервер не отвечает");
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();
         }
 
         String jsonResponse = new String(receivePacket.getData(), 0, receivePacket.getLength());

@@ -1,6 +1,7 @@
 package serv.managment;
 import cmn.data.Transmitter;
 import cmn.OutputEngine;
+import serv.load.CollectionLoader;
 
 import java.lang.reflect.Method;
 
@@ -12,8 +13,10 @@ public class CollectionReceiver {
     public int iterations=0;
 
     public String processTransmitter(Transmitter transmitter) {
-        String methodName = transmitter.getCommand();
 
+        String methodName = transmitter.getCommand();
+        Collections.addCommand(methodName);
+        CollectionLoader.save(ServerState.getTmpFile());
         try {
             Class<?> clazz = CollectionReceiver.class;
             Method method = clazz.getDeclaredMethod(methodName, Transmitter.class);
@@ -24,10 +27,10 @@ public class CollectionReceiver {
         return null;
     }
 
-    public void info(Transmitter transmitter) {
-        System.out.println(OutputEngine.collectionName() + " collection");
-        System.out.println(OutputEngine.collectionType() + " " + Collections.getCollection().getClass().getSimpleName());
-        System.out.println(OutputEngine.collectionSize() + " " + Collections.getCollection().size());
+    public String info(Transmitter transmitter) {
+        return OutputEngine.collectionName() + " collection" + "\n" + OutputEngine.collectionType() + " " +
+                Collections.getCollection().getClass().getSimpleName() + "\n" +
+                OutputEngine.collectionSize() + " " + Collections.getCollection().size();
     }
 
     public String show(Transmitter transmitter) {
@@ -35,33 +38,25 @@ public class CollectionReceiver {
     }
 
 
-    public void add(Transmitter transmitter) {
-        Collections.addElem(transmitter.getElem());
+    public String add(Transmitter transmitter) {
+        return Collections.addElem(transmitter.getElem());
     }
     public void update(Transmitter transmitter) {
         Collections.update(Collections.searchInCollection(transmitter.getId()), transmitter.getElem());
     }
-    public void remove_by_id(Transmitter transmitter) {
-        Collections.removeById(transmitter.getId());
+    public String remove_by_id(Transmitter transmitter) {
+        return Collections.removeById(transmitter.getId());
     }
-    public void clear(Transmitter transmitter) {
+    public String clear(Transmitter transmitter) {
         if (!Collections.getCollection().isEmpty()) {
-            Collections.clearCollection();
+            return Collections.clearCollection();
         } else {
-            System.out.println(OutputEngine.collectionEmpty());
+            return OutputEngine.collectionEmpty();
         }
     }
     //public void save() {
 //        Serializer.save(Collections.getCollection());
 //    }
-    public void execute_script(Transmitter transmitter) {
-        iterations++;
-        if (iterations>499) {
-            System.out.println(OutputEngine.stackOverflowError());
-            return;
-        }
-        //ServerConnector.launcher(null, Mode.FILE, null, filename);
-    }
 
     public String head(Transmitter transmitter) {
         return Collections.printFirstElem();
@@ -69,16 +64,16 @@ public class CollectionReceiver {
     public void remove_lower(Transmitter transmitter) {
         Collections.removeLower(transmitter.getId());
     }
-    public void history(Transmitter transmitter) {
-        Collections.printHistory();
+    public String history(Transmitter transmitter) {
+        return Collections.printHistory();
     }
-    public void cltmp(Transmitter transmitter) {
-        Collections.countLessThanMinimalPoint(transmitter.getMinimalPoint());
+    public String cltmp(Transmitter transmitter) {
+        return Collections.countLessThanMinimalPoint(transmitter.getMinimalPoint()).toString();
     }
-    public void print_unique_authors(Transmitter transmitter) {
-        Collections.printUniqueAuthor();
+    public String print_unique_authors(Transmitter transmitter) {
+        return Collections.printUniqueAuthor();
     }
-    public void pfdmp(Transmitter transmitter) {
-        Collections.printMinimalPoints();
+    public String pfdmp(Transmitter transmitter) {
+        return Collections.printMinimalPoints();
     }
 }
