@@ -14,7 +14,7 @@ dependencies {
 
 
 application {
-    mainClass = 'wing.ClientLauncher'
+    mainClass = 'cl.ClientLauncher'
 }
 
 sourceSets {

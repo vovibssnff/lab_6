@@ -10,10 +10,11 @@ repositories {
 dependencies {
     implementation(project(':common'))
     implementation('com.google.code.gson:gson:2.10.1')
+    implementation files("../libs/rudp-SNAPSHOT.jar")
 }
 
 application {
-    mainClass = 'wing.ServerLauncher'
+    mainClass = 'serv.ServerLauncher'
 }
 
 sourceSets {
