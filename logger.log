@@ -1,0 +1,5 @@
+Wed May 10 03:28:39 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@28feb3fa
+Wed May 10 03:28:39 MSK 2023::Request: {
+  "command": "info"
+}
+Wed May 10 03:28:39 MSK 2023::Response: "Collection name: collection\nCollection type: ArrayDeque\nCollection size: 0"

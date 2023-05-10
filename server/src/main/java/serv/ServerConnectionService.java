@@ -2,6 +2,7 @@ package serv;
 
 import net.rudp.ReliableServerSocket;
 import net.rudp.ReliableSocket;
+import serv.managment.ServerConnector;
 import serv.managment.ServerState;
 import cmn.data.Transmitter;
 
@@ -13,8 +14,10 @@ import java.nio.channels.DatagramChannel;
 import java.nio.channels.SelectionKey;
 import java.nio.channels.Selector;
 import java.util.Iterator;
+import java.util.logging.Logger;
 
 public class ServerConnectionService {
+    public static Logger logger;
     //private static ReliableServerSocket reliableServerSock;
     //private static ReliableSocket reliableSock;
     private static InetSocketAddress address;
@@ -38,6 +41,7 @@ public class ServerConnectionService {
     }
 
     public static void connect(Selector selector, ByteBuffer buffer) {
+        logger = ServerConnector.logger;
         while (true) {
             try {
                 selector.select();
@@ -54,6 +58,7 @@ public class ServerConnectionService {
                     DatagramChannel clientChannel = (DatagramChannel) key.channel();
                     buffer.clear();
                     System.out.println(clientChannel.socket());
+                    logger.info("Add client " + clientChannel.socket());
                     try {
                         clientAddress = clientChannel.receive(buffer);
                     } catch (IOException e) {
@@ -61,11 +66,13 @@ public class ServerConnectionService {
                     }
                     buffer.flip();
                     String jsonRequest = new String(buffer.array(), 0, buffer.limit());
+                    logger.info("Request: " + jsonRequest);
                     Transmitter transmitter = ServerState.getGson().fromJson(jsonRequest, Transmitter.class);
 
                     String resp = ServerState.getCollectionReceiver().processTransmitter(transmitter);
                     System.out.println(resp);
                     String jsonResponse = ServerState.getGson().toJson(resp);
+                    logger.info("Response: " + jsonResponse);
 
                     buffer.clear();
                     buffer.put(jsonResponse.getBytes());
