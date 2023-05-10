@@ -1,5 +1,137 @@
-Wed May 10 03:28:39 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@28feb3fa
-Wed May 10 03:28:39 MSK 2023::Request: {
-  "command": "info"
+Wed May 10 05:35:12 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@7dc222ae
+Wed May 10 05:35:12 MSK 2023::Request: {
+  "command": "show"
 }
-Wed May 10 03:28:39 MSK 2023::Response: "Collection name: collection\nCollection type: ArrayDeque\nCollection size: 0"
+Wed May 10 05:35:12 MSK 2023::Response: "The collection is empty."
+Wed May 10 05:35:37 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@7dc222ae
+Wed May 10 05:35:37 MSK 2023::Request: {
+  "command": "add",
+  "elem": {
+    "id": 8854160229265590254,
+    "name": "name",
+    "coordinates": {
+      "x": 54.0,
+      "y": 34
+    },
+    "creationDate": "2023-05-10T05:35:20.622023966",
+    "minimalPoint": 213.0,
+    "difficulty": "VERY_EASY",
+    "author": {
+      "name": "Van",
+      "passportID": "8cecae02-ad2e-404f-ba27-c85228f1c615",
+      "eyeColor": "BROWN",
+      "location": {
+        "x": 7.0,
+        "y": 7.0,
+        "z": 7.0
+      }
+    }
+  }
+}
+Wed May 10 05:35:37 MSK 2023::Response: "New collection element was added successfully."
+Wed May 10 05:35:40 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@7dc222ae
+Wed May 10 05:35:40 MSK 2023::Request: {
+  "command": "show"
+}
+Wed May 10 05:35:40 MSK 2023::Response: "_________________________________\nid: 8854160229265590254\nname: name\ncoordinates: 54.0 34\ncreationDate: 2023-05-10T05:35:20.622023966\nminimalPoint: 213.0\ndifficulty: VERY_EASY\nauthor: \n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\nname: Van\npassportID: 8cecae02-ad2e-404f-ba27-c85228f1c615\neyeColor: BROWN\nlocation: 7.0 7.0 7.0\n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n#################################"
+Wed May 10 05:36:14 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@7dc222ae
+Wed May 10 05:36:14 MSK 2023::Request: {
+  "command": "update",
+  "id": 8854160229265590254,
+  "elem": {
+    "id": 8854160229265590254,
+    "name": "name",
+    "coordinates": {
+      "x": 7.0,
+      "y": 7
+    },
+    "creationDate": "2023-05-10T05:35:55.616467074",
+    "minimalPoint": 7.0,
+    "difficulty": "IMPOSSIBLE",
+    "author": {
+      "name": "Bily",
+      "passportID": "35c83420-138f-444a-9d8f-4029bd4a2580",
+      "eyeColor": "BLACK",
+      "location": {
+        "x": 54.0,
+        "y": 54.0,
+        "z": 54.0
+      }
+    }
+  }
+}
+Wed May 10 05:37:32 MSK 2023::Response: null
+Wed May 10 05:38:02 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@7dc222ae
+Wed May 10 05:38:02 MSK 2023::Request: {
+  "command": "show"
+}
+Wed May 10 05:38:02 MSK 2023::Response: "_________________________________\nid: 8854160229265590254\nname: name\ncoordinates: 54.0 34\ncreationDate: 2023-05-10T05:35:20.622023966\nminimalPoint: 213.0\ndifficulty: VERY_EASY\nauthor: \n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\nname: Van\npassportID: 8cecae02-ad2e-404f-ba27-c85228f1c615\neyeColor: BROWN\nlocation: 7.0 7.0 7.0\n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n#################################"
+Wed May 10 05:38:47 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@7dc222ae
+Wed May 10 05:38:47 MSK 2023::Request: {
+  "command": "update",
+  "id": 8854160229265590254,
+  "elem": {
+    "id": 8854160229265590254,
+    "name": "name",
+    "coordinates": {
+      "x": 65.0,
+      "y": 65
+    },
+    "creationDate": "2023-05-10T05:38:31.640801586",
+    "minimalPoint": 65.0,
+    "difficulty": "IMPOSSIBLE",
+    "author": {
+      "name": "authorname",
+      "passportID": "fc612f2b-f0b7-4cfb-85f1-c98072ea8f4b",
+      "eyeColor": "BLACK",
+      "location": {
+        "x": 4.0,
+        "y": 4.0,
+        "z": 4.0
+      }
+    }
+  }
+}
+Wed May 10 05:40:38 MSK 2023::Response: null
+Wed May 10 05:40:48 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@7dc222ae
+Wed May 10 05:40:48 MSK 2023::Request: {
+  "command": "show"
+}
+Wed May 10 05:40:48 MSK 2023::Response: "_________________________________\nid: 8854160229265590254\nname: name\ncoordinates: 54.0 34\ncreationDate: 2023-05-10T05:35:20.622023966\nminimalPoint: 213.0\ndifficulty: VERY_EASY\nauthor: \n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\nname: Van\npassportID: 8cecae02-ad2e-404f-ba27-c85228f1c615\neyeColor: BROWN\nlocation: 7.0 7.0 7.0\n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n#################################"
+Wed May 10 05:40:51 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@7dc222ae
+Wed May 10 05:40:51 MSK 2023::Request: {
+  "command": "show"
+}
+Wed May 10 05:40:51 MSK 2023::Response: "_________________________________\nid: 8854160229265590254\nname: name\ncoordinates: 54.0 34\ncreationDate: 2023-05-10T05:35:20.622023966\nminimalPoint: 213.0\ndifficulty: VERY_EASY\nauthor: \n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\nname: Van\npassportID: 8cecae02-ad2e-404f-ba27-c85228f1c615\neyeColor: BROWN\nlocation: 7.0 7.0 7.0\n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n#################################"
+Wed May 10 05:44:17 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@7dc222ae
+Wed May 10 05:44:17 MSK 2023::Request: {
+  "command": "show"
+}
+Wed May 10 05:44:17 MSK 2023::Response: "_________________________________\nid: 8854160229265590254\nname: name\ncoordinates: 54.0 34\ncreationDate: 2023-05-10T05:35:20.622023966\nminimalPoint: 213.0\ndifficulty: VERY_EASY\nauthor: \n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\nname: Van\npassportID: 8cecae02-ad2e-404f-ba27-c85228f1c615\neyeColor: BROWN\nlocation: 7.0 7.0 7.0\n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n#################################"
+Wed May 10 05:44:48 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@7dc222ae
+Wed May 10 05:44:48 MSK 2023::Request: {
+  "command": "update",
+  "id": 8854160229265590254,
+  "elem": {
+    "id": 8854160229265590254,
+    "name": "name",
+    "coordinates": {
+      "x": 54.0,
+      "y": 34
+    },
+    "creationDate": "2023-05-10T05:44:30.252592922",
+    "minimalPoint": 7.0,
+    "difficulty": "IMPOSSIBLE",
+    "author": {
+      "name": "Billy",
+      "passportID": "d8e67ea1-9134-460c-8fa6-8bad172106e9",
+      "eyeColor": "BROWN",
+      "location": {
+        "x": 7.0,
+        "y": 7.0,
+        "z": 7.0
+      }
+    }
+  }
+}
+Wed May 10 05:44:55 MSK 2023::Response: null

@@ -61,7 +61,7 @@ public class CollectionReceiver {
 
     }
     public void update(Transmitter transmitter) {
-        if (Validator.checkId(transmitter.getElem().getId())&&Validator.checkPassportId(transmitter.getElem().getAuthor().getPassportID())) {
+        if (!Validator.checkId(transmitter.getElem().getId())&&!Validator.checkPassportId(transmitter.getElem().getAuthor().getPassportID())) {
             Collections.update(Collections.searchInCollection(transmitter.getId()), transmitter.getElem());
         }
 
