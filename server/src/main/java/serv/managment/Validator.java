@@ -13,10 +13,10 @@ import java.util.regex.Pattern;
 public class Validator {
     public static boolean checkId(long id) {
         if (Collections.containsId(id)) {
-            System.out.println(OutputEngine.incorrectId());
+            //System.out.println(OutputEngine.incorrectId());
             return false;
         } else {
-            System.out.println(OutputEngine.correctId());
+            //System.out.println(OutputEngine.correctId());
             Collections.addId(id);
             return true;
         }
@@ -89,10 +89,10 @@ public class Validator {
     }
     public static boolean checkPassportId(String passportID) {
         if (Collections.containsPassportId(passportID)) {
-            System.out.println(OutputEngine.incorrectPassportId());
+            //System.out.println(OutputEngine.incorrectPassportId());
             return false;
         } else {
-            System.out.println(OutputEngine.correctPassportId());
+            //System.out.println(OutputEngine.correctPassportId());
             Collections.addPassportId(passportID);
             return true;
         }

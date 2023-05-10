@@ -39,7 +39,7 @@ public class ClientConnectionService {
         byte[] receiveData = new byte[1024];
         DatagramPacket receivePacket = new DatagramPacket(receiveData, receiveData.length);
         try {
-            socket.setSoTimeout(2000);
+            socket.setSoTimeout(5000);
             socket.receive(receivePacket);
 
         } catch (SocketTimeoutException e) {

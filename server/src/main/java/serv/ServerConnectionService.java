@@ -64,7 +64,7 @@ public class ServerConnectionService {
                     Transmitter transmitter = ServerState.getGson().fromJson(jsonRequest, Transmitter.class);
 
                     String resp = ServerState.getCollectionReceiver().processTransmitter(transmitter);
-                    //System.out.println(resp);
+                    System.out.println(resp);
                     String jsonResponse = ServerState.getGson().toJson(resp);
 
                     buffer.clear();
