@@ -61,7 +61,7 @@ public class UsrInputReceiver implements UsrInputInterface {
             System.out.println(OutputEngine.stackOverflowError());
             return;
         }
-        InputEngine.modeSwitcher(null, filename);
+        InputEngine.modeSwitcher(null, Mode.FILE, null, filename);
     }
 
 

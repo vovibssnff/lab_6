@@ -4,6 +4,7 @@ import cmn.cmd.Command;
 import serv.ServerConnectionService;
 import cmn.OutputEngine;
 import serv.load.CollectionLoader;
+import serv.load.Parser;
 import serv.log.Logging;
 
 import java.io.File;
@@ -22,8 +23,8 @@ public class ServerConnector {
     public static String resp = null;
     public static Logger logger;
     public static void init() {
-//        Collections.addElemsFromList(Parser.parse());
-//        Collections.sortCollection();
+        //Collections.addElemsFromList(Parser.parse());
+        Collections.sortCollection();
         logger = Logging.logger;
 
         ServerState.setTmpFile(new File("temporary.tmp"));
@@ -31,7 +32,7 @@ public class ServerConnector {
         System.out.println(OutputEngine.greeting_msg());
         Scanner keyboardScanner = new Scanner(System.in);
 
-        ServerConnectionService.initConnection(2222);
+        ServerConnectionService.initConnection(ServerState.getPort());
     }
     public static void commandExecute(Command currentCommand, File tmpFile) {
         currentCommand.execute();

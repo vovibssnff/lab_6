@@ -2,6 +2,8 @@ package serv;
 
 import net.rudp.ReliableServerSocket;
 import net.rudp.ReliableSocket;
+import serv.load.Serializer;
+import serv.managment.Collections;
 import serv.managment.ServerConnector;
 import serv.managment.ServerState;
 import cmn.data.Transmitter;
@@ -66,15 +68,18 @@ public class ServerConnectionService {
                     }
                     buffer.flip();
                     String jsonRequest = new String(buffer.array(), 0, buffer.limit());
+                    Serializer.save(Collections.getCollection());
                     logger.info("Request: " + jsonRequest);
+
                     Transmitter transmitter = ServerState.getGson().fromJson(jsonRequest, Transmitter.class);
 
                     String resp = ServerState.getCollectionReceiver().processTransmitter(transmitter);
-                    System.out.println(resp);
+                    //System.out.println(resp);
                     String jsonResponse = ServerState.getGson().toJson(resp);
                     logger.info("Response: " + jsonResponse);
 
                     buffer.clear();
+                    System.out.println(jsonResponse.getBytes().length);
                     buffer.put(jsonResponse.getBytes());
                     buffer.flip();
 
@@ -83,7 +88,7 @@ public class ServerConnectionService {
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
-
+                    buffer.clear();
                     iterator.remove();
                 }
             }

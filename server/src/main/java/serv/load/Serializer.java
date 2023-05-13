@@ -16,7 +16,7 @@ public class Serializer {
 
         Gson gson = new GsonBuilder().registerTypeAdapter(LocalDateTime.class, new LocalDateTimeAdapter()).setPrettyPrinting().create();
 
-        try (PrintWriter out = new PrintWriter(new FileWriter("collection.json"))) {
+        try (PrintWriter out = new PrintWriter(new FileWriter("elements.json"))) {
             JsonWriter writer = gson.newJsonWriter(out);
             writer.setIndent("\t");
             writer.setSerializeNulls(true);

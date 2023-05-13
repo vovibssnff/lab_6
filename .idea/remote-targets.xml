@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="RemoteTargetsManager">
+    <option name="projectDefaultTargetUuid" value="028856e9-e905-496e-8e2c-6f919b20ee61" />
+    <targets>
+      <target name="s373265@helios.cs.ifmo.ru:2222" type="ssh/sftp" uuid="028856e9-e905-496e-8e2c-6f919b20ee61">
+        <config>
+          <option name="projectRootOnTarget" value="$PROJECT_DIR$/../../../../studs/s373265/lab_6" />
+          <option name="serverName" value="s373265@helios.cs.ifmo.ru:2222 password" />
+          <option name="useRsync" value="true" />
+        </config>
+        <ContributedStateBase type="JavaLanguageRuntime">
+          <config>
+            <option name="javaVersionString" value="17.0.2" />
+          </config>
+        </ContributedStateBase>
+      </target>
+    </targets>
+  </component>
+</project>

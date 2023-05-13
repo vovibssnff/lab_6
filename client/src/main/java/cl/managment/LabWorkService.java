@@ -48,7 +48,7 @@ public class LabWorkService implements ReceiverInterface {
             return;
         }
         ProgramState.setMode(Mode.FILE);
-        InputEngine.modeSwitcher(null, filename);
+        InputEngine.modeSwitcher(null, Mode.FILE, null, filename);
     }
     @Override
     public void exit() {
