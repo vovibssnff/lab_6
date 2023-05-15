@@ -5,6 +5,12 @@ import cmn.UsrInputInterface;
 import cmn.data.LabWork;
 
 public class AddCmd implements Command {
+    public AddCmd(UsrInputInterface usrInput) {
+        LabWork elem = usrInput.add();
+        if (elem!=null) {
+            this.elem=elem;
+        }
+    }
     private UsrInputInterface usrInputReceiver;
     private ReceiverInterface labWorkService;
     private LabWork elem;

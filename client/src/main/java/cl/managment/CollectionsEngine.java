@@ -12,20 +12,20 @@ import java.util.*;
 public class CollectionsEngine {
     private static final Map<Integer, byte[]> packetBuffer = new HashMap<>();
     private static final Map<Integer, Long> sentTimestamps = new HashMap<>();
-    private static final Map<String, Command> commandMap = new HashMap<>(); //коллекция для идентификации введенных команд
+    private static final Map<String, Class<? extends Command>> commandMap = new HashMap<>(); //коллекция для идентификации введенных команд
 
     /**
      * Добавление в commandMap новой команды
      * @param key - ключ, имя команды
      * @param value - значение, объект команды
      */
-    public static void addElemToCommandMap(String key, Command value) {
+    public static void addElemToCommandMap(String key, Class<? extends Command> value) {
         commandMap.put(key, value);
     }
     public static String printCommandMap() {
         return commandMap.toString();
     }
-    public static Map<String, Command> getCommandMap() {
+    public static Map<String, Class<? extends Command>> getCommandMap() {
         return commandMap;
     }
 
@@ -34,16 +34,8 @@ public class CollectionsEngine {
      * @param command - искомая команда
      * @return command
      */
-    public static Command searchCommand(String command) {
-        Command cmd = null;
-        for (Map.Entry<String, Command> entry : commandMap.entrySet()) {
-            String key = entry.getKey();
-            if (key.equals(command)) {
-                cmd = entry.getValue();
-                return cmd;
-            }
-        }
-        return cmd;
+    public static Class<? extends Command> searchCommand(String command) {
+        return commandMap.get(command);
     }
 
 

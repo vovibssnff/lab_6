@@ -18,12 +18,12 @@ public class UsrInputReceiver implements UsrInputInterface {
     }
     @Override
     public LabWork add() {
-        ProgramState.setMode(Mode.ADD);
+        ProgramState.setCommandType(CommandType.ADD);
         return ElemInputService.setElemScript(null);
     }
     @Override
     public LabWork update(Long arg) {
-        ProgramState.setMode(Mode.UPDATE);
+        ProgramState.setCommandType(CommandType.UPDATE);
         return ElemInputService.setElemScript(arg);
     }
     @Override
@@ -53,18 +53,5 @@ public class UsrInputReceiver implements UsrInputInterface {
         }
         return null;
     }
-
-    public void executeScriptValidation(String filename) {
-        ProgramState.setMode(Mode.FILE);
-        iterations++;
-        if (iterations>499) {
-            System.out.println(OutputEngine.stackOverflowError());
-            return;
-        }
-        InputEngine.modeSwitcher(null, Mode.FILE, null, filename);
-    }
-
-
-
 
 }

@@ -9,6 +9,13 @@ public class UpdateCmd implements Command {
     private ReceiverInterface labWorkService;
     private Long id;
     private LabWork labWork;
+
+    public UpdateCmd(String arg) {
+        if (this.usrInputReceiver.typeValidator(arg, Long.class)) {
+            this.id = this.usrInputReceiver.setArg(arg, Long.class);
+            this.labWork = this.usrInputReceiver.update(this.id);
+        }
+    }
     @Override
     public void setUsrInputReceiver(UsrInputInterface usrInputReceiver) {
         this.usrInputReceiver=usrInputReceiver;
@@ -19,10 +26,7 @@ public class UpdateCmd implements Command {
     }
     @Override
     public void setArg(String arg) {
-        if (this.usrInputReceiver.typeValidator(arg, Long.class)) {
-            this.id = this.usrInputReceiver.setArg(arg, Long.class);
-            this.labWork = this.usrInputReceiver.update(this.id);
-        }
+
     }
     @Override
     public void execute() {

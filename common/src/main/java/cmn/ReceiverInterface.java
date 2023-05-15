@@ -2,6 +2,8 @@ package cmn;
 
 import cmn.data.LabWork;
 
+import java.io.File;
+
 public interface ReceiverInterface {
     void help();
     void info();
@@ -10,7 +12,7 @@ public interface ReceiverInterface {
     void update(LabWork elem);
     void removeById(Long id);
     void clear();
-    void executeScript(String filename);
+    void executeScript(File file);
     void exit();
     void head();
     void removeLower(Long id);

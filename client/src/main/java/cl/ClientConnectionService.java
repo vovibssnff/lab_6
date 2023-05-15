@@ -36,7 +36,7 @@ public class ClientConnectionService {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-        byte[] receiveData = new byte[1024];
+        byte[] receiveData = new byte[2048 * 2048];
         DatagramPacket receivePacket = new DatagramPacket(receiveData, receiveData.length);
         try {
             socket.setSoTimeout(5000);

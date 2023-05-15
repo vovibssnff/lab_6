@@ -19,6 +19,10 @@ public class ElemInputService {
      */
 
     public static LabWork setElemScript(Long ID) {
+        switch (ProgramState.getMode()) {
+            case FILE -> {ProgramState.setScanner(ProgramState.getFileScanner());}
+            case DEFAULT -> {ProgramState.setScanner(ProgramState.getKeyboardScanner());}
+        }
         Scanner sc = ProgramState.getScanner();
 
         LabWork elem = new LabWork();
@@ -36,7 +40,7 @@ public class ElemInputService {
         Float locationZ = null;
         Person author = new Person();
 
-        switch (ProgramState.getMode()) {
+        switch (ProgramState.getCommandType()) {
             case ADD -> elem.setId();
             case UPDATE -> elem.setId(ID);
         }

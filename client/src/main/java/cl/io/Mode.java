@@ -6,6 +6,4 @@ package cl.io;
 public enum Mode {
     FILE,
     DEFAULT,
-    ADD,
-    UPDATE
 }

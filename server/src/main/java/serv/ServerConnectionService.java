@@ -37,7 +37,7 @@ public class ServerConnectionService {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        ByteBuffer buffer = ByteBuffer.allocate(1024);
+        ByteBuffer buffer = ByteBuffer.allocate(2048 * 2048);
         assert selector != null;
         connect(selector, buffer);
     }
