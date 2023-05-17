@@ -10,6 +10,12 @@ public class Coordinates implements Serializable {
         this.x=x;
         this.y=y;
     }
+    public void setX(double x) {
+        this.x = x;
+    }
+    public void setY(long y) {
+        this.y = y;
+    }
     public double getX() {
         return x;
     }

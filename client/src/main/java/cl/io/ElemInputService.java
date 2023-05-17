@@ -6,8 +6,8 @@ import cmn.data.Color;
 import cmn.data.Difficulty;
 import cmn.data.LabWork;
 import cmn.data.Person;
+import cmn.service.LabWorkBuilder;
 
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class ElemInputService {
@@ -26,210 +26,163 @@ public class ElemInputService {
         Scanner sc = ProgramState.getScanner();
 
         LabWork elem = new LabWork();
+        LabWorkBuilder labWorkBuilder = new LabWorkBuilder();
         String name = null;
-        Double coordinatesX = null;
-        Long coordinatesY = null;
-        Double minimalPoint = null;
+        String coordinatesX = null;
+        String coordinatesY = null;
+        String minimalPoint = null;
         String difficultyStr;
         Difficulty difficulty = null;
         String authorName = null;
         String colorStr;
         Color eyeColor=null;
-        Float locationX = null;
-        Double locationY = null;
-        Float locationZ = null;
+        String locationX = null;
+        String locationY = null;
+        String locationZ = null;
         Person author = new Person();
 
-        switch (ProgramState.getCommandType()) {
-            case ADD -> elem.setId();
-            case UPDATE -> elem.setId(ID);
-        }
+        //TODO deprecated
+//        switch (ProgramState.getCommandType()) {
+//            case ADD -> elem.setId();
+//            case UPDATE -> elem.setId(ID);
+//        }
+
+        //Ввод имени
         System.out.println(OutputEngine.insertName());
-        do {
+        while (true) {
+            String inputName = sc.nextLine();
             try {
-                System.out.print(OutputEngine.prompt());
-                name = sc.nextLine().trim();
-            } catch (IllegalArgumentException e) {
-                System.out.println(e.getMessage());
+                labWorkBuilder.setLabName(inputName);
+            } catch (RuntimeException flag) {
+                continue;
             }
-        } while(!Validator.checkName(name));
-        elem.setName(name);
+            break;
+        }
+        // elem.setName(name);
 
+        //Ввод координат Х
         System.out.println(OutputEngine.insertCoordinatesX());
-        do {
+        while (true) {
+            System.out.print(OutputEngine.prompt());
+            coordinatesX = sc.nextLine();
             try {
-                System.out.print(OutputEngine.prompt());
-                if (sc.hasNextDouble()) {
-                    coordinatesX = sc.nextDouble();
-                    sc.nextLine();
-                    if (Validator.checkCoordinatesX(coordinatesX)) {
-                        break;
-                    } else {
-                        System.out.println(OutputEngine.incorrectCoordinatesX());
-                    }
-                } else {
-                    System.out.println(OutputEngine.incorrectCoordinatesX());
-                    sc.nextLine();
-                }
-            } catch (InputMismatchException e) {
-                System.out.println(e.getMessage());
+                labWorkBuilder.setCoordsX(coordinatesX);
+            } catch (RuntimeException flag) {
+                //System.out.println(OutputEngine.incorrectCoordinatesX());
+                continue;
             }
-        } while (true);
+            break;
+        }
 
+        //Ввод координат Y
         System.out.println(OutputEngine.insertCoordinatesY());
-        do {
+        while (true) {
+            System.out.print(OutputEngine.prompt());
+            coordinatesY = sc.nextLine();
             try {
-                System.out.print(OutputEngine.prompt());
-                if (sc.hasNextLong()) {
-                    coordinatesY = sc.nextLong();
-                    sc.nextLine();
-                    if (Validator.checkCoordinatesY(coordinatesY)) {
-                        break;
-                    } else {
-                        System.out.println(OutputEngine.incorrectCoordinatesX());
-                    }
-                } else {
-                    System.out.println(OutputEngine.incorrectCoordinatesY());
-                    sc.nextLine();
-                }
-            } catch (InputMismatchException e) {
-                System.out.println(e.getMessage());
+                labWorkBuilder.setCoordsY(coordinatesY);
+            } catch (RuntimeException flag) {
+                //System.out.println(OutputEngine.incorrectCoordinatesY());
+                continue;
             }
-        } while (true);
+            break;
+        }
 
-        elem.setCoordinates(coordinatesX, coordinatesY);
-
-        elem.setCreationDate();
+        labWorkBuilder.setCreationDate();
 
         System.out.println(OutputEngine.insertMinimalPoint());
-        do {
+        while (true) {
+            System.out.print(OutputEngine.prompt());
+            minimalPoint = sc.nextLine();
             try {
-                System.out.print(OutputEngine.prompt());
-                if (sc.hasNextDouble()) {
-                    minimalPoint = sc.nextDouble();
-                    sc.nextLine();
-                    if (Validator.checkMinimalPoint(minimalPoint)) {
-                        break;
-                    } else {
-                        System.out.println(OutputEngine.incorrectMinimalPoint());
-                    }
-                } else {
-                    System.out.println(OutputEngine.incorrectMinimalPoint());
-                    sc.nextLine();
-                }
-            } catch (InputMismatchException e) {
-                System.out.println(e.getMessage());
-                sc.nextLine();
+                labWorkBuilder.setMinimalPoint(minimalPoint);
+            } catch (RuntimeException flag) {
+                //System.out.println(OutputEngine.incorrectCoordinatesY());
+                continue;
             }
-        } while (true);
-        elem.setMinimalPoint(minimalPoint);
+            break;
+        }
 
         System.out.println(OutputEngine.insertDifficulty());
-        do {
+        while (true) {
+            System.out.print(OutputEngine.prompt());
+            difficultyStr = sc.nextLine();
             try {
-                System.out.print(OutputEngine.prompt());
-                difficultyStr = sc.nextLine().trim();
-                difficulty = Difficulty.valueOf(difficultyStr.toUpperCase());
-            } catch (IllegalArgumentException e) {
-                System.out.println(e.getMessage());
+                labWorkBuilder.setDifficulty(difficultyStr);
+            } catch (RuntimeException flag) {
+                //System.out.println(OutputEngine.incorrectCoordinatesY());
+                continue;
             }
-        } while (!Validator.checkDifficulty(difficulty));
-        elem.setDifficulty(difficulty);
+            break;
+        }
 
         System.out.println(OutputEngine.insertAuthorName());
-        do {
+        while (true) {
+            System.out.print(OutputEngine.prompt());
+            authorName = sc.nextLine();
             try {
-                System.out.print(OutputEngine.prompt());
-                authorName = sc.nextLine().trim();
-            } catch (IllegalArgumentException e) {
-                System.out.println(e.getMessage());
+                labWorkBuilder.setAuthorName(authorName);
+            } catch (RuntimeException flag) {
+                //System.out.println(OutputEngine.incorrectCoordinatesY());
+                continue;
             }
-        } while(!Validator.checkAuthorName(authorName));
-        author.setName(authorName);
+            break;
+        }
 
-        author.setPassportID();
+        labWorkBuilder.setPassportID();
 
         System.out.println(OutputEngine.insertColor());
-        do {
-            try{
-                System.out.print(OutputEngine.prompt());
-                colorStr = sc.nextLine().trim();
-                eyeColor = Color.valueOf(colorStr.toUpperCase());
-            } catch(IllegalArgumentException e) {
-                System.out.println(e.getMessage());
+        while (true) {
+            System.out.print(OutputEngine.prompt());
+            colorStr = sc.nextLine();
+            try {
+                labWorkBuilder.setColor(colorStr);
+            } catch (RuntimeException flag) {
+                //System.out.println(OutputEngine.incorrectCoordinatesY());
+                continue;
             }
-        } while(!Validator.checkColor(eyeColor));
-        author.setEyeColor(eyeColor);
+            break;
+        }
 
         System.out.println(OutputEngine.insertLocationX());
-        do {
+        while (true) {
+            System.out.print(OutputEngine.prompt());
+            locationX = sc.nextLine();
             try {
-                System.out.print(OutputEngine.prompt());
-                if (sc.hasNextFloat()) {
-                    locationX = sc.nextFloat();
-                    sc.nextLine();
-                    if (Validator.checkLocationX(locationX)) {
-                        break;
-                    } else {
-                        System.out.println(OutputEngine.incorrectLocationX());
-                    }
-                } else {
-                    System.out.println(OutputEngine.incorrectLocationX());
-                    sc.nextLine();
-                }
-            } catch (InputMismatchException e) {
-                System.out.println(e.getMessage());
-                sc.nextLine();
+                labWorkBuilder.setLocationX(locationX);
+            } catch (RuntimeException flag) {
+                //System.out.println(OutputEngine.incorrectCoordinatesY());
+                continue;
             }
-        } while (true);
-        author.getLocation().setX(locationX);
+            break;
+        }
 
         System.out.println(OutputEngine.insertLocationY());
-        do {
+        while (true) {
+            System.out.print(OutputEngine.prompt());
+            locationY = sc.nextLine();
             try {
-                System.out.print(OutputEngine.prompt());
-                if (sc.hasNextDouble()) {
-                    locationY = sc.nextDouble();
-                    sc.nextLine();
-                    if (Validator.checkLocationY(locationY)) {
-                        break;
-                    } else {
-                        System.out.println(OutputEngine.incorrectLocationY());
-                    }
-                } else {
-                    System.out.println(OutputEngine.incorrectLocationY());
-                    sc.nextLine();
-                }
-            } catch (InputMismatchException e) {
-                System.out.println(e.getMessage());
-                sc.nextLine();
+                labWorkBuilder.setLocationY(locationY);
+            } catch (RuntimeException flag) {
+                //System.out.println(OutputEngine.incorrectCoordinatesY());
+                continue;
             }
-        } while (true);
-        author.getLocation().setY(locationY);
+            break;
+        }
 
         System.out.println(OutputEngine.insertLocationZ());
-        do {
+        while (true) {
+            System.out.print(OutputEngine.prompt());
+            locationZ = sc.nextLine();
             try {
-                System.out.print(OutputEngine.prompt());
-                if (sc.hasNextFloat()) {
-                    locationZ = sc.nextFloat();
-                    sc.nextLine();
-                    if (Validator.checkLocationZ(locationZ)) {
-                        break;
-                    } else {
-                        System.out.println(OutputEngine.incorrectLocationZ());
-                    }
-                } else {
-                    System.out.println(OutputEngine.incorrectLocationZ());
-                    sc.nextLine();
-                }
-            } catch (InputMismatchException e) {
-                System.out.println(e.getMessage());
-                sc.nextLine();
+                labWorkBuilder.setLocationZ(locationZ);
+            } catch (RuntimeException flag) {
+                //System.out.println(OutputEngine.incorrectCoordinatesY());
+                continue;
             }
-        } while (true);
-        author.getLocation().setZ(locationZ);
-        elem.setAuthor(author);
+            break;
+        }
+        elem = labWorkBuilder.getLabWork();
         return elem;
     }
 }

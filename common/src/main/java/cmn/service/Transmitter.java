@@ -1,4 +1,6 @@
-package cmn.data;
+package cmn.service;
+
+import cmn.data.LabWork;
 
 public class Transmitter {
     private String command;

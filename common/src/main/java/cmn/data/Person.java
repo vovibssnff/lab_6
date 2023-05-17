@@ -9,18 +9,14 @@ public class Person implements Serializable {
     private Color eyeColor; //Поле может быть null
     private Location location; //Поле может быть null
     public Person() {
-        this.name="default";
-        this.passportID="00000XX";
-        this.eyeColor=Color.GREEN;
-        this.location=new Location(0, 0, 0);
+        this.name="";
+        this.passportID="0";
+        this.eyeColor=null;
+        this.location=new Location();
     }
+
     public void setName(String name) {
-        if (!name.equals("")) {
-            this.name=name;
-
-        } else {
-
-        }
+        this.name = name;
     }
 
     /**

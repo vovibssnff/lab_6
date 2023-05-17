@@ -1,11 +1,9 @@
 package cl;
 
-import cmn.data.Transmitter;
+import cmn.service.Transmitter;
 import cl.managment.ProgramState;
-import net.rudp.ReliableSocket;
 
 import java.io.IOException;
-import java.io.InputStream;
 import java.net.*;
 
 

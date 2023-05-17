@@ -1,18 +1,13 @@
 package cmn.cmd;
 
 import cmn.OutputEngine;
-import cmn.ReceiverInterface;
-import cmn.UsrInputInterface;
-import cmn.data.Transmitter;
+import cmn.service.ReceiverInterface;
+import cmn.service.UsrInputInterface;
+import cmn.service.Transmitter;
 
 import java.io.File;
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.ArrayDeque;
 import java.util.ArrayList;
-import java.util.List;
 
 public class ExecuteScriptCmd implements Command {
 

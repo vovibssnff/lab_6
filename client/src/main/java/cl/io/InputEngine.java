@@ -47,45 +47,5 @@ public class InputEngine {
                 System.out.println(OutputEngine.incorrectCommand());
             }
         }
-        //Восстановление старых данных
-        //modeSwitcher(null, null);
-    }
-
-    //TODO REMOVE THIS FUCKING DEPRECATED SHIT
-    public static void modeSwitcher(Command currentCommand, File file) {
-        String[] tokens = new String[0];
-        switch (ProgramState.getMode()) {
-
-            //Режим чтения команд с клавиатуры
-            case DEFAULT -> {
-                ProgramState.setScanner(ProgramState.getKeyboardScanner());
-                //Основной сканер
-                while (true) {
-
-                }
-            }
-
-            //Режим чтения команд из скрипта
-            case FILE -> {
-                Scanner fileScanner = null;
-                try {
-                    fileScanner = new Scanner(file);
-                    ProgramState.setMode(Mode.FILE);
-                    ProgramState.setScanner(fileScanner);
-                } catch (FileNotFoundException e) {
-                    e.getStackTrace();
-                }
-                while (true) {
-                    assert fileScanner != null;
-                    if (!fileScanner.hasNextLine()) {
-                        ExecuteScriptCmd.removeFile(file);
-//                        ProgramState.setMode(Mode.DEFAULT);
-//                        ProgramState.setScanner(ProgramState.getKeyboardScanner());
-                        break;
-                    }
-                    //CommandHandler.castCommand(null);
-                }
-            }
-        }
     }
 }

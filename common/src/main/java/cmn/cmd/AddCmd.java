@@ -1,15 +1,18 @@
 package cmn.cmd;
 
-import cmn.ReceiverInterface;
-import cmn.UsrInputInterface;
+import cmn.service.LabWorkBuilder;
+import cmn.service.LabWorkStorage;
+import cmn.service.ReceiverInterface;
+import cmn.service.UsrInputInterface;
 import cmn.data.LabWork;
 
-public class AddCmd implements Command {
+public class AddCmd implements Command, LabWorkStorage {
     public AddCmd(UsrInputInterface usrInput) {
-        LabWork elem = usrInput.add();
-        if (elem!=null) {
-            this.elem=elem;
-        }
+//        LabWorkBuilder labWorkBuilder = new LabWorkBuilder();
+//        LabWork elem =
+//        if (elem!=null) {
+//            this.elem=elem;
+//        }
     }
     private UsrInputInterface usrInputReceiver;
     private ReceiverInterface labWorkService;
@@ -23,19 +26,19 @@ public class AddCmd implements Command {
         this.labWorkService=labWorkService;
     }
     @Override
-    public void setArg(String arg) {
-        LabWork elem = this.usrInputReceiver.add();
-        if (elem!=null) {
-            this.elem=elem;
-        }
-    }
-    @Override
     public void execute() {
-        if (this.elem!=null) {
-            this.labWorkService.addElem(this.elem);
+        if (this.elem==null) {
+            // добавление от пользователя
+            elem = this.usrInputReceiver.add();
         }
+        this.labWorkService.addElem(this.elem);
     }
     public static String getName() {
         return "add";
+    }
+
+    @Override
+    public void setLab(LabWork lw) {
+        elem = lw;
     }
 }

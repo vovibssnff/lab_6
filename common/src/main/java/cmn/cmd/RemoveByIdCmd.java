@@ -1,7 +1,7 @@
 package cmn.cmd;
 
-import cmn.ReceiverInterface;
-import cmn.UsrInputInterface;
+import cmn.service.ReceiverInterface;
+import cmn.service.UsrInputInterface;
 
 public class RemoveByIdCmd implements Command {
     private UsrInputInterface usrInputReceiver;

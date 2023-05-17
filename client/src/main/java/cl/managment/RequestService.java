@@ -1,7 +1,7 @@
 package cl.managment;
 
 import cl.ClientConnectionService;
-import cmn.data.Transmitter;
+import cmn.service.Transmitter;
 
 public class RequestService {
     public static void sendRequest(Transmitter transmitter) {

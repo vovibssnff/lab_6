@@ -6,6 +6,7 @@ public class Location implements Serializable {
     private float x; //Поле не может быть null
     private double y;
     private float z;
+    public Location() {}
     public Location(float x, double y, float z) {
         this.x=x;
         this.y=y;

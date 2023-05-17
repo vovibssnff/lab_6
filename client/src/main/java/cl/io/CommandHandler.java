@@ -3,7 +3,7 @@ package cl.io;
 import cl.managment.CollectionsEngine;
 import cl.managment.ProgramState;
 import cmn.OutputEngine;
-import cmn.UsrInputInterface;
+import cmn.service.UsrInputInterface;
 import cmn.cmd.Command;
 
 import java.lang.reflect.InvocationTargetException;

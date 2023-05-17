@@ -1,4 +1,4 @@
-package cmn;
+package cmn.service;
 
 import cmn.data.LabWork;
 

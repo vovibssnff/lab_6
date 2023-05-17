@@ -1,12 +1,10 @@
 package serv;
 
-import net.rudp.ReliableServerSocket;
-import net.rudp.ReliableSocket;
 import serv.load.Serializer;
 import serv.managment.Collections;
 import serv.managment.ServerConnector;
 import serv.managment.ServerState;
-import cmn.data.Transmitter;
+import cmn.service.Transmitter;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;

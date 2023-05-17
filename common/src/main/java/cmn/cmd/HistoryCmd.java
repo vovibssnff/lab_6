@@ -1,6 +1,6 @@
 package cmn.cmd;
 
-import cmn.ReceiverInterface;
+import cmn.service.ReceiverInterface;
 
 public class HistoryCmd implements Command {
     private ReceiverInterface labWorkService;

@@ -1,6 +1,6 @@
 package cl.managment;
 
-import cmn.UsrInputInterface;
+import cmn.service.UsrInputInterface;
 import cl.io.*;
 import cmn.OutputEngine;
 import cmn.data.LabWork;

@@ -1,0 +1,2222 @@
+Thu May 18 01:53:36 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:53:36 MSK 2023::Request: {
+  "command": "help"
+}
+Thu May 18 01:53:36 MSK 2023::Response: "help : вывести справку по доступным командам\ninfo : вывести в стандартный поток вывода информацию о коллекции (тип, дата инициализации, количество элементов и т.д.)\nshow : вывести в стандартный поток вывода все элементы коллекции в строковом представлении\nadd : добавить новый элемент в коллекцию\nupdate {id} : обновить значение элемента коллекции, id которого равен заданному\nremove_by_id {id} : удалить элемент из коллекции по его id\nclear : очистить коллекцию\nexecute_script {file_name} : считать и исполнить скрипт из указанного файла. В скрипте содержатся команды в таком же виде, в котором их вводит пользователь в интерактивном режиме.\nexit : завершить программу (без сохранения в файл)\nhead : вывести первый элемент коллекции\nremove_lower {id} : удалить из коллекции все элементы, меньшие, чем заданный\nhistory : вывести последние 12 команд (без их аргументов)\ncltmp {minimal_point}: вывести количество элементов, значение поля minimalPoint которых меньше заданного\nprint_unique_authors : вывести уникальные значения поля author всех элементов в коллекции\npfdmp : вывести значения поля minimalPoint всех элементов в порядке убывания"
+Thu May 18 01:53:36 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:53:36 MSK 2023::Request: {
+  "command": "help"
+}
+Thu May 18 01:53:36 MSK 2023::Response: "help : вывести справку по доступным командам\ninfo : вывести в стандартный поток вывода информацию о коллекции (тип, дата инициализации, количество элементов и т.д.)\nshow : вывести в стандартный поток вывода все элементы коллекции в строковом представлении\nadd : добавить новый элемент в коллекцию\nupdate {id} : обновить значение элемента коллекции, id которого равен заданному\nremove_by_id {id} : удалить элемент из коллекции по его id\nclear : очистить коллекцию\nexecute_script {file_name} : считать и исполнить скрипт из указанного файла. В скрипте содержатся команды в таком же виде, в котором их вводит пользователь в интерактивном режиме.\nexit : завершить программу (без сохранения в файл)\nhead : вывести первый элемент коллекции\nremove_lower {id} : удалить из коллекции все элементы, меньшие, чем заданный\nhistory : вывести последние 12 команд (без их аргументов)\ncltmp {minimal_point}: вывести количество элементов, значение поля minimalPoint которых меньше заданного\nprint_unique_authors : вывести уникальные значения поля author всех элементов в коллекции\npfdmp : вывести значения поля minimalPoint всех элементов в порядке убывания"
+Thu May 18 01:53:36 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:53:36 MSK 2023::Request: {
+  "command": "add",
+  "elem": {
+    "id": 2582180352143543569,
+    "name": "name2",
+    "coordinates": {
+      "x": 54.0,
+      "y": 77
+    },
+    "creationDate": "2023-05-18T01:53:36.791001701",
+    "minimalPoint": 54.0,
+    "difficulty": "VERY_EASY",
+    "author": {
+      "name": "Van_Darkholm",
+      "passportID": "67de930f-ce80-4a32-9ad6-cf76228ef07a",
+      "eyeColor": "GREEN",
+      "location": {
+        "x": 5.0,
+        "y": 4.0,
+        "z": 3.0
+      }
+    }
+  }
+}
+Thu May 18 01:53:36 MSK 2023::Response: "New collection element was added successfully."
+Thu May 18 01:53:42 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:53:42 MSK 2023::Request: {
+  "command": "info"
+}
+Thu May 18 01:53:42 MSK 2023::Response: "Collection name: collection\nCollection type: ArrayDeque\nCollection size: 1"
+Thu May 18 01:54:20 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:20 MSK 2023::Request: {
+  "command": "help"
+}
+Thu May 18 01:54:20 MSK 2023::Response: "help : вывести справку по доступным командам\ninfo : вывести в стандартный поток вывода информацию о коллекции (тип, дата инициализации, количество элементов и т.д.)\nshow : вывести в стандартный поток вывода все элементы коллекции в строковом представлении\nadd : добавить новый элемент в коллекцию\nupdate {id} : обновить значение элемента коллекции, id которого равен заданному\nremove_by_id {id} : удалить элемент из коллекции по его id\nclear : очистить коллекцию\nexecute_script {file_name} : считать и исполнить скрипт из указанного файла. В скрипте содержатся команды в таком же виде, в котором их вводит пользователь в интерактивном режиме.\nexit : завершить программу (без сохранения в файл)\nhead : вывести первый элемент коллекции\nremove_lower {id} : удалить из коллекции все элементы, меньшие, чем заданный\nhistory : вывести последние 12 команд (без их аргументов)\ncltmp {minimal_point}: вывести количество элементов, значение поля minimalPoint которых меньше заданного\nprint_unique_authors : вывести уникальные значения поля author всех элементов в коллекции\npfdmp : вывести значения поля minimalPoint всех элементов в порядке убывания"
+Thu May 18 01:54:20 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:20 MSK 2023::Request: {
+  "command": "help"
+}
+Thu May 18 01:54:20 MSK 2023::Response: "help : вывести справку по доступным командам\ninfo : вывести в стандартный поток вывода информацию о коллекции (тип, дата инициализации, количество элементов и т.д.)\nshow : вывести в стандартный поток вывода все элементы коллекции в строковом представлении\nadd : добавить новый элемент в коллекцию\nupdate {id} : обновить значение элемента коллекции, id которого равен заданному\nremove_by_id {id} : удалить элемент из коллекции по его id\nclear : очистить коллекцию\nexecute_script {file_name} : считать и исполнить скрипт из указанного файла. В скрипте содержатся команды в таком же виде, в котором их вводит пользователь в интерактивном режиме.\nexit : завершить программу (без сохранения в файл)\nhead : вывести первый элемент коллекции\nremove_lower {id} : удалить из коллекции все элементы, меньшие, чем заданный\nhistory : вывести последние 12 команд (без их аргументов)\ncltmp {minimal_point}: вывести количество элементов, значение поля minimalPoint которых меньше заданного\nprint_unique_authors : вывести уникальные значения поля author всех элементов в коллекции\npfdmp : вывести значения поля minimalPoint всех элементов в порядке убывания"
+Thu May 18 01:54:20 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:20 MSK 2023::Request: {
+  "command": "add",
+  "elem": {
+    "id": 3397779695848604851,
+    "name": "name2",
+    "coordinates": {
+      "x": 54.0,
+      "y": 77
+    },
+    "creationDate": "2023-05-18T01:54:20.792742248",
+    "minimalPoint": 54.0,
+    "difficulty": "VERY_EASY",
+    "author": {
+      "name": "Van_Darkholm",
+      "passportID": "76db4a6c-c0ec-45a2-8d03-b031cb4982c4",
+      "eyeColor": "GREEN",
+      "location": {
+        "x": 5.0,
+        "y": 4.0,
+        "z": 3.0
+      }
+    }
+  }
+}
+Thu May 18 01:54:20 MSK 2023::Response: "New collection element was added successfully."
+Thu May 18 01:54:20 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:20 MSK 2023::Request: {
+  "command": "add",
+  "elem": {
+    "id": 1974945266424434641,
+    "name": "name3",
+    "coordinates": {
+      "x": 54.0,
+      "y": 71
+    },
+    "creationDate": "2023-05-18T01:54:20.798258896",
+    "minimalPoint": 54.0,
+    "difficulty": "VERY_HARD",
+    "author": {
+      "name": "Van_Darkholmmmmmm",
+      "passportID": "e32b1180-5ddb-4ad7-a9d8-3ee349a14a22",
+      "eyeColor": "GREEN",
+      "location": {
+        "x": 5.0,
+        "y": 1.0,
+        "z": 3.0
+      }
+    }
+  }
+}
+Thu May 18 01:54:20 MSK 2023::Response: "New collection element was added successfully."
+Thu May 18 01:54:20 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:20 MSK 2023::Request: {
+  "command": "add",
+  "elem": {
+    "id": 8295173963488445713,
+    "name": "name6",
+    "coordinates": {
+      "x": 511.0,
+      "y": 73
+    },
+    "creationDate": "2023-05-18T01:54:20.800955586",
+    "minimalPoint": 54.0,
+    "difficulty": "IMPOSSIBLE",
+    "author": {
+      "name": "Billy_Harrington",
+      "passportID": "bea2fc4d-bbd0-42e9-81ae-4f6eb193e247",
+      "eyeColor": "BLACK",
+      "location": {
+        "x": 5.0,
+        "y": 1.0,
+        "z": 3.0
+      }
+    }
+  }
+}
+Thu May 18 01:54:20 MSK 2023::Response: "New collection element was added successfully."
+Thu May 18 01:54:20 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:20 MSK 2023::Request: {
+  "command": "add",
+  "elem": {
+    "id": 8101507453498116000,
+    "name": "name54",
+    "coordinates": {
+      "x": 27.0,
+      "y": 77
+    },
+    "creationDate": "2023-05-18T01:54:20.803860527",
+    "minimalPoint": 51.0,
+    "difficulty": "IMPOSSIBLE",
+    "author": {
+      "name": "Bogdan",
+      "passportID": "2f55c53a-fa59-410b-b857-70c3d3049955",
+      "eyeColor": "BROWN",
+      "location": {
+        "x": 5.0,
+        "y": 4.0,
+        "z": 1.0
+      }
+    }
+  }
+}
+Thu May 18 01:54:20 MSK 2023::Response: "New collection element was added successfully."
+Thu May 18 01:54:24 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:24 MSK 2023::Request: {
+  "command": "info"
+}
+Thu May 18 01:54:24 MSK 2023::Response: "Collection name: collection\nCollection type: ArrayDeque\nCollection size: 5"
+Thu May 18 01:54:26 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:26 MSK 2023::Request: {
+  "command": "show"
+}
+Thu May 18 01:54:26 MSK 2023::Response: "_________________________________\nid: 8295173963488445713\nname: name6\ncoordinates: 511.0 73\ncreationDate: 2023-05-18T01:54:20.800955586\nminimalPoint: 54.0\ndifficulty: IMPOSSIBLE\nauthor: \n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\nname: Billy_Harrington\npassportID: bea2fc4d-bbd0-42e9-81ae-4f6eb193e247\neyeColor: BLACK\nlocation: 5.0 1.0 3.0\n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n#################################_________________________________\nid: 8101507453498116000\nname: name54\ncoordinates: 27.0 77\ncreationDate: 2023-05-18T01:54:20.803860527\nminimalPoint: 51.0\ndifficulty: IMPOSSIBLE\nauthor: \n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\nname: Bogdan\npassportID: 2f55c53a-fa59-410b-b857-70c3d3049955\neyeColor: BROWN\nlocation: 5.0 4.0 1.0\n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n#################################_________________________________\nid: 3397779695848604851\nname: name2\ncoordinates: 54.0 77\ncreationDate: 2023-05-18T01:54:20.792742248\nminimalPoint: 54.0\ndifficulty: VERY_EASY\nauthor: \n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\nname: Van_Darkholm\npassportID: 76db4a6c-c0ec-45a2-8d03-b031cb4982c4\neyeColor: GREEN\nlocation: 5.0 4.0 3.0\n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n#################################_________________________________\nid: 2582180352143543569\nname: name2\ncoordinates: 54.0 77\ncreationDate: 2023-05-18T01:53:36.791001701\nminimalPoint: 54.0\ndifficulty: VERY_EASY\nauthor: \n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\nname: Van_Darkholm\npassportID: 67de930f-ce80-4a32-9ad6-cf76228ef07a\neyeColor: GREEN\nlocation: 5.0 4.0 3.0\n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n#################################_________________________________\nid: 1974945266424434641\nname: name3\ncoordinates: 54.0 71\ncreationDate: 2023-05-18T01:54:20.798258896\nminimalPoint: 54.0\ndifficulty: VERY_HARD\nauthor: \n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\nname: Van_Darkholmmmmmm\npassportID: e32b1180-5ddb-4ad7-a9d8-3ee349a14a22\neyeColor: GREEN\nlocation: 5.0 1.0 3.0\n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n#################################"
+Thu May 18 01:54:35 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:35 MSK 2023::Request: {
+  "command": "help"
+}
+Thu May 18 01:54:35 MSK 2023::Response: "help : вывести справку по доступным командам\ninfo : вывести в стандартный поток вывода информацию о коллекции (тип, дата инициализации, количество элементов и т.д.)\nshow : вывести в стандартный поток вывода все элементы коллекции в строковом представлении\nadd : добавить новый элемент в коллекцию\nupdate {id} : обновить значение элемента коллекции, id которого равен заданному\nremove_by_id {id} : удалить элемент из коллекции по его id\nclear : очистить коллекцию\nexecute_script {file_name} : считать и исполнить скрипт из указанного файла. В скрипте содержатся команды в таком же виде, в котором их вводит пользователь в интерактивном режиме.\nexit : завершить программу (без сохранения в файл)\nhead : вывести первый элемент коллекции\nremove_lower {id} : удалить из коллекции все элементы, меньшие, чем заданный\nhistory : вывести последние 12 команд (без их аргументов)\ncltmp {minimal_point}: вывести количество элементов, значение поля minimalPoint которых меньше заданного\nprint_unique_authors : вывести уникальные значения поля author всех элементов в коллекции\npfdmp : вывести значения поля minimalPoint всех элементов в порядке убывания"
+Thu May 18 01:54:35 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:35 MSK 2023::Request: {
+  "command": "help"
+}
+Thu May 18 01:54:35 MSK 2023::Response: "help : вывести справку по доступным командам\ninfo : вывести в стандартный поток вывода информацию о коллекции (тип, дата инициализации, количество элементов и т.д.)\nshow : вывести в стандартный поток вывода все элементы коллекции в строковом представлении\nadd : добавить новый элемент в коллекцию\nupdate {id} : обновить значение элемента коллекции, id которого равен заданному\nremove_by_id {id} : удалить элемент из коллекции по его id\nclear : очистить коллекцию\nexecute_script {file_name} : считать и исполнить скрипт из указанного файла. В скрипте содержатся команды в таком же виде, в котором их вводит пользователь в интерактивном режиме.\nexit : завершить программу (без сохранения в файл)\nhead : вывести первый элемент коллекции\nremove_lower {id} : удалить из коллекции все элементы, меньшие, чем заданный\nhistory : вывести последние 12 команд (без их аргументов)\ncltmp {minimal_point}: вывести количество элементов, значение поля minimalPoint которых меньше заданного\nprint_unique_authors : вывести уникальные значения поля author всех элементов в коллекции\npfdmp : вывести значения поля minimalPoint всех элементов в порядке убывания"
+Thu May 18 01:54:35 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:35 MSK 2023::Request: {
+  "command": "add",
+  "elem": {
+    "id": 1810326374049529963,
+    "name": "name2",
+    "coordinates": {
+      "x": 54.0,
+      "y": 77
+    },
+    "creationDate": "2023-05-18T01:54:35.761382777",
+    "minimalPoint": 54.0,
+    "difficulty": "VERY_EASY",
+    "author": {
+      "name": "Van_Darkholm",
+      "passportID": "8a13549c-9edb-4d03-a09c-a88abe28e20a",
+      "eyeColor": "GREEN",
+      "location": {
+        "x": 5.0,
+        "y": 4.0,
+        "z": 3.0
+      }
+    }
+  }
+}
+Thu May 18 01:54:35 MSK 2023::Response: "New collection element was added successfully."
+Thu May 18 01:54:35 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:35 MSK 2023::Request: {
+  "command": "add",
+  "elem": {
+    "id": 3512819139714959664,
+    "name": "name3",
+    "coordinates": {
+      "x": 54.0,
+      "y": 71
+    },
+    "creationDate": "2023-05-18T01:54:35.76468491",
+    "minimalPoint": 54.0,
+    "difficulty": "VERY_HARD",
+    "author": {
+      "name": "Van_Darkholmmmmmm",
+      "passportID": "28b40e76-a3e0-4b13-868b-77de3d2842e2",
+      "eyeColor": "GREEN",
+      "location": {
+        "x": 5.0,
+        "y": 1.0,
+        "z": 3.0
+      }
+    }
+  }
+}
+Thu May 18 01:54:35 MSK 2023::Response: "New collection element was added successfully."
+Thu May 18 01:54:35 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:35 MSK 2023::Request: {
+  "command": "add",
+  "elem": {
+    "id": 6339263193557453965,
+    "name": "name6",
+    "coordinates": {
+      "x": 511.0,
+      "y": 73
+    },
+    "creationDate": "2023-05-18T01:54:35.769376319",
+    "minimalPoint": 54.0,
+    "difficulty": "IMPOSSIBLE",
+    "author": {
+      "name": "Billy_Harrington",
+      "passportID": "a7774745-a35c-4acf-b59b-a94cbd11a00a",
+      "eyeColor": "BLACK",
+      "location": {
+        "x": 5.0,
+        "y": 1.0,
+        "z": 3.0
+      }
+    }
+  }
+}
+Thu May 18 01:54:35 MSK 2023::Response: "New collection element was added successfully."
+Thu May 18 01:54:35 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:35 MSK 2023::Request: {
+  "command": "add",
+  "elem": {
+    "id": 229627065902386630,
+    "name": "name54",
+    "coordinates": {
+      "x": 27.0,
+      "y": 77
+    },
+    "creationDate": "2023-05-18T01:54:35.773141677",
+    "minimalPoint": 51.0,
+    "difficulty": "IMPOSSIBLE",
+    "author": {
+      "name": "Bogdan",
+      "passportID": "4833c410-44d1-4f9b-953e-5355cb9d52c6",
+      "eyeColor": "BROWN",
+      "location": {
+        "x": 5.0,
+        "y": 4.0,
+        "z": 1.0
+      }
+    }
+  }
+}
+Thu May 18 01:54:35 MSK 2023::Response: "New collection element was added successfully."
+Thu May 18 01:54:35 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:35 MSK 2023::Request: {
+  "command": "help"
+}
+Thu May 18 01:54:35 MSK 2023::Response: "help : вывести справку по доступным командам\ninfo : вывести в стандартный поток вывода информацию о коллекции (тип, дата инициализации, количество элементов и т.д.)\nshow : вывести в стандартный поток вывода все элементы коллекции в строковом представлении\nadd : добавить новый элемент в коллекцию\nupdate {id} : обновить значение элемента коллекции, id которого равен заданному\nremove_by_id {id} : удалить элемент из коллекции по его id\nclear : очистить коллекцию\nexecute_script {file_name} : считать и исполнить скрипт из указанного файла. В скрипте содержатся команды в таком же виде, в котором их вводит пользователь в интерактивном режиме.\nexit : завершить программу (без сохранения в файл)\nhead : вывести первый элемент коллекции\nremove_lower {id} : удалить из коллекции все элементы, меньшие, чем заданный\nhistory : вывести последние 12 команд (без их аргументов)\ncltmp {minimal_point}: вывести количество элементов, значение поля minimalPoint которых меньше заданного\nprint_unique_authors : вывести уникальные значения поля author всех элементов в коллекции\npfdmp : вывести значения поля minimalPoint всех элементов в порядке убывания"
+Thu May 18 01:54:35 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:35 MSK 2023::Request: {
+  "command": "help"
+}
+Thu May 18 01:54:35 MSK 2023::Response: "help : вывести справку по доступным командам\ninfo : вывести в стандартный поток вывода информацию о коллекции (тип, дата инициализации, количество элементов и т.д.)\nshow : вывести в стандартный поток вывода все элементы коллекции в строковом представлении\nadd : добавить новый элемент в коллекцию\nupdate {id} : обновить значение элемента коллекции, id которого равен заданному\nremove_by_id {id} : удалить элемент из коллекции по его id\nclear : очистить коллекцию\nexecute_script {file_name} : считать и исполнить скрипт из указанного файла. В скрипте содержатся команды в таком же виде, в котором их вводит пользователь в интерактивном режиме.\nexit : завершить программу (без сохранения в файл)\nhead : вывести первый элемент коллекции\nremove_lower {id} : удалить из коллекции все элементы, меньшие, чем заданный\nhistory : вывести последние 12 команд (без их аргументов)\ncltmp {minimal_point}: вывести количество элементов, значение поля minimalPoint которых меньше заданного\nprint_unique_authors : вывести уникальные значения поля author всех элементов в коллекции\npfdmp : вывести значения поля minimalPoint всех элементов в порядке убывания"
+Thu May 18 01:54:35 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:35 MSK 2023::Request: {
+  "command": "add",
+  "elem": {
+    "id": 6718940916490129038,
+    "name": "name2",
+    "coordinates": {
+      "x": 54.0,
+      "y": 77
+    },
+    "creationDate": "2023-05-18T01:54:35.784406232",
+    "minimalPoint": 54.0,
+    "difficulty": "VERY_EASY",
+    "author": {
+      "name": "Van_Darkholm",
+      "passportID": "e7ba7994-93a1-499a-bca4-b85b9ec969e3",
+      "eyeColor": "GREEN",
+      "location": {
+        "x": 5.0,
+        "y": 4.0,
+        "z": 3.0
+      }
+    }
+  }
+}
+Thu May 18 01:54:35 MSK 2023::Response: "New collection element was added successfully."
+Thu May 18 01:54:35 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:35 MSK 2023::Request: {
+  "command": "add",
+  "elem": {
+    "id": 989008099137372995,
+    "name": "name3",
+    "coordinates": {
+      "x": 54.0,
+      "y": 71
+    },
+    "creationDate": "2023-05-18T01:54:35.787779057",
+    "minimalPoint": 54.0,
+    "difficulty": "VERY_HARD",
+    "author": {
+      "name": "Van_Darkholmmmmmm",
+      "passportID": "71dba39c-2f5f-4d2e-b479-214b27637f56",
+      "eyeColor": "GREEN",
+      "location": {
+        "x": 5.0,
+        "y": 1.0,
+        "z": 3.0
+      }
+    }
+  }
+}
+Thu May 18 01:54:35 MSK 2023::Response: "New collection element was added successfully."
+Thu May 18 01:54:35 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:35 MSK 2023::Request: {
+  "command": "add",
+  "elem": {
+    "id": 5902898948916726822,
+    "name": "name6",
+    "coordinates": {
+      "x": 511.0,
+      "y": 73
+    },
+    "creationDate": "2023-05-18T01:54:35.791165114",
+    "minimalPoint": 54.0,
+    "difficulty": "IMPOSSIBLE",
+    "author": {
+      "name": "Billy_Harrington",
+      "passportID": "af5bb01c-d81e-46ce-b8f2-e1a30e9c525e",
+      "eyeColor": "BLACK",
+      "location": {
+        "x": 5.0,
+        "y": 1.0,
+        "z": 3.0
+      }
+    }
+  }
+}
+Thu May 18 01:54:35 MSK 2023::Response: "New collection element was added successfully."
+Thu May 18 01:54:35 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:35 MSK 2023::Request: {
+  "command": "add",
+  "elem": {
+    "id": 8974310054606163092,
+    "name": "name54",
+    "coordinates": {
+      "x": 27.0,
+      "y": 77
+    },
+    "creationDate": "2023-05-18T01:54:35.796365591",
+    "minimalPoint": 51.0,
+    "difficulty": "IMPOSSIBLE",
+    "author": {
+      "name": "Bogdan",
+      "passportID": "df760c9f-2a66-4d86-8c7a-3a41d3e87914",
+      "eyeColor": "BROWN",
+      "location": {
+        "x": 5.0,
+        "y": 4.0,
+        "z": 1.0
+      }
+    }
+  }
+}
+Thu May 18 01:54:35 MSK 2023::Response: "New collection element was added successfully."
+Thu May 18 01:54:35 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:35 MSK 2023::Request: {
+  "command": "help"
+}
+Thu May 18 01:54:35 MSK 2023::Response: "help : вывести справку по доступным командам\ninfo : вывести в стандартный поток вывода информацию о коллекции (тип, дата инициализации, количество элементов и т.д.)\nshow : вывести в стандартный поток вывода все элементы коллекции в строковом представлении\nadd : добавить новый элемент в коллекцию\nupdate {id} : обновить значение элемента коллекции, id которого равен заданному\nremove_by_id {id} : удалить элемент из коллекции по его id\nclear : очистить коллекцию\nexecute_script {file_name} : считать и исполнить скрипт из указанного файла. В скрипте содержатся команды в таком же виде, в котором их вводит пользователь в интерактивном режиме.\nexit : завершить программу (без сохранения в файл)\nhead : вывести первый элемент коллекции\nremove_lower {id} : удалить из коллекции все элементы, меньшие, чем заданный\nhistory : вывести последние 12 команд (без их аргументов)\ncltmp {minimal_point}: вывести количество элементов, значение поля minimalPoint которых меньше заданного\nprint_unique_authors : вывести уникальные значения поля author всех элементов в коллекции\npfdmp : вывести значения поля minimalPoint всех элементов в порядке убывания"
+Thu May 18 01:54:35 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:35 MSK 2023::Request: {
+  "command": "help"
+}
+Thu May 18 01:54:35 MSK 2023::Response: "help : вывести справку по доступным командам\ninfo : вывести в стандартный поток вывода информацию о коллекции (тип, дата инициализации, количество элементов и т.д.)\nshow : вывести в стандартный поток вывода все элементы коллекции в строковом представлении\nadd : добавить новый элемент в коллекцию\nupdate {id} : обновить значение элемента коллекции, id которого равен заданному\nremove_by_id {id} : удалить элемент из коллекции по его id\nclear : очистить коллекцию\nexecute_script {file_name} : считать и исполнить скрипт из указанного файла. В скрипте содержатся команды в таком же виде, в котором их вводит пользователь в интерактивном режиме.\nexit : завершить программу (без сохранения в файл)\nhead : вывести первый элемент коллекции\nremove_lower {id} : удалить из коллекции все элементы, меньшие, чем заданный\nhistory : вывести последние 12 команд (без их аргументов)\ncltmp {minimal_point}: вывести количество элементов, значение поля minimalPoint которых меньше заданного\nprint_unique_authors : вывести уникальные значения поля author всех элементов в коллекции\npfdmp : вывести значения поля minimalPoint всех элементов в порядке убывания"
+Thu May 18 01:54:35 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:35 MSK 2023::Request: {
+  "command": "add",
+  "elem": {
+    "id": 8039195480938269360,
+    "name": "name2",
+    "coordinates": {
+      "x": 54.0,
+      "y": 77
+    },
+    "creationDate": "2023-05-18T01:54:35.807329202",
+    "minimalPoint": 54.0,
+    "difficulty": "VERY_EASY",
+    "author": {
+      "name": "Van_Darkholm",
+      "passportID": "28991586-38c6-41f0-b941-b0e74b9208f7",
+      "eyeColor": "GREEN",
+      "location": {
+        "x": 5.0,
+        "y": 4.0,
+        "z": 3.0
+      }
+    }
+  }
+}
+Thu May 18 01:54:35 MSK 2023::Response: "New collection element was added successfully."
+Thu May 18 01:54:35 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:35 MSK 2023::Request: {
+  "command": "add",
+  "elem": {
+    "id": 7799311751719109021,
+    "name": "name3",
+    "coordinates": {
+      "x": 54.0,
+      "y": 71
+    },
+    "creationDate": "2023-05-18T01:54:35.811071099",
+    "minimalPoint": 54.0,
+    "difficulty": "VERY_HARD",
+    "author": {
+      "name": "Van_Darkholmmmmmm",
+      "passportID": "935d8b59-58c0-456e-8cc4-03a3f5f735c7",
+      "eyeColor": "GREEN",
+      "location": {
+        "x": 5.0,
+        "y": 1.0,
+        "z": 3.0
+      }
+    }
+  }
+}
+Thu May 18 01:54:35 MSK 2023::Response: "New collection element was added successfully."
+Thu May 18 01:54:35 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:35 MSK 2023::Request: {
+  "command": "add",
+  "elem": {
+    "id": 5253455879775473292,
+    "name": "name6",
+    "coordinates": {
+      "x": 511.0,
+      "y": 73
+    },
+    "creationDate": "2023-05-18T01:54:35.81403021",
+    "minimalPoint": 54.0,
+    "difficulty": "IMPOSSIBLE",
+    "author": {
+      "name": "Billy_Harrington",
+      "passportID": "c0cb2edf-44b0-4a46-9d4f-76b157b7ddb0",
+      "eyeColor": "BLACK",
+      "location": {
+        "x": 5.0,
+        "y": 1.0,
+        "z": 3.0
+      }
+    }
+  }
+}
+Thu May 18 01:54:35 MSK 2023::Response: "New collection element was added successfully."
+Thu May 18 01:54:35 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:35 MSK 2023::Request: {
+  "command": "add",
+  "elem": {
+    "id": 7324532141594266449,
+    "name": "name54",
+    "coordinates": {
+      "x": 27.0,
+      "y": 77
+    },
+    "creationDate": "2023-05-18T01:54:35.820389535",
+    "minimalPoint": 51.0,
+    "difficulty": "IMPOSSIBLE",
+    "author": {
+      "name": "Bogdan",
+      "passportID": "4cfa9bfe-375f-4317-bf79-071832a7c26a",
+      "eyeColor": "BROWN",
+      "location": {
+        "x": 5.0,
+        "y": 4.0,
+        "z": 1.0
+      }
+    }
+  }
+}
+Thu May 18 01:54:35 MSK 2023::Response: "New collection element was added successfully."
+Thu May 18 01:54:35 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:35 MSK 2023::Request: {
+  "command": "help"
+}
+Thu May 18 01:54:35 MSK 2023::Response: "help : вывести справку по доступным командам\ninfo : вывести в стандартный поток вывода информацию о коллекции (тип, дата инициализации, количество элементов и т.д.)\nshow : вывести в стандартный поток вывода все элементы коллекции в строковом представлении\nadd : добавить новый элемент в коллекцию\nupdate {id} : обновить значение элемента коллекции, id которого равен заданному\nremove_by_id {id} : удалить элемент из коллекции по его id\nclear : очистить коллекцию\nexecute_script {file_name} : считать и исполнить скрипт из указанного файла. В скрипте содержатся команды в таком же виде, в котором их вводит пользователь в интерактивном режиме.\nexit : завершить программу (без сохранения в файл)\nhead : вывести первый элемент коллекции\nremove_lower {id} : удалить из коллекции все элементы, меньшие, чем заданный\nhistory : вывести последние 12 команд (без их аргументов)\ncltmp {minimal_point}: вывести количество элементов, значение поля minimalPoint которых меньше заданного\nprint_unique_authors : вывести уникальные значения поля author всех элементов в коллекции\npfdmp : вывести значения поля minimalPoint всех элементов в порядке убывания"
+Thu May 18 01:54:35 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:35 MSK 2023::Request: {
+  "command": "help"
+}
+Thu May 18 01:54:35 MSK 2023::Response: "help : вывести справку по доступным командам\ninfo : вывести в стандартный поток вывода информацию о коллекции (тип, дата инициализации, количество элементов и т.д.)\nshow : вывести в стандартный поток вывода все элементы коллекции в строковом представлении\nadd : добавить новый элемент в коллекцию\nupdate {id} : обновить значение элемента коллекции, id которого равен заданному\nremove_by_id {id} : удалить элемент из коллекции по его id\nclear : очистить коллекцию\nexecute_script {file_name} : считать и исполнить скрипт из указанного файла. В скрипте содержатся команды в таком же виде, в котором их вводит пользователь в интерактивном режиме.\nexit : завершить программу (без сохранения в файл)\nhead : вывести первый элемент коллекции\nremove_lower {id} : удалить из коллекции все элементы, меньшие, чем заданный\nhistory : вывести последние 12 команд (без их аргументов)\ncltmp {minimal_point}: вывести количество элементов, значение поля minimalPoint которых меньше заданного\nprint_unique_authors : вывести уникальные значения поля author всех элементов в коллекции\npfdmp : вывести значения поля minimalPoint всех элементов в порядке убывания"
+Thu May 18 01:54:35 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:35 MSK 2023::Request: {
+  "command": "add",
+  "elem": {
+    "id": 2802573450468281252,
+    "name": "name2",
+    "coordinates": {
+      "x": 54.0,
+      "y": 77
+    },
+    "creationDate": "2023-05-18T01:54:35.831158172",
+    "minimalPoint": 54.0,
+    "difficulty": "VERY_EASY",
+    "author": {
+      "name": "Van_Darkholm",
+      "passportID": "1bc6dc60-ce87-4e1e-9e0f-9428604b7581",
+      "eyeColor": "GREEN",
+      "location": {
+        "x": 5.0,
+        "y": 4.0,
+        "z": 3.0
+      }
+    }
+  }
+}
+Thu May 18 01:54:35 MSK 2023::Response: "New collection element was added successfully."
+Thu May 18 01:54:35 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:35 MSK 2023::Request: {
+  "command": "add",
+  "elem": {
+    "id": 587348378778159165,
+    "name": "name3",
+    "coordinates": {
+      "x": 54.0,
+      "y": 71
+    },
+    "creationDate": "2023-05-18T01:54:35.835067944",
+    "minimalPoint": 54.0,
+    "difficulty": "VERY_HARD",
+    "author": {
+      "name": "Van_Darkholmmmmmm",
+      "passportID": "cc37be8c-d6bf-4022-8ef6-d8050aa0122e",
+      "eyeColor": "GREEN",
+      "location": {
+        "x": 5.0,
+        "y": 1.0,
+        "z": 3.0
+      }
+    }
+  }
+}
+Thu May 18 01:54:35 MSK 2023::Response: "New collection element was added successfully."
+Thu May 18 01:54:35 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:35 MSK 2023::Request: {
+  "command": "add",
+  "elem": {
+    "id": 4706170713286525569,
+    "name": "name6",
+    "coordinates": {
+      "x": 511.0,
+      "y": 73
+    },
+    "creationDate": "2023-05-18T01:54:35.838817185",
+    "minimalPoint": 54.0,
+    "difficulty": "IMPOSSIBLE",
+    "author": {
+      "name": "Billy_Harrington",
+      "passportID": "4daf9eb5-6aed-4dd0-8e02-2261f7f6f185",
+      "eyeColor": "BLACK",
+      "location": {
+        "x": 5.0,
+        "y": 1.0,
+        "z": 3.0
+      }
+    }
+  }
+}
+Thu May 18 01:54:35 MSK 2023::Response: "New collection element was added successfully."
+Thu May 18 01:54:35 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:35 MSK 2023::Request: {
+  "command": "add",
+  "elem": {
+    "id": 557493330439588993,
+    "name": "name54",
+    "coordinates": {
+      "x": 27.0,
+      "y": 77
+    },
+    "creationDate": "2023-05-18T01:54:35.842634853",
+    "minimalPoint": 51.0,
+    "difficulty": "IMPOSSIBLE",
+    "author": {
+      "name": "Bogdan",
+      "passportID": "0e3fc89a-8151-4a58-b713-34e6f3389218",
+      "eyeColor": "BROWN",
+      "location": {
+        "x": 5.0,
+        "y": 4.0,
+        "z": 1.0
+      }
+    }
+  }
+}
+Thu May 18 01:54:35 MSK 2023::Response: "New collection element was added successfully."
+Thu May 18 01:54:35 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:35 MSK 2023::Request: {
+  "command": "help"
+}
+Thu May 18 01:54:35 MSK 2023::Response: "help : вывести справку по доступным командам\ninfo : вывести в стандартный поток вывода информацию о коллекции (тип, дата инициализации, количество элементов и т.д.)\nshow : вывести в стандартный поток вывода все элементы коллекции в строковом представлении\nadd : добавить новый элемент в коллекцию\nupdate {id} : обновить значение элемента коллекции, id которого равен заданному\nremove_by_id {id} : удалить элемент из коллекции по его id\nclear : очистить коллекцию\nexecute_script {file_name} : считать и исполнить скрипт из указанного файла. В скрипте содержатся команды в таком же виде, в котором их вводит пользователь в интерактивном режиме.\nexit : завершить программу (без сохранения в файл)\nhead : вывести первый элемент коллекции\nremove_lower {id} : удалить из коллекции все элементы, меньшие, чем заданный\nhistory : вывести последние 12 команд (без их аргументов)\ncltmp {minimal_point}: вывести количество элементов, значение поля minimalPoint которых меньше заданного\nprint_unique_authors : вывести уникальные значения поля author всех элементов в коллекции\npfdmp : вывести значения поля minimalPoint всех элементов в порядке убывания"
+Thu May 18 01:54:35 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:35 MSK 2023::Request: {
+  "command": "help"
+}
+Thu May 18 01:54:35 MSK 2023::Response: "help : вывести справку по доступным командам\ninfo : вывести в стандартный поток вывода информацию о коллекции (тип, дата инициализации, количество элементов и т.д.)\nshow : вывести в стандартный поток вывода все элементы коллекции в строковом представлении\nadd : добавить новый элемент в коллекцию\nupdate {id} : обновить значение элемента коллекции, id которого равен заданному\nremove_by_id {id} : удалить элемент из коллекции по его id\nclear : очистить коллекцию\nexecute_script {file_name} : считать и исполнить скрипт из указанного файла. В скрипте содержатся команды в таком же виде, в котором их вводит пользователь в интерактивном режиме.\nexit : завершить программу (без сохранения в файл)\nhead : вывести первый элемент коллекции\nremove_lower {id} : удалить из коллекции все элементы, меньшие, чем заданный\nhistory : вывести последние 12 команд (без их аргументов)\ncltmp {minimal_point}: вывести количество элементов, значение поля minimalPoint которых меньше заданного\nprint_unique_authors : вывести уникальные значения поля author всех элементов в коллекции\npfdmp : вывести значения поля minimalPoint всех элементов в порядке убывания"
+Thu May 18 01:54:35 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:35 MSK 2023::Request: {
+  "command": "add",
+  "elem": {
+    "id": 2758609120574524165,
+    "name": "name2",
+    "coordinates": {
+      "x": 54.0,
+      "y": 77
+    },
+    "creationDate": "2023-05-18T01:54:35.853746881",
+    "minimalPoint": 54.0,
+    "difficulty": "VERY_EASY",
+    "author": {
+      "name": "Van_Darkholm",
+      "passportID": "c2d6be3b-a7fd-45b3-836d-a7154a9cb045",
+      "eyeColor": "GREEN",
+      "location": {
+        "x": 5.0,
+        "y": 4.0,
+        "z": 3.0
+      }
+    }
+  }
+}
+Thu May 18 01:54:35 MSK 2023::Response: "New collection element was added successfully."
+Thu May 18 01:54:35 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:35 MSK 2023::Request: {
+  "command": "add",
+  "elem": {
+    "id": 8721178288335899830,
+    "name": "name3",
+    "coordinates": {
+      "x": 54.0,
+      "y": 71
+    },
+    "creationDate": "2023-05-18T01:54:35.859126834",
+    "minimalPoint": 54.0,
+    "difficulty": "VERY_HARD",
+    "author": {
+      "name": "Van_Darkholmmmmmm",
+      "passportID": "693b4de2-1090-4faf-aca8-86da4f8a0cb1",
+      "eyeColor": "GREEN",
+      "location": {
+        "x": 5.0,
+        "y": 1.0,
+        "z": 3.0
+      }
+    }
+  }
+}
+Thu May 18 01:54:35 MSK 2023::Response: "New collection element was added successfully."
+Thu May 18 01:54:35 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:35 MSK 2023::Request: {
+  "command": "add",
+  "elem": {
+    "id": 5868217063828572265,
+    "name": "name6",
+    "coordinates": {
+      "x": 511.0,
+      "y": 73
+    },
+    "creationDate": "2023-05-18T01:54:35.864471272",
+    "minimalPoint": 54.0,
+    "difficulty": "IMPOSSIBLE",
+    "author": {
+      "name": "Billy_Harrington",
+      "passportID": "aa48ec8d-4f84-467b-ae66-2a0135011e6b",
+      "eyeColor": "BLACK",
+      "location": {
+        "x": 5.0,
+        "y": 1.0,
+        "z": 3.0
+      }
+    }
+  }
+}
+Thu May 18 01:54:35 MSK 2023::Response: "New collection element was added successfully."
+Thu May 18 01:54:35 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:35 MSK 2023::Request: {
+  "command": "add",
+  "elem": {
+    "id": 657080455274252861,
+    "name": "name54",
+    "coordinates": {
+      "x": 27.0,
+      "y": 77
+    },
+    "creationDate": "2023-05-18T01:54:35.871364491",
+    "minimalPoint": 51.0,
+    "difficulty": "IMPOSSIBLE",
+    "author": {
+      "name": "Bogdan",
+      "passportID": "10f346dc-202a-4ae5-ac4d-93874f0b8a3c",
+      "eyeColor": "BROWN",
+      "location": {
+        "x": 5.0,
+        "y": 4.0,
+        "z": 1.0
+      }
+    }
+  }
+}
+Thu May 18 01:54:35 MSK 2023::Response: "New collection element was added successfully."
+Thu May 18 01:54:35 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:35 MSK 2023::Request: {
+  "command": "help"
+}
+Thu May 18 01:54:35 MSK 2023::Response: "help : вывести справку по доступным командам\ninfo : вывести в стандартный поток вывода информацию о коллекции (тип, дата инициализации, количество элементов и т.д.)\nshow : вывести в стандартный поток вывода все элементы коллекции в строковом представлении\nadd : добавить новый элемент в коллекцию\nupdate {id} : обновить значение элемента коллекции, id которого равен заданному\nremove_by_id {id} : удалить элемент из коллекции по его id\nclear : очистить коллекцию\nexecute_script {file_name} : считать и исполнить скрипт из указанного файла. В скрипте содержатся команды в таком же виде, в котором их вводит пользователь в интерактивном режиме.\nexit : завершить программу (без сохранения в файл)\nhead : вывести первый элемент коллекции\nremove_lower {id} : удалить из коллекции все элементы, меньшие, чем заданный\nhistory : вывести последние 12 команд (без их аргументов)\ncltmp {minimal_point}: вывести количество элементов, значение поля minimalPoint которых меньше заданного\nprint_unique_authors : вывести уникальные значения поля author всех элементов в коллекции\npfdmp : вывести значения поля minimalPoint всех элементов в порядке убывания"
+Thu May 18 01:54:35 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:35 MSK 2023::Request: {
+  "command": "help"
+}
+Thu May 18 01:54:35 MSK 2023::Response: "help : вывести справку по доступным командам\ninfo : вывести в стандартный поток вывода информацию о коллекции (тип, дата инициализации, количество элементов и т.д.)\nshow : вывести в стандартный поток вывода все элементы коллекции в строковом представлении\nadd : добавить новый элемент в коллекцию\nupdate {id} : обновить значение элемента коллекции, id которого равен заданному\nremove_by_id {id} : удалить элемент из коллекции по его id\nclear : очистить коллекцию\nexecute_script {file_name} : считать и исполнить скрипт из указанного файла. В скрипте содержатся команды в таком же виде, в котором их вводит пользователь в интерактивном режиме.\nexit : завершить программу (без сохранения в файл)\nhead : вывести первый элемент коллекции\nremove_lower {id} : удалить из коллекции все элементы, меньшие, чем заданный\nhistory : вывести последние 12 команд (без их аргументов)\ncltmp {minimal_point}: вывести количество элементов, значение поля minimalPoint которых меньше заданного\nprint_unique_authors : вывести уникальные значения поля author всех элементов в коллекции\npfdmp : вывести значения поля minimalPoint всех элементов в порядке убывания"
+Thu May 18 01:54:35 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:35 MSK 2023::Request: {
+  "command": "add",
+  "elem": {
+    "id": 7190144881001382905,
+    "name": "name2",
+    "coordinates": {
+      "x": 54.0,
+      "y": 77
+    },
+    "creationDate": "2023-05-18T01:54:35.89003942",
+    "minimalPoint": 54.0,
+    "difficulty": "VERY_EASY",
+    "author": {
+      "name": "Van_Darkholm",
+      "passportID": "f7a31ef4-c843-4fcb-8c39-ecdbb7926221",
+      "eyeColor": "GREEN",
+      "location": {
+        "x": 5.0,
+        "y": 4.0,
+        "z": 3.0
+      }
+    }
+  }
+}
+Thu May 18 01:54:35 MSK 2023::Response: "New collection element was added successfully."
+Thu May 18 01:54:35 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:35 MSK 2023::Request: {
+  "command": "add",
+  "elem": {
+    "id": 1342952171590271220,
+    "name": "name3",
+    "coordinates": {
+      "x": 54.0,
+      "y": 71
+    },
+    "creationDate": "2023-05-18T01:54:35.896663757",
+    "minimalPoint": 54.0,
+    "difficulty": "VERY_HARD",
+    "author": {
+      "name": "Van_Darkholmmmmmm",
+      "passportID": "81f0eb73-7a85-4226-9b4d-cb51ee91eb3c",
+      "eyeColor": "GREEN",
+      "location": {
+        "x": 5.0,
+        "y": 1.0,
+        "z": 3.0
+      }
+    }
+  }
+}
+Thu May 18 01:54:35 MSK 2023::Response: "New collection element was added successfully."
+Thu May 18 01:54:35 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:35 MSK 2023::Request: {
+  "command": "add",
+  "elem": {
+    "id": 5773619832938250887,
+    "name": "name6",
+    "coordinates": {
+      "x": 511.0,
+      "y": 73
+    },
+    "creationDate": "2023-05-18T01:54:35.904496188",
+    "minimalPoint": 54.0,
+    "difficulty": "IMPOSSIBLE",
+    "author": {
+      "name": "Billy_Harrington",
+      "passportID": "de6fc49b-26fe-4e7c-accc-2a2fde41c23a",
+      "eyeColor": "BLACK",
+      "location": {
+        "x": 5.0,
+        "y": 1.0,
+        "z": 3.0
+      }
+    }
+  }
+}
+Thu May 18 01:54:35 MSK 2023::Response: "New collection element was added successfully."
+Thu May 18 01:54:35 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:35 MSK 2023::Request: {
+  "command": "add",
+  "elem": {
+    "id": 382919976160610698,
+    "name": "name54",
+    "coordinates": {
+      "x": 27.0,
+      "y": 77
+    },
+    "creationDate": "2023-05-18T01:54:35.917838746",
+    "minimalPoint": 51.0,
+    "difficulty": "IMPOSSIBLE",
+    "author": {
+      "name": "Bogdan",
+      "passportID": "1867d1c8-d27b-4f6e-8a5e-23cb31258acb",
+      "eyeColor": "BROWN",
+      "location": {
+        "x": 5.0,
+        "y": 4.0,
+        "z": 1.0
+      }
+    }
+  }
+}
+Thu May 18 01:54:35 MSK 2023::Response: "New collection element was added successfully."
+Thu May 18 01:54:35 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:35 MSK 2023::Request: {
+  "command": "help"
+}
+Thu May 18 01:54:35 MSK 2023::Response: "help : вывести справку по доступным командам\ninfo : вывести в стандартный поток вывода информацию о коллекции (тип, дата инициализации, количество элементов и т.д.)\nshow : вывести в стандартный поток вывода все элементы коллекции в строковом представлении\nadd : добавить новый элемент в коллекцию\nupdate {id} : обновить значение элемента коллекции, id которого равен заданному\nremove_by_id {id} : удалить элемент из коллекции по его id\nclear : очистить коллекцию\nexecute_script {file_name} : считать и исполнить скрипт из указанного файла. В скрипте содержатся команды в таком же виде, в котором их вводит пользователь в интерактивном режиме.\nexit : завершить программу (без сохранения в файл)\nhead : вывести первый элемент коллекции\nremove_lower {id} : удалить из коллекции все элементы, меньшие, чем заданный\nhistory : вывести последние 12 команд (без их аргументов)\ncltmp {minimal_point}: вывести количество элементов, значение поля minimalPoint которых меньше заданного\nprint_unique_authors : вывести уникальные значения поля author всех элементов в коллекции\npfdmp : вывести значения поля minimalPoint всех элементов в порядке убывания"
+Thu May 18 01:54:35 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:35 MSK 2023::Request: {
+  "command": "help"
+}
+Thu May 18 01:54:35 MSK 2023::Response: "help : вывести справку по доступным командам\ninfo : вывести в стандартный поток вывода информацию о коллекции (тип, дата инициализации, количество элементов и т.д.)\nshow : вывести в стандартный поток вывода все элементы коллекции в строковом представлении\nadd : добавить новый элемент в коллекцию\nupdate {id} : обновить значение элемента коллекции, id которого равен заданному\nremove_by_id {id} : удалить элемент из коллекции по его id\nclear : очистить коллекцию\nexecute_script {file_name} : считать и исполнить скрипт из указанного файла. В скрипте содержатся команды в таком же виде, в котором их вводит пользователь в интерактивном режиме.\nexit : завершить программу (без сохранения в файл)\nhead : вывести первый элемент коллекции\nremove_lower {id} : удалить из коллекции все элементы, меньшие, чем заданный\nhistory : вывести последние 12 команд (без их аргументов)\ncltmp {minimal_point}: вывести количество элементов, значение поля minimalPoint которых меньше заданного\nprint_unique_authors : вывести уникальные значения поля author всех элементов в коллекции\npfdmp : вывести значения поля minimalPoint всех элементов в порядке убывания"
+Thu May 18 01:54:35 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:35 MSK 2023::Request: {
+  "command": "add",
+  "elem": {
+    "id": 9217458526269557511,
+    "name": "name2",
+    "coordinates": {
+      "x": 54.0,
+      "y": 77
+    },
+    "creationDate": "2023-05-18T01:54:35.934420944",
+    "minimalPoint": 54.0,
+    "difficulty": "VERY_EASY",
+    "author": {
+      "name": "Van_Darkholm",
+      "passportID": "a6d08f68-6ba2-4e9c-931e-4d14662a9656",
+      "eyeColor": "GREEN",
+      "location": {
+        "x": 5.0,
+        "y": 4.0,
+        "z": 3.0
+      }
+    }
+  }
+}
+Thu May 18 01:54:35 MSK 2023::Response: "New collection element was added successfully."
+Thu May 18 01:54:35 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:35 MSK 2023::Request: {
+  "command": "add",
+  "elem": {
+    "id": 8327217741322338994,
+    "name": "name3",
+    "coordinates": {
+      "x": 54.0,
+      "y": 71
+    },
+    "creationDate": "2023-05-18T01:54:35.941267251",
+    "minimalPoint": 54.0,
+    "difficulty": "VERY_HARD",
+    "author": {
+      "name": "Van_Darkholmmmmmm",
+      "passportID": "2f179298-6041-4f5f-bc38-9509df6085ec",
+      "eyeColor": "GREEN",
+      "location": {
+        "x": 5.0,
+        "y": 1.0,
+        "z": 3.0
+      }
+    }
+  }
+}
+Thu May 18 01:54:35 MSK 2023::Response: "New collection element was added successfully."
+Thu May 18 01:54:35 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:35 MSK 2023::Request: {
+  "command": "add",
+  "elem": {
+    "id": 2919870556084325991,
+    "name": "name6",
+    "coordinates": {
+      "x": 511.0,
+      "y": 73
+    },
+    "creationDate": "2023-05-18T01:54:35.951343099",
+    "minimalPoint": 54.0,
+    "difficulty": "IMPOSSIBLE",
+    "author": {
+      "name": "Billy_Harrington",
+      "passportID": "268962cd-2969-4aa0-8809-01b4dff14b05",
+      "eyeColor": "BLACK",
+      "location": {
+        "x": 5.0,
+        "y": 1.0,
+        "z": 3.0
+      }
+    }
+  }
+}
+Thu May 18 01:54:35 MSK 2023::Response: "New collection element was added successfully."
+Thu May 18 01:54:35 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:35 MSK 2023::Request: {
+  "command": "add",
+  "elem": {
+    "id": 6419501779260294422,
+    "name": "name54",
+    "coordinates": {
+      "x": 27.0,
+      "y": 77
+    },
+    "creationDate": "2023-05-18T01:54:35.96146072",
+    "minimalPoint": 51.0,
+    "difficulty": "IMPOSSIBLE",
+    "author": {
+      "name": "Bogdan",
+      "passportID": "d4096e94-c8d2-407d-8b32-15174e53a5cd",
+      "eyeColor": "BROWN",
+      "location": {
+        "x": 5.0,
+        "y": 4.0,
+        "z": 1.0
+      }
+    }
+  }
+}
+Thu May 18 01:54:35 MSK 2023::Response: "New collection element was added successfully."
+Thu May 18 01:54:35 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:35 MSK 2023::Request: {
+  "command": "help"
+}
+Thu May 18 01:54:35 MSK 2023::Response: "help : вывести справку по доступным командам\ninfo : вывести в стандартный поток вывода информацию о коллекции (тип, дата инициализации, количество элементов и т.д.)\nshow : вывести в стандартный поток вывода все элементы коллекции в строковом представлении\nadd : добавить новый элемент в коллекцию\nupdate {id} : обновить значение элемента коллекции, id которого равен заданному\nremove_by_id {id} : удалить элемент из коллекции по его id\nclear : очистить коллекцию\nexecute_script {file_name} : считать и исполнить скрипт из указанного файла. В скрипте содержатся команды в таком же виде, в котором их вводит пользователь в интерактивном режиме.\nexit : завершить программу (без сохранения в файл)\nhead : вывести первый элемент коллекции\nremove_lower {id} : удалить из коллекции все элементы, меньшие, чем заданный\nhistory : вывести последние 12 команд (без их аргументов)\ncltmp {minimal_point}: вывести количество элементов, значение поля minimalPoint которых меньше заданного\nprint_unique_authors : вывести уникальные значения поля author всех элементов в коллекции\npfdmp : вывести значения поля minimalPoint всех элементов в порядке убывания"
+Thu May 18 01:54:35 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:35 MSK 2023::Request: {
+  "command": "help"
+}
+Thu May 18 01:54:35 MSK 2023::Response: "help : вывести справку по доступным командам\ninfo : вывести в стандартный поток вывода информацию о коллекции (тип, дата инициализации, количество элементов и т.д.)\nshow : вывести в стандартный поток вывода все элементы коллекции в строковом представлении\nadd : добавить новый элемент в коллекцию\nupdate {id} : обновить значение элемента коллекции, id которого равен заданному\nremove_by_id {id} : удалить элемент из коллекции по его id\nclear : очистить коллекцию\nexecute_script {file_name} : считать и исполнить скрипт из указанного файла. В скрипте содержатся команды в таком же виде, в котором их вводит пользователь в интерактивном режиме.\nexit : завершить программу (без сохранения в файл)\nhead : вывести первый элемент коллекции\nremove_lower {id} : удалить из коллекции все элементы, меньшие, чем заданный\nhistory : вывести последние 12 команд (без их аргументов)\ncltmp {minimal_point}: вывести количество элементов, значение поля minimalPoint которых меньше заданного\nprint_unique_authors : вывести уникальные значения поля author всех элементов в коллекции\npfdmp : вывести значения поля minimalPoint всех элементов в порядке убывания"
+Thu May 18 01:54:35 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:35 MSK 2023::Request: {
+  "command": "add",
+  "elem": {
+    "id": 4184728163021897866,
+    "name": "name2",
+    "coordinates": {
+      "x": 54.0,
+      "y": 77
+    },
+    "creationDate": "2023-05-18T01:54:35.984298283",
+    "minimalPoint": 54.0,
+    "difficulty": "VERY_EASY",
+    "author": {
+      "name": "Van_Darkholm",
+      "passportID": "51f5f5b6-0378-4533-8101-1581b434cf84",
+      "eyeColor": "GREEN",
+      "location": {
+        "x": 5.0,
+        "y": 4.0,
+        "z": 3.0
+      }
+    }
+  }
+}
+Thu May 18 01:54:35 MSK 2023::Response: "New collection element was added successfully."
+Thu May 18 01:54:35 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:36 MSK 2023::Request: {
+  "command": "add",
+  "elem": {
+    "id": 8429972794940277776,
+    "name": "name3",
+    "coordinates": {
+      "x": 54.0,
+      "y": 71
+    },
+    "creationDate": "2023-05-18T01:54:35.992455266",
+    "minimalPoint": 54.0,
+    "difficulty": "VERY_HARD",
+    "author": {
+      "name": "Van_Darkholmmmmmm",
+      "passportID": "ac84004e-c1fe-45dc-8459-2f6dd1d1cf9e",
+      "eyeColor": "GREEN",
+      "location": {
+        "x": 5.0,
+        "y": 1.0,
+        "z": 3.0
+      }
+    }
+  }
+}
+Thu May 18 01:54:36 MSK 2023::Response: "New collection element was added successfully."
+Thu May 18 01:54:36 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:36 MSK 2023::Request: {
+  "command": "add",
+  "elem": {
+    "id": 2823937652957530384,
+    "name": "name6",
+    "coordinates": {
+      "x": 511.0,
+      "y": 73
+    },
+    "creationDate": "2023-05-18T01:54:36.005215104",
+    "minimalPoint": 54.0,
+    "difficulty": "IMPOSSIBLE",
+    "author": {
+      "name": "Billy_Harrington",
+      "passportID": "48d26ee6-638c-49ab-9273-e16ab769dc4d",
+      "eyeColor": "BLACK",
+      "location": {
+        "x": 5.0,
+        "y": 1.0,
+        "z": 3.0
+      }
+    }
+  }
+}
+Thu May 18 01:54:36 MSK 2023::Response: "New collection element was added successfully."
+Thu May 18 01:54:36 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:36 MSK 2023::Request: {
+  "command": "add",
+  "elem": {
+    "id": 4479700798965368466,
+    "name": "name54",
+    "coordinates": {
+      "x": 27.0,
+      "y": 77
+    },
+    "creationDate": "2023-05-18T01:54:36.012460297",
+    "minimalPoint": 51.0,
+    "difficulty": "IMPOSSIBLE",
+    "author": {
+      "name": "Bogdan",
+      "passportID": "a94652b5-43a0-461f-9485-52f6af2665a3",
+      "eyeColor": "BROWN",
+      "location": {
+        "x": 5.0,
+        "y": 4.0,
+        "z": 1.0
+      }
+    }
+  }
+}
+Thu May 18 01:54:36 MSK 2023::Response: "New collection element was added successfully."
+Thu May 18 01:54:36 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:36 MSK 2023::Request: {
+  "command": "help"
+}
+Thu May 18 01:54:36 MSK 2023::Response: "help : вывести справку по доступным командам\ninfo : вывести в стандартный поток вывода информацию о коллекции (тип, дата инициализации, количество элементов и т.д.)\nshow : вывести в стандартный поток вывода все элементы коллекции в строковом представлении\nadd : добавить новый элемент в коллекцию\nupdate {id} : обновить значение элемента коллекции, id которого равен заданному\nremove_by_id {id} : удалить элемент из коллекции по его id\nclear : очистить коллекцию\nexecute_script {file_name} : считать и исполнить скрипт из указанного файла. В скрипте содержатся команды в таком же виде, в котором их вводит пользователь в интерактивном режиме.\nexit : завершить программу (без сохранения в файл)\nhead : вывести первый элемент коллекции\nremove_lower {id} : удалить из коллекции все элементы, меньшие, чем заданный\nhistory : вывести последние 12 команд (без их аргументов)\ncltmp {minimal_point}: вывести количество элементов, значение поля minimalPoint которых меньше заданного\nprint_unique_authors : вывести уникальные значения поля author всех элементов в коллекции\npfdmp : вывести значения поля minimalPoint всех элементов в порядке убывания"
+Thu May 18 01:54:36 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:36 MSK 2023::Request: {
+  "command": "help"
+}
+Thu May 18 01:54:36 MSK 2023::Response: "help : вывести справку по доступным командам\ninfo : вывести в стандартный поток вывода информацию о коллекции (тип, дата инициализации, количество элементов и т.д.)\nshow : вывести в стандартный поток вывода все элементы коллекции в строковом представлении\nadd : добавить новый элемент в коллекцию\nupdate {id} : обновить значение элемента коллекции, id которого равен заданному\nremove_by_id {id} : удалить элемент из коллекции по его id\nclear : очистить коллекцию\nexecute_script {file_name} : считать и исполнить скрипт из указанного файла. В скрипте содержатся команды в таком же виде, в котором их вводит пользователь в интерактивном режиме.\nexit : завершить программу (без сохранения в файл)\nhead : вывести первый элемент коллекции\nremove_lower {id} : удалить из коллекции все элементы, меньшие, чем заданный\nhistory : вывести последние 12 команд (без их аргументов)\ncltmp {minimal_point}: вывести количество элементов, значение поля minimalPoint которых меньше заданного\nprint_unique_authors : вывести уникальные значения поля author всех элементов в коллекции\npfdmp : вывести значения поля minimalPoint всех элементов в порядке убывания"
+Thu May 18 01:54:36 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:36 MSK 2023::Request: {
+  "command": "add",
+  "elem": {
+    "id": 8777012301343966936,
+    "name": "name2",
+    "coordinates": {
+      "x": 54.0,
+      "y": 77
+    },
+    "creationDate": "2023-05-18T01:54:36.031140405",
+    "minimalPoint": 54.0,
+    "difficulty": "VERY_EASY",
+    "author": {
+      "name": "Van_Darkholm",
+      "passportID": "533514cb-554c-44b2-8619-eb8e64ee95c1",
+      "eyeColor": "GREEN",
+      "location": {
+        "x": 5.0,
+        "y": 4.0,
+        "z": 3.0
+      }
+    }
+  }
+}
+Thu May 18 01:54:36 MSK 2023::Response: "New collection element was added successfully."
+Thu May 18 01:54:36 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:36 MSK 2023::Request: {
+  "command": "add",
+  "elem": {
+    "id": 4764582443962483143,
+    "name": "name3",
+    "coordinates": {
+      "x": 54.0,
+      "y": 71
+    },
+    "creationDate": "2023-05-18T01:54:36.038645817",
+    "minimalPoint": 54.0,
+    "difficulty": "VERY_HARD",
+    "author": {
+      "name": "Van_Darkholmmmmmm",
+      "passportID": "2778e800-80a1-4b8a-b167-f85273a73016",
+      "eyeColor": "GREEN",
+      "location": {
+        "x": 5.0,
+        "y": 1.0,
+        "z": 3.0
+      }
+    }
+  }
+}
+Thu May 18 01:54:36 MSK 2023::Response: "New collection element was added successfully."
+Thu May 18 01:54:36 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:36 MSK 2023::Request: {
+  "command": "add",
+  "elem": {
+    "id": 1739165128199652302,
+    "name": "name6",
+    "coordinates": {
+      "x": 511.0,
+      "y": 73
+    },
+    "creationDate": "2023-05-18T01:54:36.045020662",
+    "minimalPoint": 54.0,
+    "difficulty": "IMPOSSIBLE",
+    "author": {
+      "name": "Billy_Harrington",
+      "passportID": "e12b04d3-e1ce-4f3b-a089-2dc314706eee",
+      "eyeColor": "BLACK",
+      "location": {
+        "x": 5.0,
+        "y": 1.0,
+        "z": 3.0
+      }
+    }
+  }
+}
+Thu May 18 01:54:36 MSK 2023::Response: "New collection element was added successfully."
+Thu May 18 01:54:36 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:36 MSK 2023::Request: {
+  "command": "add",
+  "elem": {
+    "id": 3880022176040111624,
+    "name": "name54",
+    "coordinates": {
+      "x": 27.0,
+      "y": 77
+    },
+    "creationDate": "2023-05-18T01:54:36.050274073",
+    "minimalPoint": 51.0,
+    "difficulty": "IMPOSSIBLE",
+    "author": {
+      "name": "Bogdan",
+      "passportID": "25aad78f-3076-4d2a-a5bc-2559cb46cb3b",
+      "eyeColor": "BROWN",
+      "location": {
+        "x": 5.0,
+        "y": 4.0,
+        "z": 1.0
+      }
+    }
+  }
+}
+Thu May 18 01:54:36 MSK 2023::Response: "New collection element was added successfully."
+Thu May 18 01:54:36 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:36 MSK 2023::Request: {
+  "command": "help"
+}
+Thu May 18 01:54:36 MSK 2023::Response: "help : вывести справку по доступным командам\ninfo : вывести в стандартный поток вывода информацию о коллекции (тип, дата инициализации, количество элементов и т.д.)\nshow : вывести в стандартный поток вывода все элементы коллекции в строковом представлении\nadd : добавить новый элемент в коллекцию\nupdate {id} : обновить значение элемента коллекции, id которого равен заданному\nremove_by_id {id} : удалить элемент из коллекции по его id\nclear : очистить коллекцию\nexecute_script {file_name} : считать и исполнить скрипт из указанного файла. В скрипте содержатся команды в таком же виде, в котором их вводит пользователь в интерактивном режиме.\nexit : завершить программу (без сохранения в файл)\nhead : вывести первый элемент коллекции\nremove_lower {id} : удалить из коллекции все элементы, меньшие, чем заданный\nhistory : вывести последние 12 команд (без их аргументов)\ncltmp {minimal_point}: вывести количество элементов, значение поля minimalPoint которых меньше заданного\nprint_unique_authors : вывести уникальные значения поля author всех элементов в коллекции\npfdmp : вывести значения поля minimalPoint всех элементов в порядке убывания"
+Thu May 18 01:54:36 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:36 MSK 2023::Request: {
+  "command": "help"
+}
+Thu May 18 01:54:36 MSK 2023::Response: "help : вывести справку по доступным командам\ninfo : вывести в стандартный поток вывода информацию о коллекции (тип, дата инициализации, количество элементов и т.д.)\nshow : вывести в стандартный поток вывода все элементы коллекции в строковом представлении\nadd : добавить новый элемент в коллекцию\nupdate {id} : обновить значение элемента коллекции, id которого равен заданному\nremove_by_id {id} : удалить элемент из коллекции по его id\nclear : очистить коллекцию\nexecute_script {file_name} : считать и исполнить скрипт из указанного файла. В скрипте содержатся команды в таком же виде, в котором их вводит пользователь в интерактивном режиме.\nexit : завершить программу (без сохранения в файл)\nhead : вывести первый элемент коллекции\nremove_lower {id} : удалить из коллекции все элементы, меньшие, чем заданный\nhistory : вывести последние 12 команд (без их аргументов)\ncltmp {minimal_point}: вывести количество элементов, значение поля minimalPoint которых меньше заданного\nprint_unique_authors : вывести уникальные значения поля author всех элементов в коллекции\npfdmp : вывести значения поля minimalPoint всех элементов в порядке убывания"
+Thu May 18 01:54:36 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:36 MSK 2023::Request: {
+  "command": "add",
+  "elem": {
+    "id": 7003960307860915209,
+    "name": "name2",
+    "coordinates": {
+      "x": 54.0,
+      "y": 77
+    },
+    "creationDate": "2023-05-18T01:54:36.069406214",
+    "minimalPoint": 54.0,
+    "difficulty": "VERY_EASY",
+    "author": {
+      "name": "Van_Darkholm",
+      "passportID": "bc1c84b1-31da-4874-91a7-3e087bf19747",
+      "eyeColor": "GREEN",
+      "location": {
+        "x": 5.0,
+        "y": 4.0,
+        "z": 3.0
+      }
+    }
+  }
+}
+Thu May 18 01:54:36 MSK 2023::Response: "New collection element was added successfully."
+Thu May 18 01:54:36 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:36 MSK 2023::Request: {
+  "command": "add",
+  "elem": {
+    "id": 8680231532749474095,
+    "name": "name3",
+    "coordinates": {
+      "x": 54.0,
+      "y": 71
+    },
+    "creationDate": "2023-05-18T01:54:36.074044285",
+    "minimalPoint": 54.0,
+    "difficulty": "VERY_HARD",
+    "author": {
+      "name": "Van_Darkholmmmmmm",
+      "passportID": "d9c9cc5e-d64d-400e-8633-6f6996b70f90",
+      "eyeColor": "GREEN",
+      "location": {
+        "x": 5.0,
+        "y": 1.0,
+        "z": 3.0
+      }
+    }
+  }
+}
+Thu May 18 01:54:36 MSK 2023::Response: "New collection element was added successfully."
+Thu May 18 01:54:36 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:36 MSK 2023::Request: {
+  "command": "add",
+  "elem": {
+    "id": 6090864722385584951,
+    "name": "name6",
+    "coordinates": {
+      "x": 511.0,
+      "y": 73
+    },
+    "creationDate": "2023-05-18T01:54:36.07835004",
+    "minimalPoint": 54.0,
+    "difficulty": "IMPOSSIBLE",
+    "author": {
+      "name": "Billy_Harrington",
+      "passportID": "17348b4d-adb5-4f6f-bffc-3946bba1f5e9",
+      "eyeColor": "BLACK",
+      "location": {
+        "x": 5.0,
+        "y": 1.0,
+        "z": 3.0
+      }
+    }
+  }
+}
+Thu May 18 01:54:36 MSK 2023::Response: "New collection element was added successfully."
+Thu May 18 01:54:36 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:36 MSK 2023::Request: {
+  "command": "add",
+  "elem": {
+    "id": 3404428978345952099,
+    "name": "name54",
+    "coordinates": {
+      "x": 27.0,
+      "y": 77
+    },
+    "creationDate": "2023-05-18T01:54:36.083603749",
+    "minimalPoint": 51.0,
+    "difficulty": "IMPOSSIBLE",
+    "author": {
+      "name": "Bogdan",
+      "passportID": "20323b4b-d18c-48c2-a5ee-1619a1ffcaa9",
+      "eyeColor": "BROWN",
+      "location": {
+        "x": 5.0,
+        "y": 4.0,
+        "z": 1.0
+      }
+    }
+  }
+}
+Thu May 18 01:54:36 MSK 2023::Response: "New collection element was added successfully."
+Thu May 18 01:54:36 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:36 MSK 2023::Request: {
+  "command": "help"
+}
+Thu May 18 01:54:36 MSK 2023::Response: "help : вывести справку по доступным командам\ninfo : вывести в стандартный поток вывода информацию о коллекции (тип, дата инициализации, количество элементов и т.д.)\nshow : вывести в стандартный поток вывода все элементы коллекции в строковом представлении\nadd : добавить новый элемент в коллекцию\nupdate {id} : обновить значение элемента коллекции, id которого равен заданному\nremove_by_id {id} : удалить элемент из коллекции по его id\nclear : очистить коллекцию\nexecute_script {file_name} : считать и исполнить скрипт из указанного файла. В скрипте содержатся команды в таком же виде, в котором их вводит пользователь в интерактивном режиме.\nexit : завершить программу (без сохранения в файл)\nhead : вывести первый элемент коллекции\nremove_lower {id} : удалить из коллекции все элементы, меньшие, чем заданный\nhistory : вывести последние 12 команд (без их аргументов)\ncltmp {minimal_point}: вывести количество элементов, значение поля minimalPoint которых меньше заданного\nprint_unique_authors : вывести уникальные значения поля author всех элементов в коллекции\npfdmp : вывести значения поля minimalPoint всех элементов в порядке убывания"
+Thu May 18 01:54:36 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:36 MSK 2023::Request: {
+  "command": "help"
+}
+Thu May 18 01:54:36 MSK 2023::Response: "help : вывести справку по доступным командам\ninfo : вывести в стандартный поток вывода информацию о коллекции (тип, дата инициализации, количество элементов и т.д.)\nshow : вывести в стандартный поток вывода все элементы коллекции в строковом представлении\nadd : добавить новый элемент в коллекцию\nupdate {id} : обновить значение элемента коллекции, id которого равен заданному\nremove_by_id {id} : удалить элемент из коллекции по его id\nclear : очистить коллекцию\nexecute_script {file_name} : считать и исполнить скрипт из указанного файла. В скрипте содержатся команды в таком же виде, в котором их вводит пользователь в интерактивном режиме.\nexit : завершить программу (без сохранения в файл)\nhead : вывести первый элемент коллекции\nremove_lower {id} : удалить из коллекции все элементы, меньшие, чем заданный\nhistory : вывести последние 12 команд (без их аргументов)\ncltmp {minimal_point}: вывести количество элементов, значение поля minimalPoint которых меньше заданного\nprint_unique_authors : вывести уникальные значения поля author всех элементов в коллекции\npfdmp : вывести значения поля minimalPoint всех элементов в порядке убывания"
+Thu May 18 01:54:36 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:36 MSK 2023::Request: {
+  "command": "add",
+  "elem": {
+    "id": 3949843643526563972,
+    "name": "name2",
+    "coordinates": {
+      "x": 54.0,
+      "y": 77
+    },
+    "creationDate": "2023-05-18T01:54:36.098627564",
+    "minimalPoint": 54.0,
+    "difficulty": "VERY_EASY",
+    "author": {
+      "name": "Van_Darkholm",
+      "passportID": "d7512d62-e48f-42a8-8955-c277cada24c1",
+      "eyeColor": "GREEN",
+      "location": {
+        "x": 5.0,
+        "y": 4.0,
+        "z": 3.0
+      }
+    }
+  }
+}
+Thu May 18 01:54:36 MSK 2023::Response: "New collection element was added successfully."
+Thu May 18 01:54:36 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:36 MSK 2023::Request: {
+  "command": "add",
+  "elem": {
+    "id": 1511422313144012000,
+    "name": "name3",
+    "coordinates": {
+      "x": 54.0,
+      "y": 71
+    },
+    "creationDate": "2023-05-18T01:54:36.104021448",
+    "minimalPoint": 54.0,
+    "difficulty": "VERY_HARD",
+    "author": {
+      "name": "Van_Darkholmmmmmm",
+      "passportID": "b015f0d4-6b3e-44fa-aa66-a4863c6589cf",
+      "eyeColor": "GREEN",
+      "location": {
+        "x": 5.0,
+        "y": 1.0,
+        "z": 3.0
+      }
+    }
+  }
+}
+Thu May 18 01:54:36 MSK 2023::Response: "New collection element was added successfully."
+Thu May 18 01:54:36 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:36 MSK 2023::Request: {
+  "command": "add",
+  "elem": {
+    "id": 4674537310862200519,
+    "name": "name6",
+    "coordinates": {
+      "x": 511.0,
+      "y": 73
+    },
+    "creationDate": "2023-05-18T01:54:36.109931226",
+    "minimalPoint": 54.0,
+    "difficulty": "IMPOSSIBLE",
+    "author": {
+      "name": "Billy_Harrington",
+      "passportID": "d27541f4-9677-4bd2-8866-7dcd78094755",
+      "eyeColor": "BLACK",
+      "location": {
+        "x": 5.0,
+        "y": 1.0,
+        "z": 3.0
+      }
+    }
+  }
+}
+Thu May 18 01:54:36 MSK 2023::Response: "New collection element was added successfully."
+Thu May 18 01:54:36 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:36 MSK 2023::Request: {
+  "command": "add",
+  "elem": {
+    "id": 3203595586769928473,
+    "name": "name54",
+    "coordinates": {
+      "x": 27.0,
+      "y": 77
+    },
+    "creationDate": "2023-05-18T01:54:36.115436003",
+    "minimalPoint": 51.0,
+    "difficulty": "IMPOSSIBLE",
+    "author": {
+      "name": "Bogdan",
+      "passportID": "a4156969-5316-4a04-b0b1-f29e78750733",
+      "eyeColor": "BROWN",
+      "location": {
+        "x": 5.0,
+        "y": 4.0,
+        "z": 1.0
+      }
+    }
+  }
+}
+Thu May 18 01:54:36 MSK 2023::Response: "New collection element was added successfully."
+Thu May 18 01:54:36 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:36 MSK 2023::Request: {
+  "command": "help"
+}
+Thu May 18 01:54:36 MSK 2023::Response: "help : вывести справку по доступным командам\ninfo : вывести в стандартный поток вывода информацию о коллекции (тип, дата инициализации, количество элементов и т.д.)\nshow : вывести в стандартный поток вывода все элементы коллекции в строковом представлении\nadd : добавить новый элемент в коллекцию\nupdate {id} : обновить значение элемента коллекции, id которого равен заданному\nremove_by_id {id} : удалить элемент из коллекции по его id\nclear : очистить коллекцию\nexecute_script {file_name} : считать и исполнить скрипт из указанного файла. В скрипте содержатся команды в таком же виде, в котором их вводит пользователь в интерактивном режиме.\nexit : завершить программу (без сохранения в файл)\nhead : вывести первый элемент коллекции\nremove_lower {id} : удалить из коллекции все элементы, меньшие, чем заданный\nhistory : вывести последние 12 команд (без их аргументов)\ncltmp {minimal_point}: вывести количество элементов, значение поля minimalPoint которых меньше заданного\nprint_unique_authors : вывести уникальные значения поля author всех элементов в коллекции\npfdmp : вывести значения поля minimalPoint всех элементов в порядке убывания"
+Thu May 18 01:54:36 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:36 MSK 2023::Request: {
+  "command": "help"
+}
+Thu May 18 01:54:36 MSK 2023::Response: "help : вывести справку по доступным командам\ninfo : вывести в стандартный поток вывода информацию о коллекции (тип, дата инициализации, количество элементов и т.д.)\nshow : вывести в стандартный поток вывода все элементы коллекции в строковом представлении\nadd : добавить новый элемент в коллекцию\nupdate {id} : обновить значение элемента коллекции, id которого равен заданному\nremove_by_id {id} : удалить элемент из коллекции по его id\nclear : очистить коллекцию\nexecute_script {file_name} : считать и исполнить скрипт из указанного файла. В скрипте содержатся команды в таком же виде, в котором их вводит пользователь в интерактивном режиме.\nexit : завершить программу (без сохранения в файл)\nhead : вывести первый элемент коллекции\nremove_lower {id} : удалить из коллекции все элементы, меньшие, чем заданный\nhistory : вывести последние 12 команд (без их аргументов)\ncltmp {minimal_point}: вывести количество элементов, значение поля minimalPoint которых меньше заданного\nprint_unique_authors : вывести уникальные значения поля author всех элементов в коллекции\npfdmp : вывести значения поля minimalPoint всех элементов в порядке убывания"
+Thu May 18 01:54:36 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:36 MSK 2023::Request: {
+  "command": "add",
+  "elem": {
+    "id": 2949340572497891188,
+    "name": "name2",
+    "coordinates": {
+      "x": 54.0,
+      "y": 77
+    },
+    "creationDate": "2023-05-18T01:54:36.129401493",
+    "minimalPoint": 54.0,
+    "difficulty": "VERY_EASY",
+    "author": {
+      "name": "Van_Darkholm",
+      "passportID": "98688925-7a82-47ba-b3e5-b501624f056c",
+      "eyeColor": "GREEN",
+      "location": {
+        "x": 5.0,
+        "y": 4.0,
+        "z": 3.0
+      }
+    }
+  }
+}
+Thu May 18 01:54:36 MSK 2023::Response: "New collection element was added successfully."
+Thu May 18 01:54:36 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:36 MSK 2023::Request: {
+  "command": "add",
+  "elem": {
+    "id": 275592068497493679,
+    "name": "name3",
+    "coordinates": {
+      "x": 54.0,
+      "y": 71
+    },
+    "creationDate": "2023-05-18T01:54:36.133594092",
+    "minimalPoint": 54.0,
+    "difficulty": "VERY_HARD",
+    "author": {
+      "name": "Van_Darkholmmmmmm",
+      "passportID": "384cdaa0-ffb9-40b7-8290-b0556462cece",
+      "eyeColor": "GREEN",
+      "location": {
+        "x": 5.0,
+        "y": 1.0,
+        "z": 3.0
+      }
+    }
+  }
+}
+Thu May 18 01:54:36 MSK 2023::Response: "New collection element was added successfully."
+Thu May 18 01:54:36 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:36 MSK 2023::Request: {
+  "command": "add",
+  "elem": {
+    "id": 2619443485599944064,
+    "name": "name6",
+    "coordinates": {
+      "x": 511.0,
+      "y": 73
+    },
+    "creationDate": "2023-05-18T01:54:36.13805411",
+    "minimalPoint": 54.0,
+    "difficulty": "IMPOSSIBLE",
+    "author": {
+      "name": "Billy_Harrington",
+      "passportID": "a6a05f87-1cb7-4ef8-b900-6994179255da",
+      "eyeColor": "BLACK",
+      "location": {
+        "x": 5.0,
+        "y": 1.0,
+        "z": 3.0
+      }
+    }
+  }
+}
+Thu May 18 01:54:36 MSK 2023::Response: "New collection element was added successfully."
+Thu May 18 01:54:36 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:36 MSK 2023::Request: {
+  "command": "add",
+  "elem": {
+    "id": 6998121697085047521,
+    "name": "name54",
+    "coordinates": {
+      "x": 27.0,
+      "y": 77
+    },
+    "creationDate": "2023-05-18T01:54:36.14298632",
+    "minimalPoint": 51.0,
+    "difficulty": "IMPOSSIBLE",
+    "author": {
+      "name": "Bogdan",
+      "passportID": "338547dd-d4ae-4e9f-9d8f-907074cdab72",
+      "eyeColor": "BROWN",
+      "location": {
+        "x": 5.0,
+        "y": 4.0,
+        "z": 1.0
+      }
+    }
+  }
+}
+Thu May 18 01:54:36 MSK 2023::Response: "New collection element was added successfully."
+Thu May 18 01:54:36 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:36 MSK 2023::Request: {
+  "command": "help"
+}
+Thu May 18 01:54:36 MSK 2023::Response: "help : вывести справку по доступным командам\ninfo : вывести в стандартный поток вывода информацию о коллекции (тип, дата инициализации, количество элементов и т.д.)\nshow : вывести в стандартный поток вывода все элементы коллекции в строковом представлении\nadd : добавить новый элемент в коллекцию\nupdate {id} : обновить значение элемента коллекции, id которого равен заданному\nremove_by_id {id} : удалить элемент из коллекции по его id\nclear : очистить коллекцию\nexecute_script {file_name} : считать и исполнить скрипт из указанного файла. В скрипте содержатся команды в таком же виде, в котором их вводит пользователь в интерактивном режиме.\nexit : завершить программу (без сохранения в файл)\nhead : вывести первый элемент коллекции\nremove_lower {id} : удалить из коллекции все элементы, меньшие, чем заданный\nhistory : вывести последние 12 команд (без их аргументов)\ncltmp {minimal_point}: вывести количество элементов, значение поля minimalPoint которых меньше заданного\nprint_unique_authors : вывести уникальные значения поля author всех элементов в коллекции\npfdmp : вывести значения поля minimalPoint всех элементов в порядке убывания"
+Thu May 18 01:54:36 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:36 MSK 2023::Request: {
+  "command": "help"
+}
+Thu May 18 01:54:36 MSK 2023::Response: "help : вывести справку по доступным командам\ninfo : вывести в стандартный поток вывода информацию о коллекции (тип, дата инициализации, количество элементов и т.д.)\nshow : вывести в стандартный поток вывода все элементы коллекции в строковом представлении\nadd : добавить новый элемент в коллекцию\nupdate {id} : обновить значение элемента коллекции, id которого равен заданному\nremove_by_id {id} : удалить элемент из коллекции по его id\nclear : очистить коллекцию\nexecute_script {file_name} : считать и исполнить скрипт из указанного файла. В скрипте содержатся команды в таком же виде, в котором их вводит пользователь в интерактивном режиме.\nexit : завершить программу (без сохранения в файл)\nhead : вывести первый элемент коллекции\nremove_lower {id} : удалить из коллекции все элементы, меньшие, чем заданный\nhistory : вывести последние 12 команд (без их аргументов)\ncltmp {minimal_point}: вывести количество элементов, значение поля minimalPoint которых меньше заданного\nprint_unique_authors : вывести уникальные значения поля author всех элементов в коллекции\npfdmp : вывести значения поля minimalPoint всех элементов в порядке убывания"
+Thu May 18 01:54:36 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:36 MSK 2023::Request: {
+  "command": "add",
+  "elem": {
+    "id": 1296177340185398421,
+    "name": "name2",
+    "coordinates": {
+      "x": 54.0,
+      "y": 77
+    },
+    "creationDate": "2023-05-18T01:54:36.154754809",
+    "minimalPoint": 54.0,
+    "difficulty": "VERY_EASY",
+    "author": {
+      "name": "Van_Darkholm",
+      "passportID": "5c063b1a-b506-439e-880c-d8bbf3dc9db0",
+      "eyeColor": "GREEN",
+      "location": {
+        "x": 5.0,
+        "y": 4.0,
+        "z": 3.0
+      }
+    }
+  }
+}
+Thu May 18 01:54:36 MSK 2023::Response: "New collection element was added successfully."
+Thu May 18 01:54:36 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:36 MSK 2023::Request: {
+  "command": "add",
+  "elem": {
+    "id": 7881497220267395708,
+    "name": "name3",
+    "coordinates": {
+      "x": 54.0,
+      "y": 71
+    },
+    "creationDate": "2023-05-18T01:54:36.15951605",
+    "minimalPoint": 54.0,
+    "difficulty": "VERY_HARD",
+    "author": {
+      "name": "Van_Darkholmmmmmm",
+      "passportID": "763c863a-491b-4d19-a850-7e98a6c4cd83",
+      "eyeColor": "GREEN",
+      "location": {
+        "x": 5.0,
+        "y": 1.0,
+        "z": 3.0
+      }
+    }
+  }
+}
+Thu May 18 01:54:36 MSK 2023::Response: "New collection element was added successfully."
+Thu May 18 01:54:36 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:36 MSK 2023::Request: {
+  "command": "add",
+  "elem": {
+    "id": 7561392308028786483,
+    "name": "name6",
+    "coordinates": {
+      "x": 511.0,
+      "y": 73
+    },
+    "creationDate": "2023-05-18T01:54:36.163669944",
+    "minimalPoint": 54.0,
+    "difficulty": "IMPOSSIBLE",
+    "author": {
+      "name": "Billy_Harrington",
+      "passportID": "344d70db-eb37-4f24-8c61-0f06480ebe44",
+      "eyeColor": "BLACK",
+      "location": {
+        "x": 5.0,
+        "y": 1.0,
+        "z": 3.0
+      }
+    }
+  }
+}
+Thu May 18 01:54:36 MSK 2023::Response: "New collection element was added successfully."
+Thu May 18 01:54:36 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:36 MSK 2023::Request: {
+  "command": "add",
+  "elem": {
+    "id": 895623031186802555,
+    "name": "name54",
+    "coordinates": {
+      "x": 27.0,
+      "y": 77
+    },
+    "creationDate": "2023-05-18T01:54:36.167138842",
+    "minimalPoint": 51.0,
+    "difficulty": "IMPOSSIBLE",
+    "author": {
+      "name": "Bogdan",
+      "passportID": "e5961183-2528-4986-9387-1fc9273a762a",
+      "eyeColor": "BROWN",
+      "location": {
+        "x": 5.0,
+        "y": 4.0,
+        "z": 1.0
+      }
+    }
+  }
+}
+Thu May 18 01:54:36 MSK 2023::Response: "New collection element was added successfully."
+Thu May 18 01:54:36 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:36 MSK 2023::Request: {
+  "command": "help"
+}
+Thu May 18 01:54:36 MSK 2023::Response: "help : вывести справку по доступным командам\ninfo : вывести в стандартный поток вывода информацию о коллекции (тип, дата инициализации, количество элементов и т.д.)\nshow : вывести в стандартный поток вывода все элементы коллекции в строковом представлении\nadd : добавить новый элемент в коллекцию\nupdate {id} : обновить значение элемента коллекции, id которого равен заданному\nremove_by_id {id} : удалить элемент из коллекции по его id\nclear : очистить коллекцию\nexecute_script {file_name} : считать и исполнить скрипт из указанного файла. В скрипте содержатся команды в таком же виде, в котором их вводит пользователь в интерактивном режиме.\nexit : завершить программу (без сохранения в файл)\nhead : вывести первый элемент коллекции\nremove_lower {id} : удалить из коллекции все элементы, меньшие, чем заданный\nhistory : вывести последние 12 команд (без их аргументов)\ncltmp {minimal_point}: вывести количество элементов, значение поля minimalPoint которых меньше заданного\nprint_unique_authors : вывести уникальные значения поля author всех элементов в коллекции\npfdmp : вывести значения поля minimalPoint всех элементов в порядке убывания"
+Thu May 18 01:54:36 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:36 MSK 2023::Request: {
+  "command": "help"
+}
+Thu May 18 01:54:36 MSK 2023::Response: "help : вывести справку по доступным командам\ninfo : вывести в стандартный поток вывода информацию о коллекции (тип, дата инициализации, количество элементов и т.д.)\nshow : вывести в стандартный поток вывода все элементы коллекции в строковом представлении\nadd : добавить новый элемент в коллекцию\nupdate {id} : обновить значение элемента коллекции, id которого равен заданному\nremove_by_id {id} : удалить элемент из коллекции по его id\nclear : очистить коллекцию\nexecute_script {file_name} : считать и исполнить скрипт из указанного файла. В скрипте содержатся команды в таком же виде, в котором их вводит пользователь в интерактивном режиме.\nexit : завершить программу (без сохранения в файл)\nhead : вывести первый элемент коллекции\nremove_lower {id} : удалить из коллекции все элементы, меньшие, чем заданный\nhistory : вывести последние 12 команд (без их аргументов)\ncltmp {minimal_point}: вывести количество элементов, значение поля minimalPoint которых меньше заданного\nprint_unique_authors : вывести уникальные значения поля author всех элементов в коллекции\npfdmp : вывести значения поля minimalPoint всех элементов в порядке убывания"
+Thu May 18 01:54:36 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:36 MSK 2023::Request: {
+  "command": "add",
+  "elem": {
+    "id": 7124925898648536998,
+    "name": "name2",
+    "coordinates": {
+      "x": 54.0,
+      "y": 77
+    },
+    "creationDate": "2023-05-18T01:54:36.177737454",
+    "minimalPoint": 54.0,
+    "difficulty": "VERY_EASY",
+    "author": {
+      "name": "Van_Darkholm",
+      "passportID": "c6b9a06a-befe-4b99-bafe-2ae85e03f07a",
+      "eyeColor": "GREEN",
+      "location": {
+        "x": 5.0,
+        "y": 4.0,
+        "z": 3.0
+      }
+    }
+  }
+}
+Thu May 18 01:54:36 MSK 2023::Response: "New collection element was added successfully."
+Thu May 18 01:54:36 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:36 MSK 2023::Request: {
+  "command": "add",
+  "elem": {
+    "id": 4849153344371969324,
+    "name": "name3",
+    "coordinates": {
+      "x": 54.0,
+      "y": 71
+    },
+    "creationDate": "2023-05-18T01:54:36.186133744",
+    "minimalPoint": 54.0,
+    "difficulty": "VERY_HARD",
+    "author": {
+      "name": "Van_Darkholmmmmmm",
+      "passportID": "6dd25499-7934-43b4-839f-4b844f9180d8",
+      "eyeColor": "GREEN",
+      "location": {
+        "x": 5.0,
+        "y": 1.0,
+        "z": 3.0
+      }
+    }
+  }
+}
+Thu May 18 01:54:36 MSK 2023::Response: "New collection element was added successfully."
+Thu May 18 01:54:36 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:36 MSK 2023::Request: {
+  "command": "add",
+  "elem": {
+    "id": 1209821381408804568,
+    "name": "name6",
+    "coordinates": {
+      "x": 511.0,
+      "y": 73
+    },
+    "creationDate": "2023-05-18T01:54:36.189548175",
+    "minimalPoint": 54.0,
+    "difficulty": "IMPOSSIBLE",
+    "author": {
+      "name": "Billy_Harrington",
+      "passportID": "21000086-0c46-4a93-b477-eac5466a0735",
+      "eyeColor": "BLACK",
+      "location": {
+        "x": 5.0,
+        "y": 1.0,
+        "z": 3.0
+      }
+    }
+  }
+}
+Thu May 18 01:54:36 MSK 2023::Response: "New collection element was added successfully."
+Thu May 18 01:54:36 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:36 MSK 2023::Request: {
+  "command": "add",
+  "elem": {
+    "id": 1240425503735564783,
+    "name": "name54",
+    "coordinates": {
+      "x": 27.0,
+      "y": 77
+    },
+    "creationDate": "2023-05-18T01:54:36.193971883",
+    "minimalPoint": 51.0,
+    "difficulty": "IMPOSSIBLE",
+    "author": {
+      "name": "Bogdan",
+      "passportID": "41742334-357e-4b3b-a5d4-252c8b4dbcbb",
+      "eyeColor": "BROWN",
+      "location": {
+        "x": 5.0,
+        "y": 4.0,
+        "z": 1.0
+      }
+    }
+  }
+}
+Thu May 18 01:54:36 MSK 2023::Response: "New collection element was added successfully."
+Thu May 18 01:54:36 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:36 MSK 2023::Request: {
+  "command": "help"
+}
+Thu May 18 01:54:36 MSK 2023::Response: "help : вывести справку по доступным командам\ninfo : вывести в стандартный поток вывода информацию о коллекции (тип, дата инициализации, количество элементов и т.д.)\nshow : вывести в стандартный поток вывода все элементы коллекции в строковом представлении\nadd : добавить новый элемент в коллекцию\nupdate {id} : обновить значение элемента коллекции, id которого равен заданному\nremove_by_id {id} : удалить элемент из коллекции по его id\nclear : очистить коллекцию\nexecute_script {file_name} : считать и исполнить скрипт из указанного файла. В скрипте содержатся команды в таком же виде, в котором их вводит пользователь в интерактивном режиме.\nexit : завершить программу (без сохранения в файл)\nhead : вывести первый элемент коллекции\nremove_lower {id} : удалить из коллекции все элементы, меньшие, чем заданный\nhistory : вывести последние 12 команд (без их аргументов)\ncltmp {minimal_point}: вывести количество элементов, значение поля minimalPoint которых меньше заданного\nprint_unique_authors : вывести уникальные значения поля author всех элементов в коллекции\npfdmp : вывести значения поля minimalPoint всех элементов в порядке убывания"
+Thu May 18 01:54:36 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:36 MSK 2023::Request: {
+  "command": "help"
+}
+Thu May 18 01:54:36 MSK 2023::Response: "help : вывести справку по доступным командам\ninfo : вывести в стандартный поток вывода информацию о коллекции (тип, дата инициализации, количество элементов и т.д.)\nshow : вывести в стандартный поток вывода все элементы коллекции в строковом представлении\nadd : добавить новый элемент в коллекцию\nupdate {id} : обновить значение элемента коллекции, id которого равен заданному\nremove_by_id {id} : удалить элемент из коллекции по его id\nclear : очистить коллекцию\nexecute_script {file_name} : считать и исполнить скрипт из указанного файла. В скрипте содержатся команды в таком же виде, в котором их вводит пользователь в интерактивном режиме.\nexit : завершить программу (без сохранения в файл)\nhead : вывести первый элемент коллекции\nremove_lower {id} : удалить из коллекции все элементы, меньшие, чем заданный\nhistory : вывести последние 12 команд (без их аргументов)\ncltmp {minimal_point}: вывести количество элементов, значение поля minimalPoint которых меньше заданного\nprint_unique_authors : вывести уникальные значения поля author всех элементов в коллекции\npfdmp : вывести значения поля minimalPoint всех элементов в порядке убывания"
+Thu May 18 01:54:36 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:36 MSK 2023::Request: {
+  "command": "add",
+  "elem": {
+    "id": 624049758440737849,
+    "name": "name2",
+    "coordinates": {
+      "x": 54.0,
+      "y": 77
+    },
+    "creationDate": "2023-05-18T01:54:36.207925237",
+    "minimalPoint": 54.0,
+    "difficulty": "VERY_EASY",
+    "author": {
+      "name": "Van_Darkholm",
+      "passportID": "bdcc5117-5415-46da-a160-a6728f46a855",
+      "eyeColor": "GREEN",
+      "location": {
+        "x": 5.0,
+        "y": 4.0,
+        "z": 3.0
+      }
+    }
+  }
+}
+Thu May 18 01:54:36 MSK 2023::Response: "New collection element was added successfully."
+Thu May 18 01:54:36 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:36 MSK 2023::Request: {
+  "command": "add",
+  "elem": {
+    "id": 5487969085724575264,
+    "name": "name3",
+    "coordinates": {
+      "x": 54.0,
+      "y": 71
+    },
+    "creationDate": "2023-05-18T01:54:36.212980198",
+    "minimalPoint": 54.0,
+    "difficulty": "VERY_HARD",
+    "author": {
+      "name": "Van_Darkholmmmmmm",
+      "passportID": "c5a19447-1c85-4562-b9c7-be9f1e295b51",
+      "eyeColor": "GREEN",
+      "location": {
+        "x": 5.0,
+        "y": 1.0,
+        "z": 3.0
+      }
+    }
+  }
+}
+Thu May 18 01:54:36 MSK 2023::Response: "New collection element was added successfully."
+Thu May 18 01:54:36 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:36 MSK 2023::Request: {
+  "command": "add",
+  "elem": {
+    "id": 7092817386337619206,
+    "name": "name6",
+    "coordinates": {
+      "x": 511.0,
+      "y": 73
+    },
+    "creationDate": "2023-05-18T01:54:36.217471524",
+    "minimalPoint": 54.0,
+    "difficulty": "IMPOSSIBLE",
+    "author": {
+      "name": "Billy_Harrington",
+      "passportID": "ac3d1f32-6b0d-4bf7-b607-098fab9497df",
+      "eyeColor": "BLACK",
+      "location": {
+        "x": 5.0,
+        "y": 1.0,
+        "z": 3.0
+      }
+    }
+  }
+}
+Thu May 18 01:54:36 MSK 2023::Response: "New collection element was added successfully."
+Thu May 18 01:54:36 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:36 MSK 2023::Request: {
+  "command": "add",
+  "elem": {
+    "id": 8919182937400559657,
+    "name": "name54",
+    "coordinates": {
+      "x": 27.0,
+      "y": 77
+    },
+    "creationDate": "2023-05-18T01:54:36.221552173",
+    "minimalPoint": 51.0,
+    "difficulty": "IMPOSSIBLE",
+    "author": {
+      "name": "Bogdan",
+      "passportID": "cb7b7f48-3839-40fd-a847-49d5b49fe498",
+      "eyeColor": "BROWN",
+      "location": {
+        "x": 5.0,
+        "y": 4.0,
+        "z": 1.0
+      }
+    }
+  }
+}
+Thu May 18 01:54:36 MSK 2023::Response: "New collection element was added successfully."
+Thu May 18 01:54:36 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:36 MSK 2023::Request: {
+  "command": "help"
+}
+Thu May 18 01:54:36 MSK 2023::Response: "help : вывести справку по доступным командам\ninfo : вывести в стандартный поток вывода информацию о коллекции (тип, дата инициализации, количество элементов и т.д.)\nshow : вывести в стандартный поток вывода все элементы коллекции в строковом представлении\nadd : добавить новый элемент в коллекцию\nupdate {id} : обновить значение элемента коллекции, id которого равен заданному\nremove_by_id {id} : удалить элемент из коллекции по его id\nclear : очистить коллекцию\nexecute_script {file_name} : считать и исполнить скрипт из указанного файла. В скрипте содержатся команды в таком же виде, в котором их вводит пользователь в интерактивном режиме.\nexit : завершить программу (без сохранения в файл)\nhead : вывести первый элемент коллекции\nremove_lower {id} : удалить из коллекции все элементы, меньшие, чем заданный\nhistory : вывести последние 12 команд (без их аргументов)\ncltmp {minimal_point}: вывести количество элементов, значение поля minimalPoint которых меньше заданного\nprint_unique_authors : вывести уникальные значения поля author всех элементов в коллекции\npfdmp : вывести значения поля minimalPoint всех элементов в порядке убывания"
+Thu May 18 01:54:36 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:36 MSK 2023::Request: {
+  "command": "help"
+}
+Thu May 18 01:54:36 MSK 2023::Response: "help : вывести справку по доступным командам\ninfo : вывести в стандартный поток вывода информацию о коллекции (тип, дата инициализации, количество элементов и т.д.)\nshow : вывести в стандартный поток вывода все элементы коллекции в строковом представлении\nadd : добавить новый элемент в коллекцию\nupdate {id} : обновить значение элемента коллекции, id которого равен заданному\nremove_by_id {id} : удалить элемент из коллекции по его id\nclear : очистить коллекцию\nexecute_script {file_name} : считать и исполнить скрипт из указанного файла. В скрипте содержатся команды в таком же виде, в котором их вводит пользователь в интерактивном режиме.\nexit : завершить программу (без сохранения в файл)\nhead : вывести первый элемент коллекции\nremove_lower {id} : удалить из коллекции все элементы, меньшие, чем заданный\nhistory : вывести последние 12 команд (без их аргументов)\ncltmp {minimal_point}: вывести количество элементов, значение поля minimalPoint которых меньше заданного\nprint_unique_authors : вывести уникальные значения поля author всех элементов в коллекции\npfdmp : вывести значения поля minimalPoint всех элементов в порядке убывания"
+Thu May 18 01:54:36 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:36 MSK 2023::Request: {
+  "command": "add",
+  "elem": {
+    "id": 1467871762316609709,
+    "name": "name2",
+    "coordinates": {
+      "x": 54.0,
+      "y": 77
+    },
+    "creationDate": "2023-05-18T01:54:36.235101636",
+    "minimalPoint": 54.0,
+    "difficulty": "VERY_EASY",
+    "author": {
+      "name": "Van_Darkholm",
+      "passportID": "8199c0b8-4d29-4eac-a136-e40ded2ef2a2",
+      "eyeColor": "GREEN",
+      "location": {
+        "x": 5.0,
+        "y": 4.0,
+        "z": 3.0
+      }
+    }
+  }
+}
+Thu May 18 01:54:36 MSK 2023::Response: "New collection element was added successfully."
+Thu May 18 01:54:36 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:36 MSK 2023::Request: {
+  "command": "add",
+  "elem": {
+    "id": 3237734388400145335,
+    "name": "name3",
+    "coordinates": {
+      "x": 54.0,
+      "y": 71
+    },
+    "creationDate": "2023-05-18T01:54:36.239889022",
+    "minimalPoint": 54.0,
+    "difficulty": "VERY_HARD",
+    "author": {
+      "name": "Van_Darkholmmmmmm",
+      "passportID": "892345ce-296f-48fe-a25b-ef4d580efd65",
+      "eyeColor": "GREEN",
+      "location": {
+        "x": 5.0,
+        "y": 1.0,
+        "z": 3.0
+      }
+    }
+  }
+}
+Thu May 18 01:54:36 MSK 2023::Response: "New collection element was added successfully."
+Thu May 18 01:54:36 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:36 MSK 2023::Request: {
+  "command": "add",
+  "elem": {
+    "id": 3652856558156728030,
+    "name": "name6",
+    "coordinates": {
+      "x": 511.0,
+      "y": 73
+    },
+    "creationDate": "2023-05-18T01:54:36.244320697",
+    "minimalPoint": 54.0,
+    "difficulty": "IMPOSSIBLE",
+    "author": {
+      "name": "Billy_Harrington",
+      "passportID": "686bc2af-9b93-40b3-aba0-ea68e02e8bf4",
+      "eyeColor": "BLACK",
+      "location": {
+        "x": 5.0,
+        "y": 1.0,
+        "z": 3.0
+      }
+    }
+  }
+}
+Thu May 18 01:54:36 MSK 2023::Response: "New collection element was added successfully."
+Thu May 18 01:54:36 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:36 MSK 2023::Request: {
+  "command": "add",
+  "elem": {
+    "id": 1463108978123230175,
+    "name": "name54",
+    "coordinates": {
+      "x": 27.0,
+      "y": 77
+    },
+    "creationDate": "2023-05-18T01:54:36.249132257",
+    "minimalPoint": 51.0,
+    "difficulty": "IMPOSSIBLE",
+    "author": {
+      "name": "Bogdan",
+      "passportID": "48581d81-afec-4cd6-aa06-04817c359850",
+      "eyeColor": "BROWN",
+      "location": {
+        "x": 5.0,
+        "y": 4.0,
+        "z": 1.0
+      }
+    }
+  }
+}
+Thu May 18 01:54:36 MSK 2023::Response: "New collection element was added successfully."
+Thu May 18 01:54:36 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:36 MSK 2023::Request: {
+  "command": "help"
+}
+Thu May 18 01:54:36 MSK 2023::Response: "help : вывести справку по доступным командам\ninfo : вывести в стандартный поток вывода информацию о коллекции (тип, дата инициализации, количество элементов и т.д.)\nshow : вывести в стандартный поток вывода все элементы коллекции в строковом представлении\nadd : добавить новый элемент в коллекцию\nupdate {id} : обновить значение элемента коллекции, id которого равен заданному\nremove_by_id {id} : удалить элемент из коллекции по его id\nclear : очистить коллекцию\nexecute_script {file_name} : считать и исполнить скрипт из указанного файла. В скрипте содержатся команды в таком же виде, в котором их вводит пользователь в интерактивном режиме.\nexit : завершить программу (без сохранения в файл)\nhead : вывести первый элемент коллекции\nremove_lower {id} : удалить из коллекции все элементы, меньшие, чем заданный\nhistory : вывести последние 12 команд (без их аргументов)\ncltmp {minimal_point}: вывести количество элементов, значение поля minimalPoint которых меньше заданного\nprint_unique_authors : вывести уникальные значения поля author всех элементов в коллекции\npfdmp : вывести значения поля minimalPoint всех элементов в порядке убывания"
+Thu May 18 01:54:36 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:36 MSK 2023::Request: {
+  "command": "help"
+}
+Thu May 18 01:54:36 MSK 2023::Response: "help : вывести справку по доступным командам\ninfo : вывести в стандартный поток вывода информацию о коллекции (тип, дата инициализации, количество элементов и т.д.)\nshow : вывести в стандартный поток вывода все элементы коллекции в строковом представлении\nadd : добавить новый элемент в коллекцию\nupdate {id} : обновить значение элемента коллекции, id которого равен заданному\nremove_by_id {id} : удалить элемент из коллекции по его id\nclear : очистить коллекцию\nexecute_script {file_name} : считать и исполнить скрипт из указанного файла. В скрипте содержатся команды в таком же виде, в котором их вводит пользователь в интерактивном режиме.\nexit : завершить программу (без сохранения в файл)\nhead : вывести первый элемент коллекции\nremove_lower {id} : удалить из коллекции все элементы, меньшие, чем заданный\nhistory : вывести последние 12 команд (без их аргументов)\ncltmp {minimal_point}: вывести количество элементов, значение поля minimalPoint которых меньше заданного\nprint_unique_authors : вывести уникальные значения поля author всех элементов в коллекции\npfdmp : вывести значения поля minimalPoint всех элементов в порядке убывания"
+Thu May 18 01:54:36 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:36 MSK 2023::Request: {
+  "command": "add",
+  "elem": {
+    "id": 8887177477468801397,
+    "name": "name2",
+    "coordinates": {
+      "x": 54.0,
+      "y": 77
+    },
+    "creationDate": "2023-05-18T01:54:36.264265703",
+    "minimalPoint": 54.0,
+    "difficulty": "VERY_EASY",
+    "author": {
+      "name": "Van_Darkholm",
+      "passportID": "3c753666-2f0d-4370-9db9-937b669b6051",
+      "eyeColor": "GREEN",
+      "location": {
+        "x": 5.0,
+        "y": 4.0,
+        "z": 3.0
+      }
+    }
+  }
+}
+Thu May 18 01:54:36 MSK 2023::Response: "New collection element was added successfully."
+Thu May 18 01:54:36 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:36 MSK 2023::Request: {
+  "command": "add",
+  "elem": {
+    "id": 4304996032501073777,
+    "name": "name3",
+    "coordinates": {
+      "x": 54.0,
+      "y": 71
+    },
+    "creationDate": "2023-05-18T01:54:36.269219377",
+    "minimalPoint": 54.0,
+    "difficulty": "VERY_HARD",
+    "author": {
+      "name": "Van_Darkholmmmmmm",
+      "passportID": "bfaf762b-939d-4706-ba2b-fe8ccfbefa48",
+      "eyeColor": "GREEN",
+      "location": {
+        "x": 5.0,
+        "y": 1.0,
+        "z": 3.0
+      }
+    }
+  }
+}
+Thu May 18 01:54:36 MSK 2023::Response: "New collection element was added successfully."
+Thu May 18 01:54:36 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:36 MSK 2023::Request: {
+  "command": "add",
+  "elem": {
+    "id": 8837359539598215797,
+    "name": "name6",
+    "coordinates": {
+      "x": 511.0,
+      "y": 73
+    },
+    "creationDate": "2023-05-18T01:54:36.273360238",
+    "minimalPoint": 54.0,
+    "difficulty": "IMPOSSIBLE",
+    "author": {
+      "name": "Billy_Harrington",
+      "passportID": "dd4eb2be-4d71-42dc-94f6-593945efe01a",
+      "eyeColor": "BLACK",
+      "location": {
+        "x": 5.0,
+        "y": 1.0,
+        "z": 3.0
+      }
+    }
+  }
+}
+Thu May 18 01:54:36 MSK 2023::Response: "New collection element was added successfully."
+Thu May 18 01:54:36 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:36 MSK 2023::Request: {
+  "command": "add",
+  "elem": {
+    "id": 4889800462740505443,
+    "name": "name54",
+    "coordinates": {
+      "x": 27.0,
+      "y": 77
+    },
+    "creationDate": "2023-05-18T01:54:36.278724225",
+    "minimalPoint": 51.0,
+    "difficulty": "IMPOSSIBLE",
+    "author": {
+      "name": "Bogdan",
+      "passportID": "4b8e55c4-5bc3-428d-b600-93ddaf1c20fa",
+      "eyeColor": "BROWN",
+      "location": {
+        "x": 5.0,
+        "y": 4.0,
+        "z": 1.0
+      }
+    }
+  }
+}
+Thu May 18 01:54:36 MSK 2023::Response: "New collection element was added successfully."
+Thu May 18 01:54:36 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:36 MSK 2023::Request: {
+  "command": "help"
+}
+Thu May 18 01:54:36 MSK 2023::Response: "help : вывести справку по доступным командам\ninfo : вывести в стандартный поток вывода информацию о коллекции (тип, дата инициализации, количество элементов и т.д.)\nshow : вывести в стандартный поток вывода все элементы коллекции в строковом представлении\nadd : добавить новый элемент в коллекцию\nupdate {id} : обновить значение элемента коллекции, id которого равен заданному\nremove_by_id {id} : удалить элемент из коллекции по его id\nclear : очистить коллекцию\nexecute_script {file_name} : считать и исполнить скрипт из указанного файла. В скрипте содержатся команды в таком же виде, в котором их вводит пользователь в интерактивном режиме.\nexit : завершить программу (без сохранения в файл)\nhead : вывести первый элемент коллекции\nremove_lower {id} : удалить из коллекции все элементы, меньшие, чем заданный\nhistory : вывести последние 12 команд (без их аргументов)\ncltmp {minimal_point}: вывести количество элементов, значение поля minimalPoint которых меньше заданного\nprint_unique_authors : вывести уникальные значения поля author всех элементов в коллекции\npfdmp : вывести значения поля minimalPoint всех элементов в порядке убывания"
+Thu May 18 01:54:36 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:36 MSK 2023::Request: {
+  "command": "help"
+}
+Thu May 18 01:54:36 MSK 2023::Response: "help : вывести справку по доступным командам\ninfo : вывести в стандартный поток вывода информацию о коллекции (тип, дата инициализации, количество элементов и т.д.)\nshow : вывести в стандартный поток вывода все элементы коллекции в строковом представлении\nadd : добавить новый элемент в коллекцию\nupdate {id} : обновить значение элемента коллекции, id которого равен заданному\nremove_by_id {id} : удалить элемент из коллекции по его id\nclear : очистить коллекцию\nexecute_script {file_name} : считать и исполнить скрипт из указанного файла. В скрипте содержатся команды в таком же виде, в котором их вводит пользователь в интерактивном режиме.\nexit : завершить программу (без сохранения в файл)\nhead : вывести первый элемент коллекции\nremove_lower {id} : удалить из коллекции все элементы, меньшие, чем заданный\nhistory : вывести последние 12 команд (без их аргументов)\ncltmp {minimal_point}: вывести количество элементов, значение поля minimalPoint которых меньше заданного\nprint_unique_authors : вывести уникальные значения поля author всех элементов в коллекции\npfdmp : вывести значения поля minimalPoint всех элементов в порядке убывания"
+Thu May 18 01:54:36 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:36 MSK 2023::Request: {
+  "command": "add",
+  "elem": {
+    "id": 7570469802372319882,
+    "name": "name2",
+    "coordinates": {
+      "x": 54.0,
+      "y": 77
+    },
+    "creationDate": "2023-05-18T01:54:36.291607331",
+    "minimalPoint": 54.0,
+    "difficulty": "VERY_EASY",
+    "author": {
+      "name": "Van_Darkholm",
+      "passportID": "87378ea4-a537-4a16-a34c-3ad4d9c88d5b",
+      "eyeColor": "GREEN",
+      "location": {
+        "x": 5.0,
+        "y": 4.0,
+        "z": 3.0
+      }
+    }
+  }
+}
+Thu May 18 01:54:36 MSK 2023::Response: "New collection element was added successfully."
+Thu May 18 01:54:36 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:36 MSK 2023::Request: {
+  "command": "add",
+  "elem": {
+    "id": 7465856453042784279,
+    "name": "name3",
+    "coordinates": {
+      "x": 54.0,
+      "y": 71
+    },
+    "creationDate": "2023-05-18T01:54:36.295029407",
+    "minimalPoint": 54.0,
+    "difficulty": "VERY_HARD",
+    "author": {
+      "name": "Van_Darkholmmmmmm",
+      "passportID": "aea94d0e-0328-4afb-a0c1-047b806e8954",
+      "eyeColor": "GREEN",
+      "location": {
+        "x": 5.0,
+        "y": 1.0,
+        "z": 3.0
+      }
+    }
+  }
+}
+Thu May 18 01:54:36 MSK 2023::Response: "New collection element was added successfully."
+Thu May 18 01:54:36 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:36 MSK 2023::Request: {
+  "command": "add",
+  "elem": {
+    "id": 739454432713198099,
+    "name": "name6",
+    "coordinates": {
+      "x": 511.0,
+      "y": 73
+    },
+    "creationDate": "2023-05-18T01:54:36.298336494",
+    "minimalPoint": 54.0,
+    "difficulty": "IMPOSSIBLE",
+    "author": {
+      "name": "Billy_Harrington",
+      "passportID": "22a5ff6c-d20d-424f-a8b1-bf5e95abc6c3",
+      "eyeColor": "BLACK",
+      "location": {
+        "x": 5.0,
+        "y": 1.0,
+        "z": 3.0
+      }
+    }
+  }
+}
+Thu May 18 01:54:36 MSK 2023::Response: "New collection element was added successfully."
+Thu May 18 01:54:36 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:36 MSK 2023::Request: {
+  "command": "add",
+  "elem": {
+    "id": 832052860949909255,
+    "name": "name54",
+    "coordinates": {
+      "x": 27.0,
+      "y": 77
+    },
+    "creationDate": "2023-05-18T01:54:36.303118035",
+    "minimalPoint": 51.0,
+    "difficulty": "IMPOSSIBLE",
+    "author": {
+      "name": "Bogdan",
+      "passportID": "0ee1c847-9f59-4b41-b471-62afb5942d94",
+      "eyeColor": "BROWN",
+      "location": {
+        "x": 5.0,
+        "y": 4.0,
+        "z": 1.0
+      }
+    }
+  }
+}
+Thu May 18 01:54:36 MSK 2023::Response: "New collection element was added successfully."
+Thu May 18 01:54:38 MSK 2023::Add client sun.nio.ch.DatagramSocketAdaptor@4b53f538
+Thu May 18 01:54:38 MSK 2023::Request: {
+  "command": "info"
+}
+Thu May 18 01:54:38 MSK 2023::Response: "Collection name: collection\nCollection type: ArrayDeque\nCollection size: 77"

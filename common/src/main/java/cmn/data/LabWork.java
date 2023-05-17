@@ -14,10 +14,11 @@ public class LabWork implements Comparable<LabWork>, Serializable {
     private Difficulty difficulty; //Поле не может быть null
     private Person author; //Поле не может быть null
     public LabWork() {
-        this.name="Default";
+        this.setId();
+        this.name="";
         this.coordinates=new Coordinates();
         this.minimalPoint=0;
-        this.difficulty=Difficulty.IMPOSSIBLE;
+        this.difficulty=null;
         this.author=new Person();
     }
     public void setId() {

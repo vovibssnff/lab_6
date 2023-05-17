@@ -1,7 +1,7 @@
 package cmn.cmd;
 
 
-import cmn.ReceiverInterface;
+import cmn.service.ReceiverInterface;
 
 public class HeadCmd implements Command {
     private ReceiverInterface labWorkService;

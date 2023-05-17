@@ -1,5 +1,5 @@
 package serv.managment;
-import cmn.data.Transmitter;
+import cmn.service.Transmitter;
 import cmn.OutputEngine;
 import serv.load.CollectionLoader;
 

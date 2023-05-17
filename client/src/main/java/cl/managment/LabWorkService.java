@@ -1,22 +1,21 @@
 package cl.managment;
 
 import cl.io.CommandHandler;
-import cl.io.Mode;
+import cmn.service.LabWorkBuilder;
+import cmn.service.LabWorkStorage;
 import cmn.cmd.*;
 import cmn.data.LabWork;
-import cmn.data.Transmitter;
-import cl.io.InputEngine;
-import cmn.OutputEngine;
-import cmn.ReceiverInterface;
-import cl.ClientConnectionService;
+import cmn.service.Transmitter;
+import cmn.service.ReceiverInterface;
 
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
-import java.util.Scanner;
 
 public class LabWorkService implements ReceiverInterface {
     public int iterations=0;
@@ -56,14 +55,59 @@ public class LabWorkService implements ReceiverInterface {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-        for (String line : lines) {
+
+        Iterator<String> iterator = lines.iterator();
+
+        while (iterator.hasNext()) {
+            String line = iterator.next();
             Command command = CommandHandler.castCommand(line);
+
             if (command == null) {
                 continue;
             }
-            CommandHandler.launchInvoke(command);
 
+            if (command instanceof LabWorkStorage) {
+                LabWorkBuilder lb = new LabWorkBuilder();
+
+                // Read the next 10 lines and store them in an array
+                List<String> argsList = new ArrayList<>();
+                for (int i = 0; i < 10 && iterator.hasNext(); i++) {
+                    argsList.add(iterator.next());
+                }
+
+                // Convert the list of arguments to an array
+                String[] args = argsList.toArray(new String[0]);
+
+                // Skip the next 10 lines by advancing the iterator
+//                for (int i = 0; i < 11 && iterator.hasNext(); i++) {
+//                    iterator.next();
+//                }
+
+                // Pass the arguments to the command
+                lb.setArgs(args);
+                ((LabWorkStorage) command).setLab(lb.getLabWork());
+                //RequestService.sendRequest(new Transmitter(AddCmd.getName(), null, null, lb.getLabWork()));
+            }
+
+            CommandHandler.launchInvoke(command);
         }
+
+//        for (String line : lines) {
+//            Command command = CommandHandler.castCommand(line);
+//            if (command == null) {
+//                continue;
+//            }
+//            if (command instanceof LabWorkStorage) {
+//
+//                // Тут берёт Н строк
+//                // var lab = parseMovie(String[] args)
+//                LabWorkBuilder lb = new LabWorkBuilder();
+//                // lb.putArgs(String[])
+//                // if lab != null -> command.setLab(lab)
+//            }
+//            CommandHandler.launchInvoke(command);
+//
+//        }
         // For line in file
         // Command a = CommandFactory.createCommnad(line)
         // a.execute() или что-то типа
