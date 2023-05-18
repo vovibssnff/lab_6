@@ -88,4 +88,7 @@ public class OutputEngine {
     public static String collectionSize() {return(messages.getString("collectionSize"));}
     public static String collectionRestore() {return(messages.getString("collectionRestore"));}
     public static String collectionEmpty() {return(messages.getString("collectionEmpty"));}
+    public static String serverResponseError() {return(messages.getString("serverResponseError"));}
+    public static String serverNewConnection() {return(messages.getString("serverNewConnection"));}
+    public static String server() {return(messages.getString(""));}
 }

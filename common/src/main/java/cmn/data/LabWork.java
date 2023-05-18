@@ -25,7 +25,7 @@ public class LabWork implements Comparable<LabWork>, Serializable {
         UUID uuid = UUID.randomUUID();
         long unique_id = uuid.getMostSignificantBits() & Long.MAX_VALUE;
         this.id = unique_id;
-        System.out.println("Поле ID сгенерировано успешно");
+        //System.out.println("Поле ID сгенерировано успешно");
     }
     public void setId(long id) {
         this.id = id;

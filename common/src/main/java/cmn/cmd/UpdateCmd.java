@@ -8,12 +8,17 @@ public class UpdateCmd implements Command {
     private UsrInputInterface usrInputReceiver;
     private ReceiverInterface labWorkService;
     private Long id;
-    private LabWork labWork;
+    private LabWork elem;
+
+    public UpdateCmd(UsrInputInterface usrInput, String arg) {
+        this.usrInputReceiver = usrInput;
+        this.id = Long.parseLong(arg);
+    }
 
     public UpdateCmd(String arg) {
         if (this.usrInputReceiver.typeValidator(arg, Long.class)) {
             this.id = this.usrInputReceiver.setArg(arg, Long.class);
-            this.labWork = this.usrInputReceiver.update(this.id);
+            this.elem = this.usrInputReceiver.update(this.id);
         }
     }
     @Override
@@ -30,7 +35,10 @@ public class UpdateCmd implements Command {
     }
     @Override
     public void execute() {
-        this.labWorkService.update(this.labWork);
+        if (this.elem==null) {
+            elem = this.usrInputReceiver.update(this.id);
+        }
+        this.labWorkService.update(this.elem);
     }
     public static String getName() {return "update";}
 }

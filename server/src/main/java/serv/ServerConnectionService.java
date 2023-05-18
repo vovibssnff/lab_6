@@ -1,5 +1,6 @@
 package serv;
 
+import cmn.OutputEngine;
 import serv.load.Serializer;
 import serv.managment.Collections;
 import serv.managment.ServerConnector;
@@ -57,7 +58,7 @@ public class ServerConnectionService {
                     SocketAddress clientAddress = null;
                     DatagramChannel clientChannel = (DatagramChannel) key.channel();
                     buffer.clear();
-                    System.out.println(clientChannel.socket());
+                    System.out.println(OutputEngine.serverNewConnection() + " " + clientChannel.socket());
                     logger.info("Add client " + clientChannel.socket());
                     try {
                         clientAddress = clientChannel.receive(buffer);
@@ -77,7 +78,7 @@ public class ServerConnectionService {
                     logger.info("Response: " + jsonResponse);
 
                     buffer.clear();
-                    System.out.println(jsonResponse.getBytes().length);
+                    //System.out.println(jsonResponse.getBytes().length);
                     buffer.put(jsonResponse.getBytes());
                     buffer.flip();
 

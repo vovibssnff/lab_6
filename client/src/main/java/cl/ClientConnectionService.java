@@ -1,5 +1,6 @@
 package cl;
 
+import cmn.OutputEngine;
 import cmn.service.Transmitter;
 import cl.managment.ProgramState;
 
@@ -41,7 +42,7 @@ public class ClientConnectionService {
             socket.receive(receivePacket);
 
         } catch (SocketTimeoutException e) {
-            System.out.println("Сервер не отвечает");
+            System.out.println(OutputEngine.serverResponseError());
         } catch (IOException e) {
             e.printStackTrace();
         }

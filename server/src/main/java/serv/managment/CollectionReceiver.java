@@ -51,21 +51,25 @@ public class CollectionReceiver {
             "history : вывести последние 12 команд (без их аргументов)\n" +
             "cltmp {minimal_point}: вывести количество элементов, значение поля minimalPoint которых меньше заданного\n" +
             "print_unique_authors : вывести уникальные значения поля author всех элементов в коллекции\n" +
-            "pfdmp : вывести значения поля minimalPoint всех элементов в порядке убывания");}
-    public String add(Transmitter transmitter) {
+            "pfdmp : вывести значения поля minimalPoint всех элементов в порядке убывания");
+    }
+
+    public void add(Transmitter transmitter) {
         if (Validator.checkId(transmitter.getElem().getId())&&Validator.checkPassportId(transmitter.getElem().getAuthor().getPassportID())) {
-            return Collections.addElem(transmitter.getElem());
+            Collections.addElem(transmitter.getElem());
         } else {
-            return OutputEngine.incorrectId();
+            System.out.println(OutputEngine.incorrectId());
         }
 
     }
+
     public void update(Transmitter transmitter) {
         if (!Validator.checkId(transmitter.getElem().getId())&&!Validator.checkPassportId(transmitter.getElem().getAuthor().getPassportID())) {
             Collections.update(Collections.searchInCollection(transmitter.getId()), transmitter.getElem());
         }
 
     }
+
     public String remove_by_id(Transmitter transmitter) {
         if (Validator.checkId(transmitter.getId())) {
             return Collections.removeById(transmitter.getId());
@@ -73,6 +77,7 @@ public class CollectionReceiver {
             return OutputEngine.incorrectId();
         }
     }
+
     public String clear(Transmitter transmitter) {
         if (!Collections.getCollection().isEmpty()) {
             return Collections.clearCollection();
@@ -80,6 +85,7 @@ public class CollectionReceiver {
             return OutputEngine.collectionEmpty();
         }
     }
+
     //public void save() {
 //        Serializer.save(Collections.getCollection());
 //    }

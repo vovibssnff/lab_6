@@ -50,6 +50,7 @@ public class ElemInputService {
         //Ввод имени
         System.out.println(OutputEngine.insertName());
         while (true) {
+            System.out.println(OutputEngine.prompt());
             String inputName = sc.nextLine();
             try {
                 labWorkBuilder.setLabName(inputName);

@@ -38,49 +38,4 @@ public class ServerConnector {
         currentCommand.execute();
 
     }
-//    public static void launcher(Command currentCommand, String filename) {
-//        String[] tokens = new String[0];
-//        File file = null;
-//        try {
-//            file = new File(filename);
-//        } catch (NullPointerException e) {
-//            System.out.print(OutputEngine.prompt());
-//        }
-//        switch (ServerState.getMode()) {
-//
-//            //Режим чтения команд с клавиатуры
-//            case DEFAULT -> {
-//
-//                //Основной сканер
-//                while (true) {
-//                    try {
-//                        System.out.print(OutputEngine.prompt());
-//                        commandExecute(currentCommand, tmpFile);
-//                    } catch (NullPointerException e) {
-//                        System.out.println(OutputEngine.incorrectCommand());
-//                    }
-//                }
-//            }
-//
-//            //Режим чтения команд из скрипта
-//            case FILE -> {
-//
-//                Scanner fileScanner = null;
-//                try {
-//                    fileScanner = new Scanner(file);
-//                } catch (FileNotFoundException e) {
-//                    e.getStackTrace();
-//                }
-//                if (!file.exists() || !file.isFile() || !file.canRead()) {
-//                    System.out.println(OutputEngine.accessError());
-//                    return;
-//                }
-//                while (true) {
-//                    assert fileScanner != null;
-//                    if (!fileScanner.hasNextLine()) break;
-//                    commandExecute(currentCommand, tmpFile);
-//                }
-//            }
-//        }
-//    }
 }

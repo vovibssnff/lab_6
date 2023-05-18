@@ -41,6 +41,7 @@ public class CommandHandler {
 
     public static void launchInvoke(Command command) {
         command.setLabWorkService(ProgramState.getLabWorkService());
+        //command.setUsrInputReceiver(ProgramState.getUsrInputReceiver());
         command.execute();
     }
 }

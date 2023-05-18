@@ -138,10 +138,10 @@ public class Collections {
      * в коллекцию
      * @param elem - новый объект
      */
-    public static String addElem(LabWork elem) {
+    public static void addElem(LabWork elem) {
         collection.add(elem);
         sortCollection();
-        return OutputEngine.successAddElem();
+        //return OutputEngine.successAddElem();
     }
 
     /**

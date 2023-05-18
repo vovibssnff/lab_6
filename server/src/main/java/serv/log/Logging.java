@@ -1,12 +1,9 @@
 package serv.log;
 
-import java.io.FileInputStream;
 import java.io.IOException;
-import java.util.logging.ConsoleHandler;
 import java.util.logging.FileHandler;
 import java.util.logging.Handler;
 import java.util.logging.Level;
-import java.util.logging.LogManager;
 import java.util.logging.Logger;
 
 public class Logging {
@@ -22,9 +19,9 @@ public class Logging {
         try {
             //FileHandler file name with max size and number of log files limit
             Handler fileHandler = new FileHandler("logger.log");
-            fileHandler.setFormatter(new MyFormatter());
+            fileHandler.setFormatter(new LogFormatter());
             //setting custom filter for FileHandler
-            fileHandler.setFilter(new MyFilter());
+            fileHandler.setFilter(new LogFilter());
             logger.addHandler(fileHandler);
             logger.setUseParentHandlers(false); // To remove the console handler, use
 

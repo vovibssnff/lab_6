@@ -7,16 +7,18 @@ import cmn.service.UsrInputInterface;
 import cmn.data.LabWork;
 
 public class AddCmd implements Command, LabWorkStorage {
+
+    private UsrInputInterface usrInputReceiver;
+    private ReceiverInterface labWorkService;
+    private LabWork elem;
     public AddCmd(UsrInputInterface usrInput) {
+        this.usrInputReceiver = usrInput;
 //        LabWorkBuilder labWorkBuilder = new LabWorkBuilder();
 //        LabWork elem =
 //        if (elem!=null) {
 //            this.elem=elem;
 //        }
     }
-    private UsrInputInterface usrInputReceiver;
-    private ReceiverInterface labWorkService;
-    private LabWork elem;
     @Override
     public void setUsrInputReceiver(UsrInputInterface usrInputReceiver) {
         this.usrInputReceiver=usrInputReceiver;
