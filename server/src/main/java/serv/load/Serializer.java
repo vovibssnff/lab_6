@@ -7,6 +7,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
+import serv.managment.CollectionService;
 import serv.managment.Validator;
 
 import java.io.*;
@@ -37,7 +38,8 @@ public class Serializer {
         }
     }
 
-    public static ArrayList<LabWork> parse() {
+    public static void parse() {
+        CollectionService.clearSets();
         Gson gson = new GsonBuilder().registerTypeAdapter(LocalDateTime.class, new LocalDateTimeAdapter()).create();
         ArrayList<LabWork> labWorkList = new ArrayList<>();
         Properties prop = new Properties();
@@ -82,11 +84,10 @@ public class Serializer {
             }
             reader.endArray();
             System.out.println(OutputEngine.successImport());
-            return labWorkList;
+            CollectionService.addElemsFromList(labWorkList);
         } catch (IOException e) {
             e.printStackTrace();
             System.out.println(OutputEngine.importError());
         }
-        return null;
     }
 }

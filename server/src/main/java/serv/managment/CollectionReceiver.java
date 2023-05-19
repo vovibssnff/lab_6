@@ -15,8 +15,8 @@ public class CollectionReceiver {
     public String processTransmitter(Transmitter transmitter) {
 
         String methodName = transmitter.getCommand();
-        Collections.addCommand(methodName);
-        CollectionLoader.save(ServerState.getTmpFile());
+        CollectionService.addCommand(methodName);
+        //CollectionLoader.save(ServerState.getTmpFile());
         try {
             Class<?> clazz = CollectionReceiver.class;
             Method method = clazz.getDeclaredMethod(methodName, Transmitter.class);
@@ -29,12 +29,12 @@ public class CollectionReceiver {
 
     public String info(Transmitter transmitter) {
         return OutputEngine.collectionName() + " collection" + "\n" + OutputEngine.collectionType() + " " +
-                Collections.getCollection().getClass().getSimpleName() + "\n" +
-                OutputEngine.collectionSize() + " " + Collections.getCollection().size();
+                CollectionService.getCollection().getClass().getSimpleName() + "\n" +
+                OutputEngine.collectionSize() + " " + CollectionService.getCollection().size();
     }
 
     public String show(Transmitter transmitter) {
-        return Collections.printCollection();
+        return CollectionService.printCollection();
     }
 
     public String help(Transmitter transmitter) {return ("help : вывести справку по доступным командам\n" +
@@ -56,7 +56,7 @@ public class CollectionReceiver {
 
     public void add(Transmitter transmitter) {
         if (Validator.checkId(transmitter.getElem().getId())&&Validator.checkPassportId(transmitter.getElem().getAuthor().getPassportID())) {
-            Collections.addElem(transmitter.getElem());
+            CollectionService.addElem(transmitter.getElem());
         } else {
             System.out.println(OutputEngine.incorrectId());
         }
@@ -64,50 +64,49 @@ public class CollectionReceiver {
     }
 
     public void update(Transmitter transmitter) {
-        if (!Validator.checkId(transmitter.getElem().getId())&&!Validator.checkPassportId(transmitter.getElem().getAuthor().getPassportID())) {
-            Collections.update(Collections.searchInCollection(transmitter.getId()), transmitter.getElem());
+        if (!Validator.checkId(transmitter.getId())) {
+            CollectionService.update(transmitter.getId(), transmitter.getElem());
         }
-
     }
 
     public String remove_by_id(Transmitter transmitter) {
         if (Validator.checkId(transmitter.getId())) {
-            return Collections.removeById(transmitter.getId());
+            return CollectionService.removeById(transmitter.getId());
         } else {
             return OutputEngine.incorrectId();
         }
     }
 
     public String clear(Transmitter transmitter) {
-        if (!Collections.getCollection().isEmpty()) {
-            return Collections.clearCollection();
+        if (!CollectionService.getCollection().isEmpty()) {
+            return CollectionService.clearCollection();
         } else {
             return OutputEngine.collectionEmpty();
         }
     }
 
-    //public void save() {
-//        Serializer.save(Collections.getCollection());
-//    }
-
     public String head(Transmitter transmitter) {
-        return Collections.printFirstElem();
+        return CollectionService.printFirstElem();
     }
     public void remove_lower(Transmitter transmitter) {
         if (Validator.checkId(transmitter.getId())) {
-            Collections.removeLower(transmitter.getId());
+            CollectionService.removeLower(transmitter.getId());
         }
     }
+
     public String history(Transmitter transmitter) {
-        return Collections.printHistory();
+        return CollectionService.printHistory();
     }
+
     public String cltmp(Transmitter transmitter) {
-        return Collections.countLessThanMinimalPoint(transmitter.getMinimalPoint()).toString();
+        return CollectionService.countLessThanMinimalPoint(transmitter.getMinimalPoint()).toString();
     }
+
     public String print_unique_authors(Transmitter transmitter) {
-        return Collections.printUniqueAuthor();
+        return CollectionService.printUniqueAuthor();
     }
+
     public String pfdmp(Transmitter transmitter) {
-        return Collections.printMinimalPoints();
+        return CollectionService.printMinimalPoints();
     }
 }

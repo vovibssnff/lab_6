@@ -1,5 +1,7 @@
 package serv.managment;
 
+import serv.load.Serializer;
+
 import java.util.Scanner;
 
 public class ServerController extends Thread {
@@ -11,6 +13,7 @@ public class ServerController extends Thread {
             input = scanner.nextLine();
         } while (!input.equalsIgnoreCase("exit"));
 
+        Serializer.save(CollectionService.getCollection());
         System.exit(0);
     }
 }

@@ -19,38 +19,26 @@ public class ElemInputService {
      */
 
     public static LabWork setElemScript(Long ID) {
-        switch (ProgramState.getMode()) {
-            case FILE -> {ProgramState.setScanner(ProgramState.getFileScanner());}
-            case DEFAULT -> {ProgramState.setScanner(ProgramState.getKeyboardScanner());}
-        }
         Scanner sc = ProgramState.getScanner();
 
         LabWork elem = new LabWork();
         LabWorkBuilder labWorkBuilder = new LabWorkBuilder();
-        String name = null;
         String coordinatesX = null;
         String coordinatesY = null;
         String minimalPoint = null;
         String difficultyStr;
-        Difficulty difficulty = null;
         String authorName = null;
         String colorStr;
-        Color eyeColor=null;
         String locationX = null;
         String locationY = null;
         String locationZ = null;
-        Person author = new Person();
 
-        //TODO deprecated
-//        switch (ProgramState.getCommandType()) {
-//            case ADD -> elem.setId();
-//            case UPDATE -> elem.setId(ID);
-//        }
+
 
         //Ввод имени
         System.out.println(OutputEngine.insertName());
         while (true) {
-            System.out.println(OutputEngine.prompt());
+            System.out.print(OutputEngine.prompt());
             String inputName = sc.nextLine();
             try {
                 labWorkBuilder.setLabName(inputName);
@@ -184,6 +172,9 @@ public class ElemInputService {
             break;
         }
         elem = labWorkBuilder.getLabWork();
+        if (ID!=null) {
+            elem.setId(ID);
+        }
         return elem;
     }
 }

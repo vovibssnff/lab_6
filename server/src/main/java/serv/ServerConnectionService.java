@@ -2,7 +2,7 @@ package serv;
 
 import cmn.OutputEngine;
 import serv.load.Serializer;
-import serv.managment.Collections;
+import serv.managment.CollectionService;
 import serv.managment.ServerConnector;
 import serv.managment.ServerState;
 import cmn.service.Transmitter;
@@ -58,7 +58,7 @@ public class ServerConnectionService {
                     SocketAddress clientAddress = null;
                     DatagramChannel clientChannel = (DatagramChannel) key.channel();
                     buffer.clear();
-                    System.out.println(OutputEngine.serverNewConnection() + " " + clientChannel.socket());
+                    //System.out.println(OutputEngine.serverNewConnection() + " " + clientChannel.socket());
                     logger.info("Add client " + clientChannel.socket());
                     try {
                         clientAddress = clientChannel.receive(buffer);
@@ -67,7 +67,7 @@ public class ServerConnectionService {
                     }
                     buffer.flip();
                     String jsonRequest = new String(buffer.array(), 0, buffer.limit());
-                    Serializer.save(Collections.getCollection());
+
                     logger.info("Request: " + jsonRequest);
 
                     Transmitter transmitter = ServerState.getGson().fromJson(jsonRequest, Transmitter.class);

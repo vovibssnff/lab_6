@@ -1,6 +1,7 @@
 package cl.managment;
 
 import cl.io.CommandHandler;
+import cmn.OutputEngine;
 import cmn.service.LabWorkBuilder;
 import cmn.service.LabWorkStorage;
 import cmn.cmd.*;
@@ -57,10 +58,14 @@ public class LabWorkService implements ReceiverInterface {
         }
 
         Iterator<String> iterator = lines.iterator();
-
+        Command command = null;
         while (iterator.hasNext()) {
             String line = iterator.next();
-            Command command = CommandHandler.castCommand(line);
+            try {
+                command = CommandHandler.castCommand(line);
+            } catch (RuntimeException e) {
+                System.out.println(OutputEngine.incorrectArg());
+            }
 
             if (command == null) {
                 continue;

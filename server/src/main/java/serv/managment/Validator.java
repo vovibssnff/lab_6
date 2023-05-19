@@ -12,12 +12,12 @@ import java.util.regex.Pattern;
  */
 public class Validator {
     public static boolean checkId(long id) {
-        if (Collections.containsId(id)) {
+        if (CollectionService.containsId(id)) {
             //System.out.println(OutputEngine.incorrectId());
             return false;
         } else {
             //System.out.println(OutputEngine.correctId());
-            Collections.addId(id);
+            CollectionService.addId(id);
             return true;
         }
     }
@@ -26,7 +26,7 @@ public class Validator {
             System.out.println(OutputEngine.incorrectName());
             return false;
         } else {
-            System.out.println(OutputEngine.correctName());
+            //System.out.println(OutputEngine.correctName());
             return true;
         }
     }
@@ -35,7 +35,7 @@ public class Validator {
             System.out.println(OutputEngine.incorrectCoordinatesX());
             return false;
         } else {
-            System.out.println(OutputEngine.correctCoordinatesX());
+            //System.out.println(OutputEngine.correctCoordinatesX());
             return true;
         }
     }
@@ -44,7 +44,7 @@ public class Validator {
             System.out.println(OutputEngine.incorrectCoordinatesY());
             return false;
         } else {
-            System.out.println(OutputEngine.correctCoordinatesY());
+            //System.out.println(OutputEngine.correctCoordinatesY());
             return true;
         }
     }
@@ -53,15 +53,15 @@ public class Validator {
             System.out.println(OutputEngine.incorrectMinimalPoint());
             return false;
         } else {
-            System.out.println(OutputEngine.correctMinimalPoint());
+            //System.out.println(OutputEngine.correctMinimalPoint());
             return true;
         }
     }
     public static boolean checkCreationDate(String creationDate) {;
-        Pattern pattern = Pattern.compile("\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}");
+        Pattern pattern = Pattern.compile("\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}\\.\\d{9}");
         Matcher matcher = pattern.matcher(creationDate);
         if (matcher.matches()) {
-            System.out.println(OutputEngine.correctCreationDate());
+            //System.out.println(OutputEngine.correctCreationDate());
             return true;
         } else {
             System.out.println(OutputEngine.incorrectCreationDate());
@@ -71,7 +71,7 @@ public class Validator {
     public static boolean checkDifficulty(Difficulty difficulty) {
         if (Difficulty.VERY_HARD.equals(difficulty)||Difficulty.VERY_EASY.equals(difficulty)||
                 Difficulty.IMPOSSIBLE.equals(difficulty)) {
-            System.out.println(OutputEngine.correctDifficulty());
+            //System.out.println(OutputEngine.correctDifficulty());
             return true;
         } else {
             System.out.println(OutputEngine.incorrectDifficulty());
@@ -83,23 +83,23 @@ public class Validator {
             System.out.println(OutputEngine.incorrectAuthorName());
             return false;
         } else {
-            System.out.println(OutputEngine.correctAuthorName());
+            //System.out.println(OutputEngine.correctAuthorName());
             return true;
         }
     }
     public static boolean checkPassportId(String passportID) {
-        if (Collections.containsPassportId(passportID)) {
+        if (CollectionService.containsPassportId(passportID)) {
             //System.out.println(OutputEngine.incorrectPassportId());
             return false;
         } else {
             //System.out.println(OutputEngine.correctPassportId());
-            Collections.addPassportId(passportID);
+            CollectionService.addPassportId(passportID);
             return true;
         }
     }
     public static boolean checkColor(Color eyeColor) {
         if (Color.GREEN.equals(eyeColor)||Color.BROWN.equals(eyeColor)||Color.BLACK.equals(eyeColor)) {
-            System.out.println(OutputEngine.correctEyeColor());
+            //System.out.println(OutputEngine.correctEyeColor());
             return true;
         } else {
             System.out.println(OutputEngine.incorrectEyeColor());
@@ -111,7 +111,7 @@ public class Validator {
             System.out.println(OutputEngine.incorrectLocationX());
             return false;
         } else {
-            System.out.println(OutputEngine.correctLocationX());
+            //System.out.println(OutputEngine.correctLocationX());
             return true;
         }
     }
@@ -120,7 +120,7 @@ public class Validator {
             System.out.println(OutputEngine.incorrectLocationY());
             return false;
         } else {
-            System.out.println(OutputEngine.correctLocationY());
+            //System.out.println(OutputEngine.correctLocationY());
             return true;
         }
     }
@@ -129,7 +129,7 @@ public class Validator {
             System.out.println(OutputEngine.incorrectLocationZ());
             return false;
         } else {
-            System.out.println(OutputEngine.correctLocationZ());
+            //System.out.println(OutputEngine.correctLocationZ());
             return true;
         }
     }

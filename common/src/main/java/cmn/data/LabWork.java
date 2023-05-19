@@ -53,7 +53,7 @@ public class LabWork implements Comparable<LabWork>, Serializable {
         System.out.println("Поле Author задано успешно");
     }
 
-    public long getId() {
+    public Long getId() {
         return this.id;
     }
 

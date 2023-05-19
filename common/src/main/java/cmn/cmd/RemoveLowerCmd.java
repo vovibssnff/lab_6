@@ -8,7 +8,10 @@ public class RemoveLowerCmd implements Command {
     private UsrInputInterface usrInputReceiver;
     private ReceiverInterface labWorkService;
     private Long id;
-
+    public RemoveLowerCmd(UsrInputInterface usrInputReceiver, String arg) {
+        this.usrInputReceiver = usrInputReceiver;
+        this.id = Long.parseLong(arg);
+    }
     @Override
     public void setUsrInputReceiver(UsrInputInterface usrInputReceiver) {
         this.usrInputReceiver=usrInputReceiver;

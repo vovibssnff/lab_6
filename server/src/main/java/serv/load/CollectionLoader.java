@@ -1,6 +1,6 @@
 package serv.load;
 
-import serv.managment.Collections;
+import serv.managment.CollectionService;
 import cmn.data.LabWork;
 
 import java.io.*;
@@ -13,7 +13,7 @@ public class CollectionLoader {
     public static void save(File tmpFile) {
         try (FileOutputStream fos = new FileOutputStream(tmpFile);
              ObjectOutputStream oos = new ObjectOutputStream(fos)) {
-            oos.writeObject(Collections.getCollection());
+            oos.writeObject(CollectionService.getCollection());
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -22,7 +22,7 @@ public class CollectionLoader {
         try (FileInputStream fileInputStream = new FileInputStream(tmpFile);
              ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream)) {
             ArrayDeque<LabWork> labWorks = (ArrayDeque<LabWork>) objectInputStream.readObject();
-            Collections.setCollection(labWorks);
+            CollectionService.setCollection(labWorks);
         } catch (IOException | ClassNotFoundException e) {
             e.printStackTrace();
         }

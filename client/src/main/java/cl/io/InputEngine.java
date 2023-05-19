@@ -24,7 +24,7 @@ public class InputEngine {
         CollectionsEngine.addElemToCommandMap(HistoryCmd.getName(), HistoryCmd.class);
         CollectionsEngine.addElemToCommandMap(PrintUniqueAuthorCmd.getName(), PrintUniqueAuthorCmd.class);
         CollectionsEngine.addElemToCommandMap(ClearCmd.getName(), ClearCmd.class);
-        CollectionsEngine.addElemToCommandMap(HeadCmd.getName(), HelpCmd.class);
+        CollectionsEngine.addElemToCommandMap(HeadCmd.getName(), HeadCmd.class);
         CollectionsEngine.addElemToCommandMap(InfoCmd.getName(), InfoCmd.class);
         CollectionsEngine.addElemToCommandMap(ExitCmd.getName(), ExitCmd.class);
         CollectionsEngine.addElemToCommandMap(UpdateCmd.getName(), UpdateCmd.class);
@@ -43,7 +43,7 @@ public class InputEngine {
                 String input = ProgramState.getKeyboardScanner().nextLine().trim();
                 Command command = CommandHandler.castCommand(input);
                 CommandHandler.launchInvoke(command);
-            } catch (NullPointerException e) {
+            } catch (RuntimeException e) {
                 System.out.println(OutputEngine.incorrectCommand());
             }
         }
