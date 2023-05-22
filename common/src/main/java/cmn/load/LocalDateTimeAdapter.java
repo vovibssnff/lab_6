@@ -1,10 +1,9 @@
-package cl.load;
-
-import com.google.gson.*;
+package cmn.load;
 
 import java.lang.reflect.Type;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import com.google.gson.*;
 
 /**
  * Кастомный адаптер для успешной сериализации и десериализации полей LocalDateTime

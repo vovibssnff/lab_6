@@ -2,11 +2,10 @@ package serv.managment;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import serv.load.LocalDateTimeAdapter;
+import cmn.load.LocalDateTimeAdapter;
 
 import java.io.File;
 import java.time.LocalDateTime;
-import java.util.Scanner;
 
 public class ServerState {
     private static Gson gson = new GsonBuilder().registerTypeAdapter(LocalDateTime.class, new LocalDateTimeAdapter()).setPrettyPrinting().create();

@@ -1,6 +1,7 @@
 package serv.load;
 import cmn.OutputEngine;
 import cmn.data.LabWork;
+import cmn.load.LocalDateTimeAdapter;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonObject;

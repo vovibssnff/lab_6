@@ -3,7 +3,7 @@ package cl.managment;
 import cl.io.CommandHandler;
 import cl.io.CommandType;
 import cl.io.Mode;
-import cl.load.LocalDateTimeAdapter;
+import cmn.load.LocalDateTimeAdapter;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 

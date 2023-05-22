@@ -6,8 +6,7 @@ import cmn.service.Transmitter;
 public class RequestService {
     public static void sendRequest(Transmitter transmitter) {
         String resp = ClientConnectionService.sendRequest(transmitter);
-        if (resp!=null) {
-            System.out.println(resp);
-        }
+        String res = ProgramState.getGson().fromJson(resp, String.class);
+        System.out.println(res);
     }
 }

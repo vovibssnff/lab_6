@@ -44,7 +44,8 @@ public class InputEngine {
                 Command command = CommandHandler.castCommand(input);
                 CommandHandler.launchInvoke(command);
             } catch (RuntimeException e) {
-                System.out.println(OutputEngine.incorrectCommand());
+                e.printStackTrace();
+                //System.out.println(OutputEngine.incorrectCommand());
             }
         }
     }
