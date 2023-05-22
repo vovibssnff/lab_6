@@ -7,6 +7,7 @@ import serv.load.Serializer;
 import serv.log.Logging;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.*;
 import java.util.logging.Logger;
 
@@ -25,8 +26,8 @@ public class ServerConnector {
         ServerState.setTmpFile(new File("temporary.tmp"));
         ServerState.setCollectionReceiver(new CollectionReceiver());
         System.out.println(OutputEngine.greeting_msg());
-
-        ServerConnectionService.initConnection(ServerState.getPort());
+        ServerConnectionService serverConnectionService = new ServerConnectionService();
+        serverConnectionService.initConnection(ServerState.getPort());
     }
     public static void commandExecute(Command currentCommand, File tmpFile) {
         currentCommand.execute();

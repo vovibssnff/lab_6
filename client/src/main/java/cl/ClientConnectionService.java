@@ -3,52 +3,52 @@ package cl;
 import cmn.OutputEngine;
 import cmn.service.Transmitter;
 import cl.managment.ProgramState;
+import net.rudp.ReliableSocket;
 
-import java.io.IOException;
+import java.io.*;
 import java.net.*;
-
+import java.nio.ByteBuffer;
+import java.nio.channels.SocketChannel;
+import java.nio.charset.StandardCharsets;
+import java.util.concurrent.ScheduledExecutorService;
 
 public class ClientConnectionService {
     private static InetSocketAddress serverAddress;
-    //private static ReliableSocket reliableSock;
-    private static DatagramSocket socket = null;
+    private static SocketChannel clientChannel;
 
     public static void initConnection() {
         try {
-            socket = new DatagramSocket();
+            clientChannel = SocketChannel.open();
             serverAddress = new InetSocketAddress("localhost", 2222);
-            //reliableSock = new ReliableSocket(socket);
-            //reliableSock.connect(serverAddress);
+            clientChannel.connect(serverAddress);
+            clientChannel.configureBlocking(false);
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
     public static String sendRequest(Transmitter message) {
-
         String jsonRequest = ProgramState.getGson().toJson(message);
+        ByteBuffer buffer = ByteBuffer.wrap(jsonRequest.getBytes());
 
-        byte[] sendData = jsonRequest.getBytes();
-        DatagramPacket sendPacket = new DatagramPacket(sendData, sendData.length, serverAddress);
         try {
-            socket.send(sendPacket);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-        byte[] receiveData = new byte[2048 * 2048];
-        DatagramPacket receivePacket = new DatagramPacket(receiveData, receiveData.length);
-        try {
-            socket.setSoTimeout(5000);
-            socket.receive(receivePacket);
+            clientChannel.write(buffer);
+            buffer.clear();
 
-        } catch (SocketTimeoutException e) {
-            System.out.println(OutputEngine.serverResponseError());
+            while (clientChannel.read(buffer) == 0) {
+                // Waiting for response
+            }
+            buffer.flip();
+
+            String jsonResponse = new String(buffer.array(), 0, buffer.limit());
+            return ProgramState.getGson().fromJson(jsonResponse, String.class);
         } catch (IOException e) {
             e.printStackTrace();
+            return null;
         }
-
-        String jsonResponse = new String(receivePacket.getData(), 0, receivePacket.getLength());
-        return ProgramState.getGson().fromJson(jsonResponse, String.class);
-
     }
 }
+
+
+
+
